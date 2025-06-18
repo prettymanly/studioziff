@@ -26,41 +26,45 @@ export const ServiceCard: React.FC<ServiceCardProps> = ({
 }) => {
   return (
     <div 
-      className={`w-full h-auto md:h-[552px] text-[#e5eddf] rounded-[15px] p-6 md:p-[49px] flex flex-col md:flex-row justify-between font-sans`} 
+      className={`w-full h-auto md:h-[552px] text-[#e5eddf] rounded-[15px] p-8 md:p-[56px] flex flex-col md:flex-row justify-between font-sans`} 
       style={{ backgroundColor: bgColor }}
     >
       {/* "Left" Column Content (Top on mobile) */}
-      <div className="w-full md:w-[338px] flex flex-col justify-between mb-8 md:mb-0">
+      <div className="w-full md:w-[338px] flex flex-col justify-between mb-12 md:mb-0">
         <div>
-          <div className="font-mono text-base tracking-[-0.8px] mb-8 md:mb-12">{serviceNumber}</div>
-          <h2 className="text-4xl md:text-5xl font-bold tracking-[-2.5px] leading-[45px]" dangerouslySetInnerHTML={{ __html: title }}></h2>
+          <div className="font-mono text-sm md:text-base tracking-[-0.5px] mb-10 md:mb-16 opacity-90">{serviceNumber}</div>
+          <h2 className="text-[40px] md:text-[52px] font-bold tracking-[-2.8px] leading-[1.1] md:leading-[0.9]" dangerouslySetInnerHTML={{ __html: title }}></h2>
         </div>
-        <div>
-          <h3 className="text-xl font-bold tracking-[-1px] mb-2.5">Ideal for:</h3>
-          <p className="font-mono text-base tracking-[-0.8px]">{idealFor.join(', ')}</p>
+        <div className="mt-8 md:mt-0">
+          <h3 className="text-lg md:text-xl font-bold tracking-[-0.8px] mb-3 leading-tight">Ideal for:</h3>
+          <p className="font-mono text-sm md:text-base tracking-[-0.4px] leading-relaxed opacity-95">{idealFor.join(', ')}</p>
         </div>
       </div>
 
       {/* "Right" Column Content (Bottom on mobile) */}
       <div className="w-full md:w-[432px]">
-        <div className="mb-[15px]">
-          <h3 className="font-bold text-lg tracking-[-0.9px] leading-[22px]">{description.heading}</h3>
-          <p className="text-base tracking-[-0.9px] leading-[22px] mb-4">{description.body}</p>
-          <h3 className="font-bold text-lg tracking-[-0.9px] leading-[22px]">{description.subheading}</h3>
-          <p className="text-base tracking-[-0.9px] leading-[22px]">{description.subbody}</p>
+        <div className="mb-8 md:mb-10">
+          <h3 className="font-bold text-xl md:text-[22px] tracking-[-1px] leading-tight mb-4">{description.heading}</h3>
+          <p className="text-base md:text-[17px] tracking-[-0.4px] leading-[19px] mb-6 max-w-none md:max-w-[400px]">{description.body}</p>
+          {description.subheading && (
+            <>
+              <h3 className="font-bold text-lg md:text-xl tracking-[-0.8px] leading-tight mb-3">{description.subheading}</h3>
+              <p className="text-base md:text-[17px] tracking-[-0.4px] leading-[1.6] max-w-none md:max-w-[400px]">{description.subbody}</p>
+            </>
+          )}
         </div>
         {/* This part should stay as a row on all screens */}
-        <div className="flex flex-row justify-between gap-4">
+        <div className="flex flex-row justify-between gap-6 md:gap-8">
           <div className="w-1/2">
-            <h4 className="text-xl font-bold tracking-[-1px] mb-2.5">Questions we explore</h4>
-            <ul className="list-disc pl-5 text-sm tracking-[-0.7px] leading-[18px] space-y-1">
-              {questions.map((q, i) => <li key={i}>{q}</li>)}
+            <h4 className="text-lg md:text-xl font-bold tracking-[-0.8px] mb-4 leading-tight">Questions we explore</h4>
+            <ul className="list-disc pl-5 text-sm md:text-[15px] tracking-[-0.3px] leading-[1.5] space-y-2">
+              {questions.map((q, i) => <li key={i} className="pl-1">{q}</li>)}
             </ul>
           </div>
           <div className="w-1/2">
-            <h4 className="text-xl font-bold tracking-[-1px] mb-2.5">Things we might do</h4>
-            <ul className="list-disc pl-5 text-sm tracking-[-0.7px] leading-[18px] space-y-1">
-              {activities.map((a, i) => <li key={i}>{a}</li>)}
+            <h4 className="text-lg md:text-xl font-bold tracking-[-0.8px] mb-4 leading-tight">Things we might do</h4>
+            <ul className="list-disc pl-5 text-sm md:text-[15px] tracking-[-0.3px] leading-[1.5] space-y-2">
+              {activities.map((a, i) => <li key={i} className="pl-1">{a}</li>)}
             </ul>
           </div>
         </div>

@@ -4,44 +4,45 @@ import Image from 'next/image';
 export default function Home() {
   const serviceDesignData = {
     serviceNumber: "_01",
-    title: "Customer Research<br/>+ Behavioral Insights",
+    title: "Service Design<br/>+ Research",
     bgColor: "#6a8f7b",
     links: {
       view: "DESIGN RESEARCH + SERVICE DESIGN PROJECTS",
       enquire: "ENQUIRE ON DESIGN RESEARCH WORK"
     },
     description: {
-      heading: "Beyond What They Say They Want",
-      body: "Your customers aren't as rational as you think, with contradictory desires and decisions they can't always explain. I help teams decode what actually drives behavior beyond what surveys and assumptions reveal. We turn those insights into sharp direction so you can build and market with human nature, not against it.",
-      subheading: "",
-      subbody: "",
+      heading: "Making Sense, Together.",
+      body: "Whether you're launching a new product or trying to fix what's not working, real insight beats guesswork. I help lean teams understand what matters most to their users. We'll unpack what's motivating them, where they're stuck, and what they'll actually pay for, so you can move faster, smarter.",
+      subheading: "Think of it as...",
+      subbody: "Strategic research without the fluff. We get close to your customers, make sense of their world, and translate that into sharp, usable direction for product, service, or messaging.",
     },
     questions: [
       "What's really driving our customers' decisions?",
       "Why aren't people using what we built?",
       "How do we reduce friction or unlock trust?",
+      "Why aren't employees adopting this new way of working?",
     ],
     activities: [
       "Find signals in what users say, do, or avoid",
       "Test ideas fast — with blueprints, provocations, or prototypes",
       "Turn messy feedback into confident next steps",
     ],
-    idealFor: ["Startup founders", "product owners", "L&D teams", "People & Culture teams"],
+    idealFor: ["Startup founders", "SME teams", "product owners", "L&D teams", "innovation leads"],
   };
 
   const futuresData = {
     serviceNumber: "_02",
-    title: "Strategic<br/>Futures",
+    title: "Futures<br/>+ Foresight",
     bgColor: "#547068",
     links: {
       view: "FUTURES + FORESIGHT PROJECTS",
       enquire: "ENQUIRE ON FUTURES + FORESIGHT WORK"
     },
     description: {
-      heading: "Change Comes Fast. Are You Ready?",
-      body: "Futures work isn't about crystal balls, it's about stretching perspectives before change blindsides you. I help teams read signals, anticipate risks, and imagine bold alternatives while there's still time to act. We use provocations and scenarios to fundamentally shift how you plan and build for what's coming.",
-      subheading: "",
-      subbody: ""
+      heading: "You can't predict the future. But you can prepare for the ones that matter.",
+      body: "Futures work isn't about crystal balls, it's about stretching perspectives. I help teams make sense of change, anticipate risks, and imagine bold alternatives before it's too late (or too late to do anything meaningful). It's strategic imagination, grounded in real-world signals.",
+      subheading: "Think of it as...",
+      subbody: "Foresight you can actually act on. Not just trend decks, but structured provocation, scenario thinking, and facilitated reflection that shifts how people plan and build."
     },
     questions: [
       "What shifts will change how we operate in 5–10 years?",
@@ -53,7 +54,7 @@ export default function Home() {
       "Create design fictions that dramatize implications",
       "Facilitate sensemaking across siloed teams",
     ],
-    idealFor: ["Ministries", "educational leaders", "organizations facing major shifts", "strategy teams"]
+    idealFor: ["Ministries", "educators", "orgs on the edge of disruption", "or anyone dreaming responsibly."]
   };
 
   const creativeTechData = {
@@ -66,9 +67,9 @@ export default function Home() {
     },
     description: {
       heading: "Thinking with Machines, Creatively",
-      body: "I help teams cut through AI hype to find automation that actually works for their specific needs. Whether you're streamlining operations or augmenting creative workflows, we'll identify practical use cases and build them together through hands-on experimentation. We'll demystify the jargon and roll up sleeves to turn AI possibilities into working solutions.",
-      subheading: "",
-      subbody: ""
+      body: "I help teams cut through the AI hype to find practical, creative, or strategic uses of automation. Whether you're a small business trying to streamline operations or a creative team looking to augment your workflow, we'll find use cases that actually matter and build smartly around them.",
+      subheading: "Think of it as...",
+      subbody: "Practical AI strategy and prototyping. From figuring out your first automation loop to designing AI-powered customer experiences, I work with you to make it tangible, without the jargon."
     },
     questions: [
       "Where can AI meaningfully save us time or create new value?",
@@ -80,7 +81,7 @@ export default function Home() {
       "Train your team to use and adapt AI tools responsibly",
       "Create internal workflows that save hours weekly"
     ],
-    idealFor: ["Small business owners", "creative directors", "sales professionals", "ops teams"]
+    idealFor: ["SMEs", "creative studios", "educators", "founders", "innovation and operations teams"]
   };
 
   const facilitationData = {
@@ -92,22 +93,21 @@ export default function Home() {
       enquire: "ENQUIRE ON TEACHING WORK"
     },
     description: {
-      heading: "Learning That Sticks",
-      body: "I design learning experiences that unlock clarity, confidence, and curiosity across contexts from primary schools to corporate boardrooms. Whether we're learning design thinking, building futures literacy, or helping people unpack their scripts to imagine better alternatives, I adapt to your group's energy and needs. The goal is always transformation that sticks, not just another workshop people forget.",
-      subheading: "",
-      subbody: ""
+      heading: "Making Sense, Together.",
+      body: "I design learning experiences that unlock clarity, confidence, and curiosity. From corporate innovation sprints to undergraduate classrooms, I bring structure, story, and soul to help teams and individuals build new creative muscles and actually enjoy the process.",
+      subheading: "Think of it as...",
+      subbody: "Hands-on, brains-on learning. I adapt to your group's energy and needs, layering just enough structure to stretch minds — whether we're learning design, building futures literacy, or unlearning tired ways of working."
     },
     questions: [
-      "What if we approached this challenge from a completely different angle?",
-      "What's one assumption we've never questioned?",
-      "What's possible if we let go of how things \"should\" work?",
+      "Why aren't employees thinking like owners, innovators, or collaborators?",
+      "What does it take to grow a culture of learning and experimentation?",
     ],
     activities: [
-      "Facilitate design thinking or futures workshops",
-      "Teach creativity and critical thinking",
-      "Help people prototype different versions of themselves",
+      "Facilitate high-energy, low-jargon design thinking or futures workshops",
+      "Teach creativity and critical thinking to students or professionals",
+      "Coach individuals in storytelling, career design, or strategic clarity",
     ],
-    idealFor: ["Educators", "L&D teams", "trainers", "facilitators"]
+    idealFor: ["SMEs", "creative studios", "educators", "founders", "innovation and operations teams"]
   };
 
   return (
