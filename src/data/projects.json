@@ -1,0 +1,100 @@
+[
+  {
+    "id": 1,
+    "project_number": 1,
+    "client": "NATIONAL CONGLOMERATE, PHILIPPINES",
+    "service_type": "service-design",
+    "variant": "ProjectCover",
+    "variant_index": 1,
+    "title": "Reimagining Employee Experience",
+    "description": "A comprehensive service design project to transform how 50,000+ employees interact with internal systems, reducing friction and increasing satisfaction by 40%.",
+    "content": "Working with a national conglomerate to understand and redesign their employee experience across multiple touchpoints.",
+    "cover_image_url": null
+  },
+  {
+    "id": 2,
+    "project_number": 1,
+    "client": "NATIONAL CONGLOMERATE, PHILIPPINES",
+    "service_type": "service-design",
+    "variant": "DesignQuestion",
+    "variant_index": 2,
+    "hmw_line": "How might we create seamless experiences for employees across 12 different business units?",
+    "content": "This question guided our research approach, leading us to map over 200 touchpoints and identify 15 critical pain points affecting daily productivity."
+  },
+  {
+    "id": 3,
+    "project_number": 1,
+    "client": "NATIONAL CONGLOMERATE, PHILIPPINES",
+    "service_type": "service-design",
+    "variant": "1-1ContentCol",
+    "variant_index": 3,
+    "content": "Through 40+ interviews and 6 co-design workshops, we uncovered that the biggest barrier wasn't technology—it was communication. Employees felt disconnected from company decisions and unclear about processes. Our solution focused on transparency and clarity, creating new touchpoints that kept people informed and engaged throughout their journey."
+  },
+  {
+    "id": 4,
+    "project_number": 1,
+    "client": "NATIONAL CONGLOMERATE, PHILIPPINES",
+    "service_type": "service-design",
+    "variant": "3-5ImageContent",
+    "variant_index": 4,
+    "title": "Service Blueprint",
+    "content": "We created a comprehensive service blueprint mapping all employee interactions, from onboarding to retirement. This visual tool helped leadership understand the full employee journey and identify opportunities for improvement.",
+    "project_image_url": null
+  },
+  {
+    "id": 5,
+    "project_number": 1,
+    "client": "NATIONAL CONGLOMERATE, PHILIPPINES",
+    "service_type": "service-design",
+    "variant": "3-5ContentCol",
+    "variant_index": 5,
+    "content": "Reduce onboarding time from 30 days to 10 days. Increase employee satisfaction scores by 40%. Create consistent experience across all 12 business units.",
+    "description": "18-month implementation roadmap. New digital employee portal. Streamlined HR processes. Manager training program. Regular feedback loops."
+  },
+  {
+    "id": 6,
+    "project_number": 2,
+    "client": "FINTECH STARTUP, SINGAPORE",
+    "service_type": "futures",
+    "variant": "ProjectCover",
+    "variant_index": 1,
+    "title": "Future of Digital Banking",
+    "description": "Exploring scenarios for the next decade of financial services, helping a fintech startup position for emerging opportunities in embedded finance and AI-driven personalization.",
+    "content": "Strategic futures research for a fast-growing fintech company looking to stay ahead of industry trends.",
+    "cover_image_url": null
+  },
+  {
+    "id": 7,
+    "project_number": 2,
+    "client": "FINTECH STARTUP, SINGAPORE",
+    "service_type": "futures",
+    "variant": "DesignQuestion",
+    "variant_index": 2,
+    "hmw_line": "How might financial services evolve when AI makes every transaction intelligent and predictive?",
+    "content": "We developed four distinct scenarios ranging from AI-augmented banking to fully autonomous financial ecosystems, each with implications for product development and market positioning."
+  },
+  {
+    "id": 8,
+    "project_number": 3,
+    "client": "CREATIVE AGENCY, LONDON",
+    "service_type": "creative-tech",
+    "variant": "ProjectCover",
+    "variant_index": 1,
+    "title": "Interactive Brand Experience",
+    "description": "Designing and prototyping an immersive digital installation that responds to visitor movement and creates personalized brand narratives in real-time.",
+    "content": "Building cutting-edge interactive experiences that blur the line between digital and physical brand engagement.",
+    "cover_image_url": null
+  },
+  {
+    "id": 9,
+    "project_number": 4,
+    "client": "GLOBAL CONSULTANCY, NYC",
+    "service_type": "facilitation",
+    "variant": "ProjectCover",
+    "variant_index": 1,
+    "title": "Strategic Alignment Workshop Series",
+    "description": "Facilitating a series of workshops for C-suite executives to align on company vision and strategy across multiple time horizons, resulting in a unified 5-year roadmap.",
+    "content": "Guiding leadership teams through complex strategic decisions using structured facilitation and systems thinking.",
+    "cover_image_url": null
+  }
+]

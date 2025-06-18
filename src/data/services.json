@@ -1,0 +1,74 @@
+[
+  {
+    "id": "service-design",
+    "serviceNumber": "01 | SERVICE DESIGN",
+    "title": "Service Design + Research",
+    "tagline": "Most people skip straight to ideas. I help you slow down to see where the story really begins.",
+    "description": "Whether you're launching a new product or trying to fix what's not working, real insight beats guesswork. I help lean teams understand what matters most to their users. We'll unpack what's motivating them, where they're stuck, and what they'll actually pay for, so you can move faster, smarter. Think of it as... Strategic research without the fluff. We get close to your customers, make sense of their world, and translate that into sharp, usable direction for product, service, or messaging.",
+    "idealFor": [
+      "Startup founders",
+      "SME teams", 
+      "Product owners",
+      "L&D teams",
+      "Innovation leads"
+    ],
+    "links": [
+      { "text": "VIEW DESIGN RESEARCH PROJECTS", "url": "/service-design-projects" },
+      { "text": "ENQUIRE ON DESIGN RESEARCH WORK", "url": "/enquire-design" }
+    ]
+  },
+  {
+    "id": 2,
+    "title": "Futures",
+    "tagline": "The future isn't fixed. Let's explore the possibilities and prepare for what's coming next.",
+    "description": "Future-ready thinking for uncertain times. I help organizations navigate complexity by exploring scenarios, identifying emerging trends, and building adaptive strategies. Through futures research and strategic foresight, we'll map out potential pathways and develop resilient approaches that work across multiple possible tomorrows.",
+    "idealFor": [
+      "Strategic planners",
+      "Innovation teams",
+      "Policy makers",
+      "Leadership teams",
+      "Change agents"
+    ],
+    "serviceNumber": "_02",
+    "links": {
+      "viewWork": "/futures",
+      "enquire": "/contact"
+    }
+  },
+  {
+    "id": 3,
+    "title": "Creative Tech",
+    "tagline": "Where technology meets human experience. Building digital solutions that actually work for people.",
+    "description": "Thoughtful technology for human needs. I bridge the gap between complex technical possibilities and real-world user requirements. From prototyping new interactions to designing digital services, we'll create technology solutions that enhance rather than complicate human experiences.",
+    "idealFor": [
+      "Product teams",
+      "Tech startups",
+      "Digital agencies",
+      "UX teams",
+      "Innovation labs"
+    ],
+    "serviceNumber": "_03",
+    "links": {
+      "viewWork": "/creative-tech",
+      "enquire": "/contact"
+    }
+  },
+  {
+    "id": 4,
+    "title": "Facilitation",
+    "tagline": "Great ideas need great conversations. I help teams think together more effectively.",
+    "description": "Collaborative thinking, amplified. Whether you're navigating change, solving complex problems, or aligning diverse perspectives, the right facilitation makes all the difference. I design and guide workshops, strategy sessions, and collaborative processes that unlock collective intelligence and drive meaningful outcomes.",
+    "idealFor": [
+      "Leadership teams",
+      "Cross-functional groups",
+      "Strategy teams",
+      "Workshop organizers",
+      "Change managers"
+    ],
+    "serviceNumber": "_04",
+    "links": {
+      "viewWork": "/facilitation",
+      "enquire": "/contact"
+    }
+  }
+]
