@@ -129,7 +129,7 @@ export default function Home() {
         </header>
 
         {/* Hero Section */}
-        <section className="w-full h-auto md:h-[436px] mb-10 flex flex-col md:flex-row items-center gap-[38px]">
+        <section className="w-full h-auto md:h-[436px] mb-20 flex flex-col md:flex-row items-center gap-[38px]">
           {/* Left Box - Text */}
           <div className="w-full md:w-1/2 h-[436px] bg-white rounded-[15px] p-[49px] flex flex-col justify-between text-[#404b51]">
             <p className="font-mono text-base tracking-[-0.8px]">_INTRO</p>
@@ -152,7 +152,7 @@ export default function Home() {
         </section>
 
         {/* About Section */}
-        <section className="w-full mb-10 text-[#323e45] text-[25px] leading-[30px] font-sans">
+        <section className="w-full mb-20 text-[#323e45] text-[25px] leading-[30px] font-sans">
           <p className="mb-6">
             My salaryman days began in advertising. A discipline that taught me the value of narrative precision, the power of productive tension, and a religious belief that there's always space for tongues in cheeks.
           </p>
