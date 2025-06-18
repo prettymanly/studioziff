@@ -2,6 +2,65 @@
 
 import Image from 'next/image';
 import { useRef } from 'react';
+import ProjectCard, { ProjectCardProps } from '@/components/ProjectCard/ProjectCard';
+
+const project1Data: ProjectCardProps[] = [
+  {
+    variant: 'ProjectCover',
+    overline: '01 | CLIENT: LEADING INSURER, APAC',
+    title: 'Household OS: Reimagining Family Coordination in the Philippines',
+    image: '/images/intro-image.png', // Using existing image as placeholder
+    swipeToRead: true,
+  },
+  {
+    variant: '1:1ContentCol',
+    overline: '01 | CLIENT: LEADING INSURER, APAC',
+    leftContent: {
+      title: 'From Insight to Org-Wide Activation',
+      body: "In a co-creation workshop, I facilitated teams across the org to use the mindsets hands-on, not as reference material, but as thinking tools.",
+      list: [
+        "Marketing saw how to better communicate trust during moments of instability.",
+        "Product identified where complexity bred drop-off.",
+        "Ops rethought service flows around moments of vulnerability."
+      ]
+    },
+    rightContent: {
+      title: 'Why It Matters',
+      body: "Most insurers track customers as data points. We helped this one see them as living systems of changing needs and gave teams the tools to work with those shifts in real time. This project wasn't just about decoding behavior. It was about embedding a new way of noticing, thinking, and designing across the business."
+    }
+  },
+  {
+    variant: '3:5ContentCol',
+    overline: '01 | CLIENT: LEADING INSURER, APAC',
+    leftContent: {
+      body: 'As policy lapses surged, the question wasn\'t just "why are people walking away?" It was, <strong><em>why weren\'t we seeing it coming?</em></strong><br/><br/>This insurer had data, but little visibility into the shifting emotional and practical realities behind those numbers. What they lacked was a shared lens across departments: a way to notice, interpret, and respond to early signals of disengagement before it was too late.'
+    },
+    rightContent: {
+        title: 'From Personas to Fluid Mindsets',
+        body: `We interviewed customers and frontline staff across APAC, surfacing 12 distinct Insurance Mindsets, from skeptical first-timers to overwhelmed caregivers managing multiple policies.<br/><br/>But these weren't personas. They were behavioral states: dynamic, overlapping, and context-driven. <br/><br/>They helped teams ask better questions like: <br/><em>What happens when someone is 'Envisioning' their future, while also 'Sheltering' loved ones through crisis?</em><br/><br/>Each mindset acted as a strategic signal, helping teams anticipate when, how, and why a customer's needs might shift, and what that could mean for service, messaging, or support.`
+    }
+  },
+  {
+    variant: '3:5ImageContent',
+    overline: '01 | CLIENT: LEADING INSURER, APAC',
+    image: '/images/intro-image.png', // Using existing image as placeholder
+    rightContent: {
+      title: 'A Tool Teams Could Think With',
+      body: "We transformed these insights into tactile mindset cards, not just to summarize research, but to trigger alignment and action. I led the design and development of these cards, not just visually, but functionally:",
+      list: [
+        "Could a marketer hold one and reframe their brief?",
+        "Could a product owner spot a blind spot they hadn't seen before?",
+        "Could an operations lead see where empathy could be built into the backend?"
+      ]
+    }
+  },
+  {
+    variant: 'HMW',
+    overline: '01 | CLIENT: LEADING INSURER, APAC',
+    hmw: 'How might an everyday utility app redistribute invisible labour across the household?',
+  }
+];
+
 
 export default function ResearchProjectsPage() {
   const scrollRef1 = useRef<HTMLDivElement>(null);
@@ -101,12 +160,9 @@ export default function ResearchProjectsPage() {
               className="overflow-x-auto snap-x snap-mandatory scrollbar-hide"
               style={{ display: 'flex', gap: '2rem', padding: '1rem 0' }}
             >
-              {[1, 2, 3, 4, 5].map((cardNum) => (
-                <div key={cardNum} className="w-[902px] h-[552px] bg-white rounded-[15px] p-[56px] flex-shrink-0 snap-center flex items-center justify-center">
-                  <div className="text-center text-[#404b51]">
-                    <h4 className="text-2xl font-bold mb-4">Project 1 - Card {cardNum}</h4>
-                    <p>Card {cardNum} content will be inserted here</p>
-                  </div>
+              {project1Data.map((card, index) => (
+                <div key={index} className="flex-shrink-0 snap-center">
+                  <ProjectCard {...card} />
                 </div>
               ))}
             </div>
@@ -136,12 +192,9 @@ export default function ResearchProjectsPage() {
               className="overflow-x-auto snap-x snap-mandatory scrollbar-hide"
               style={{ display: 'flex', gap: '2rem', padding: '1rem 0' }}
             >
-              {[1, 2, 3, 4, 5].map((cardNum) => (
-                <div key={cardNum} className="w-[902px] h-[552px] bg-white rounded-[15px] p-[56px] flex-shrink-0 snap-center flex items-center justify-center">
-                  <div className="text-center text-[#404b51]">
-                    <h4 className="text-2xl font-bold mb-4">Project 2 - Card {cardNum}</h4>
-                    <p>Card {cardNum} content will be inserted here</p>
-                  </div>
+              {project1Data.map((card, index) => (
+                <div key={index} className="flex-shrink-0 snap-center">
+                  <ProjectCard {...card} />
                 </div>
               ))}
             </div>
@@ -171,12 +224,9 @@ export default function ResearchProjectsPage() {
               className="overflow-x-auto snap-x snap-mandatory scrollbar-hide"
               style={{ display: 'flex', gap: '2rem', padding: '1rem 0' }}
             >
-              {[1, 2, 3, 4, 5].map((cardNum) => (
-                <div key={cardNum} className="w-[902px] h-[552px] bg-white rounded-[15px] p-[56px] flex-shrink-0 snap-center flex items-center justify-center">
-                  <div className="text-center text-[#404b51]">
-                    <h4 className="text-2xl font-bold mb-4">Project 3 - Card {cardNum}</h4>
-                    <p>Card {cardNum} content will be inserted here</p>
-                  </div>
+              {project1Data.map((card, index) => (
+                <div key={index} className="flex-shrink-0 snap-center">
+                  <ProjectCard {...card} />
                 </div>
               ))}
             </div>
