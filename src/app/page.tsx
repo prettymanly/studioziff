@@ -1,4 +1,5 @@
 import { ServiceCard } from '@/components/ServiceCard/ServiceCard';
+import Image from 'next/image';
 
 export default function Home() {
   const serviceDesignData = {
@@ -140,13 +141,14 @@ export default function Home() {
           </div>
 
           {/* Right Box - Image */}
-          <div
-            className="w-full md:w-1/2 h-[436px] bg-[#D9D9D9] rounded-[15px] bg-cover"
-            style={{ 
-              backgroundImage: "url('http://localhost:3845/assets/89c7e088a9646499c357983fba268314fa128afc.png')",
-              backgroundPosition: 'center'
-            }}
-          ></div>
+          <div className="relative w-full md:w-1/2 h-[436px] rounded-[15px] overflow-hidden">
+            <Image
+              src="/images/intro-image.png"
+              alt="Ziff Lau"
+              fill
+              style={{ objectFit: 'cover' }}
+            />
+          </div>
         </section>
 
         {/* About Section */}
