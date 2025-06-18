@@ -174,7 +174,7 @@ export default function Home() {
         </section>
 
         {/* Services Section */}
-        <section className="flex flex-col items-center space-y-16">
+        <section className="flex flex-col space-y-16">
           
           {/* Service 1 + Links */}
           <div>
