@@ -19,15 +19,12 @@ export default function Home() {
       "What's really driving our customers' decisions?",
       "Why aren't people using what we built?",
       "How do we reduce friction or unlock trust?",
-      "Where should we focus first?",
       "Why aren't employees adopting this new way of working?",
     ],
     activities: [
-      "Interview your users, even the quiet ones",
-      "Test hypotheses with low-lift provocations",
-      "Spot behaviour patterns and opportunity gaps",
-      "Co-create simple blueprints or MVP experiments",
-      "Translate messy feedback into clear product direction",
+      "Find signals in what users say, do, or avoid",
+      "Test ideas fast — with blueprints, provocations, or prototypes",
+      "Turn messy feedback into confident next steps",
     ],
     idealFor: ["Startup founders", "SME teams", "product owners", "L&D teams", "innovation leads"],
   };
@@ -48,17 +45,13 @@ export default function Home() {
     },
     questions: [
       "What shifts will change how we operate in 5–10 years?",
-      "What are we currently blind to?",
       "What future are we unconsciously designing for?",
       "How might emerging tech reshape our mission or business?",
-      "What risks are we ignoring because they feel uncomfortable?"
     ],
     activities: [
       "Run scenario-planning and trend-mapping workshops",
       "Create design fictions that dramatize implications",
       "Facilitate sensemaking across siloed teams",
-      "Develop uncertainty matrices or system maps",
-      "Translate foresight into strategy triggers or project briefs"
     ],
     idealFor: ["Ministries", "educators", "orgs on the edge of disruption", "or anyone dreaming responsibly."]
   };
@@ -81,12 +74,8 @@ export default function Home() {
       "Where can AI meaningfully save us time or create new value?",
       "What processes can we automate without losing the human touch?",
       "How might AI enhance (not replace) our creative or service workflows?",
-      "What does a 'right-sized' AI tool stack look like for us?",
-      "How do we keep it ethical, aligned, and not annoying to use?"
     ],
     activities: [
-      "Map automation or AI opportunity areas in your org",
-      "Build MVPs using tools like ChatGPT, Make, Airtable, or Bubble",
       "Prototype AI-powered experiences (chat, content, recommendations)",
       "Train your team to use and adapt AI tools responsibly",
       "Create internal workflows that save hours weekly"
@@ -110,43 +99,38 @@ export default function Home() {
     },
     questions: [
       "Why aren't employees thinking like owners, innovators, or collaborators?",
-      "How might we shift from knowing what to do to knowing how to act on it?",
       "What does it take to grow a culture of learning and experimentation?",
-      "How do we get people excited to try (and fail) better together?"
     ],
     activities: [
       "Facilitate high-energy, low-jargon design thinking or futures workshops",
       "Teach creativity and critical thinking to students or professionals",
       "Coach individuals in storytelling, career design, or strategic clarity",
-      "Build custom toolkits or learning programs for your team or org",
-      "Run immersive learning journeys for adults or families"
     ],
     idealFor: ["SMEs", "creative studios", "educators", "founders", "innovation and operations teams"]
   };
 
   return (
-    <main className="flex flex-col items-center py-10">
-      <div className="w-[902px]">
+    <main className="flex flex-col items-center py-10 px-2.5">
+      <div className="w-full max-w-[902px]">
         
         {/* Header Placeholder */}
-        <header className="h-[129px] w-full mb-10 flex justify-between items-center font-mono text-base">
+        <header className="w-full mb-10 flex flex-row justify-between items-start font-mono text-base py-4">
           <div>
             <p className="text-[#5e7c72] font-bold">ELSEWHERE</p>
-            <p>ABOUT ZIFF</p>
-            <p>BLOG</p>
-            <p>LINKEDIN</p>
+            <p><a href="#" className="hover:opacity-80">BLOG</a></p>
+            <p><a href="#" className="hover:opacity-80">LINKEDIN</a></p>
           </div>
-          <div className="text-right">
+          <div className="text-left md:text-right">
             <p className="text-[#5e7c72] font-bold">CONTACT</p>
-            <p>ZIFF.LAU@GMAIL.COM</p>
+            <p><a href="mailto:ZIFF.LAU@GMAIL.COM" className="hover:opacity-80">ZIFF.LAU@GMAIL.COM</a></p>
             <p>+9322 7317</p>
           </div>
         </header>
 
         {/* Hero Section */}
-        <section className="w-full h-[436px] mb-10 flex flex-row items-center gap-[38px]">
+        <section className="w-full h-auto md:h-[436px] mb-10 flex flex-col md:flex-row items-center gap-[38px]">
           {/* Left Box - Text */}
-          <div className="w-[432px] h-full bg-white rounded-[15px] p-[49px] flex flex-col justify-between text-[#404b51]">
+          <div className="w-full md:w-1/2 h-[436px] bg-white rounded-[15px] p-[49px] flex flex-col justify-between text-[#404b51]">
             <p className="font-mono text-base tracking-[-0.8px]">_INTRO</p>
             <p className="text-[20px] leading-[22px] tracking-[-1px]">
               <span className="font-bold">ZIFF LAU</span>
@@ -157,7 +141,7 @@ export default function Home() {
 
           {/* Right Box - Image */}
           <div
-            className="w-[432px] h-full bg-[#D9D9D9] rounded-[15px] bg-cover"
+            className="w-full md:w-1/2 h-[436px] bg-[#D9D9D9] rounded-[15px] bg-cover"
             style={{ 
               backgroundImage: "url('http://localhost:3845/assets/89c7e088a9646499c357983fba268314fa128afc.png')",
               backgroundPosition: 'center'
@@ -195,7 +179,7 @@ export default function Home() {
           {/* Service 1 + Links */}
           <div>
             <ServiceCard {...serviceDesignData} />
-            <div className="mt-[38px] flex justify-between items-center font-mono text-base text-[#5e7c72]">
+            <div className="mt-[38px] flex flex-col md:flex-row justify-between items-start md:items-center font-mono text-base text-[#5e7c72] gap-4 md:gap-0">
               <a href="#" className="hover:opacity-80">
                 VIEW <span className="font-bold underline">{serviceDesignData.links.view}</span>
               </a>
@@ -206,7 +190,7 @@ export default function Home() {
           {/* Service 2 + Links */}
           <div>
             <ServiceCard {...futuresData} />
-            <div className="mt-[38px] flex justify-between items-center font-mono text-base text-[#5e7c72]">
+            <div className="mt-[38px] flex flex-col md:flex-row justify-between items-start md:items-center font-mono text-base text-[#5e7c72] gap-4 md:gap-0">
               <a href="#" className="hover:opacity-80">
                 VIEW <span className="font-bold underline">{futuresData.links.view}</span>
               </a>
@@ -217,7 +201,7 @@ export default function Home() {
           {/* Service 3 + Links */}
           <div>
             <ServiceCard {...creativeTechData} />
-            <div className="mt-[38px] flex justify-between items-center font-mono text-base text-[#5e7c72]">
+            <div className="mt-[38px] flex flex-col md:flex-row justify-between items-start md:items-center font-mono text-base text-[#5e7c72] gap-4 md:gap-0">
               <a href="#" className="hover:opacity-80">
                 VIEW <span className="font-bold underline">{creativeTechData.links.view}</span>
               </a>
@@ -228,7 +212,7 @@ export default function Home() {
           {/* Service 4 + Links */}
           <div>
             <ServiceCard {...facilitationData} />
-            <div className="mt-[38px] flex justify-between items-center font-mono text-base text-[#5e7c72]">
+            <div className="mt-[38px] flex flex-col md:flex-row justify-between items-start md:items-center font-mono text-base text-[#5e7c72] gap-4 md:gap-0">
               <a href="#" className="hover:opacity-80">
                 VIEW <span className="font-bold underline">{facilitationData.links.view}</span>
               </a>
