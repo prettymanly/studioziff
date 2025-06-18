@@ -4,11 +4,11 @@ import Image from 'next/image';
 export default function Home() {
   const serviceDesignData = {
     serviceNumber: "_01",
-    title: "Customer Research<br/>+ Behavioral Insights",
+    title: "Customer Research<br/><span style='font-weight: 300;'>+</span> Behavioral Insights",
     bgColor: "#6a8f7b",
     links: {
-      view: "DESIGN RESEARCH + SERVICE DESIGN PROJECTS",
-      enquire: "ENQUIRE ON DESIGN RESEARCH WORK"
+      view: "RESEARCH PROJECTS",
+      enquire: "ENQUIRE ON RESEARCH WORK"
     },
     description: {
       heading: "Beyond What They Say They Want",
@@ -34,8 +34,8 @@ export default function Home() {
     title: "Strategic<br/>Futures",
     bgColor: "#547068",
     links: {
-      view: "FUTURES + FORESIGHT PROJECTS",
-      enquire: "ENQUIRE ON FUTURES + FORESIGHT WORK"
+      view: "FUTURES PROJECTS",
+      enquire: "ENQUIRE ON FUTURES WORK"
     },
     description: {
       heading: "Change Comes Fast. Are You Ready?",
@@ -58,11 +58,11 @@ export default function Home() {
 
   const creativeTechData = {
     serviceNumber: "_03",
-    title: "Generative AI<br/>+ Automation",
+    title: "Generative AI<br/><span style='font-weight: 300;'>+</span> Automation",
     bgColor: "#37494c",
     links: {
-      view: "GENERATIVE AI + AUTOMATION PROJECTS",
-      enquire: "ENQUIRE ON GENERATIVE AI WORK"
+      view: "AI PROJECTS",
+      enquire: "ENQUIRE ON AI WORK"
     },
     description: {
       heading: "Thinking with Machines, Creatively",
@@ -85,11 +85,11 @@ export default function Home() {
 
   const facilitationData = {
     serviceNumber: "_04",
-    title: "Teaching, Facilitation<br/>+ Capability Building",
+    title: "Teaching, Facilitation<br/><span style='font-weight: 300;'>+</span> Capability Building",
     bgColor: "#2f3a41",
     links: {
-      view: "TEACHING + FACILITATION PROJECTS",
-      enquire: "ENQUIRE ON TEACHING WORK"
+      view: "TEACHING EXPERIENCE",
+      enquire: "ENQUIRE ON EDUCATION WORK"
     },
     description: {
       heading: "Learning That Sticks",
@@ -98,7 +98,7 @@ export default function Home() {
       subbody: ""
     },
     questions: [
-      "What if we approached this challenge from a completely different angle?",
+      "What if we flipped this challenge completely?",
       "What's one assumption we've never questioned?",
       "What's possible if we let go of how things \"should\" work?",
     ],
@@ -117,12 +117,12 @@ export default function Home() {
         {/* Header Placeholder */}
         <header className="w-full mb-10 flex flex-row justify-between items-start font-mono text-base py-4">
           <div>
-            <p className="text-[#5e7c72] font-bold">ELSEWHERE</p>
+            <p className="text-[#5e7c72] font-bold">FIND ME</p>
             <p><a href="#" className="hover:opacity-80">BLOG</a></p>
             <p><a href="#" className="hover:opacity-80">LINKEDIN</a></p>
           </div>
           <div className="text-left md:text-right">
-            <p className="text-[#5e7c72] font-bold">CONTACT</p>
+            <p className="text-[#5e7c72] font-bold">SAY HELLO</p>
             <p><a href="mailto:ZIFF.LAU@GMAIL.COM" className="hover:opacity-80">ZIFF.LAU@GMAIL.COM</a></p>
             <p>+9322 7317</p>
           </div>
@@ -152,7 +152,7 @@ export default function Home() {
         </section>
 
         {/* About Section */}
-        <section className="w-full mb-10 text-[#323e45] text-[30px] leading-normal font-sans">
+        <section className="w-full mb-10 text-[#323e45] text-[25px] leading-[30px] font-sans">
           <p className="mb-6">
             My salaryman days began in advertising. A discipline that taught me the value of narrative precision, the power of productive tension, and a religious belief that there's always space for tongues in cheeks.
           </p>
@@ -171,7 +171,7 @@ export default function Home() {
             <li>Teaching gigs (I currently teach Innovation Design at SIT, where students pretend to listen)</li>
           </ul>
           <p>
-            Yes, I wear many hats, and yes, I has one for each context. Below, you'll find what those hats look like, and how I think when I'm wearing them.
+            Yes, I wear many hats, and yes, I have one for each context. Below, you'll find what those hats look like, and how I think when I'm wearing them.
           </p>
         </section>
 

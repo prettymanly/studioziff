@@ -33,7 +33,7 @@ export const ServiceCard: React.FC<ServiceCardProps> = ({
       <div className="w-full md:w-[338px] flex flex-col justify-between mb-12 md:mb-0">
         <div>
           <div className="font-mono text-sm md:text-base tracking-[-0.5px] mb-10 md:mb-16 opacity-90">{serviceNumber}</div>
-          <h2 className="text-[40px] md:text-[52px] font-bold tracking-[-2.8px] leading-[1.1] md:leading-[0.9]" dangerouslySetInnerHTML={{ __html: title }}></h2>
+          <h2 className="text-[40px] md:text-[52px] font-bold tracking-[-2.8px] leading-[1.1] md:leading-[0.9] md:-mt-[46px]" dangerouslySetInnerHTML={{ __html: title }}></h2>
         </div>
         <div className="mt-8 md:mt-0">
           <h3 className="text-lg md:text-xl font-bold tracking-[-0.8px] mb-3 leading-tight">Ideal for:</h3>
