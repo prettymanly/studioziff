@@ -98,19 +98,17 @@ export default function ResearchProjectsPage() {
             </div>
             <div 
               ref={scrollRef1}
-              className="overflow-x-auto snap-x snap-mandatory scrollbar-hide -mx-2.5"
-              style={{ width: 'calc(100vw)', marginLeft: 'calc(-50vw + 50%)', paddingLeft: 'calc(50vw - 50%)' }}
+              className="overflow-x-auto snap-x snap-mandatory scrollbar-hide"
+              style={{ display: 'flex', gap: '2rem', padding: '1rem 0' }}
             >
-              <div className="flex gap-8 pb-4" style={{ width: 'max-content' }}>
-                {[1, 2, 3, 4, 5].map((cardNum) => (
-                  <div key={cardNum} className="w-[902px] h-[552px] bg-white rounded-[15px] p-[56px] flex-shrink-0 snap-start snap-always flex items-center justify-center">
-                    <div className="text-center text-[#404b51]">
-                      <h4 className="text-2xl font-bold mb-4">Project 1 - Card {cardNum}</h4>
-                      <p>Card {cardNum} content will be inserted here</p>
-                    </div>
+              {[1, 2, 3, 4, 5].map((cardNum) => (
+                <div key={cardNum} className="w-[902px] h-[552px] bg-white rounded-[15px] p-[56px] flex-shrink-0 snap-center flex items-center justify-center">
+                  <div className="text-center text-[#404b51]">
+                    <h4 className="text-2xl font-bold mb-4">Project 1 - Card {cardNum}</h4>
+                    <p>Card {cardNum} content will be inserted here</p>
                   </div>
-                ))}
-              </div>
+                </div>
+              ))}
             </div>
           </div>
 
@@ -135,19 +133,17 @@ export default function ResearchProjectsPage() {
             </div>
             <div 
               ref={scrollRef2}
-              className="overflow-x-auto snap-x snap-mandatory scrollbar-hide -mx-2.5"
-              style={{ width: 'calc(100vw)', marginLeft: 'calc(-50vw + 50%)', paddingLeft: 'calc(50vw - 50%)' }}
+              className="overflow-x-auto snap-x snap-mandatory scrollbar-hide"
+              style={{ display: 'flex', gap: '2rem', padding: '1rem 0' }}
             >
-              <div className="flex gap-8 pb-4" style={{ width: 'max-content' }}>
-                {[1, 2, 3, 4, 5].map((cardNum) => (
-                  <div key={cardNum} className="w-[902px] h-[552px] bg-white rounded-[15px] p-[56px] flex-shrink-0 snap-start snap-always flex items-center justify-center">
-                    <div className="text-center text-[#404b51]">
-                      <h4 className="text-2xl font-bold mb-4">Project 2 - Card {cardNum}</h4>
-                      <p>Card {cardNum} content will be inserted here</p>
-                    </div>
+              {[1, 2, 3, 4, 5].map((cardNum) => (
+                <div key={cardNum} className="w-[902px] h-[552px] bg-white rounded-[15px] p-[56px] flex-shrink-0 snap-center flex items-center justify-center">
+                  <div className="text-center text-[#404b51]">
+                    <h4 className="text-2xl font-bold mb-4">Project 2 - Card {cardNum}</h4>
+                    <p>Card {cardNum} content will be inserted here</p>
                   </div>
-                ))}
-              </div>
+                </div>
+              ))}
             </div>
           </div>
 
@@ -172,19 +168,17 @@ export default function ResearchProjectsPage() {
             </div>
             <div 
               ref={scrollRef3}
-              className="overflow-x-auto snap-x snap-mandatory scrollbar-hide -mx-2.5"
-              style={{ width: 'calc(100vw)', marginLeft: 'calc(-50vw + 50%)', paddingLeft: 'calc(50vw - 50%)' }}
+              className="overflow-x-auto snap-x snap-mandatory scrollbar-hide"
+              style={{ display: 'flex', gap: '2rem', padding: '1rem 0' }}
             >
-              <div className="flex gap-8 pb-4" style={{ width: 'max-content' }}>
-                {[1, 2, 3, 4, 5].map((cardNum) => (
-                  <div key={cardNum} className="w-[902px] h-[552px] bg-white rounded-[15px] p-[56px] flex-shrink-0 snap-start snap-always flex items-center justify-center">
-                    <div className="text-center text-[#404b51]">
-                      <h4 className="text-2xl font-bold mb-4">Project 3 - Card {cardNum}</h4>
-                      <p>Card {cardNum} content will be inserted here</p>
-                    </div>
+              {[1, 2, 3, 4, 5].map((cardNum) => (
+                <div key={cardNum} className="w-[902px] h-[552px] bg-white rounded-[15px] p-[56px] flex-shrink-0 snap-center flex items-center justify-center">
+                  <div className="text-center text-[#404b51]">
+                    <h4 className="text-2xl font-bold mb-4">Project 3 - Card {cardNum}</h4>
+                    <p>Card {cardNum} content will be inserted here</p>
                   </div>
-                ))}
-              </div>
+                </div>
+              ))}
             </div>
           </div>
 
