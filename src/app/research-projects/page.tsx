@@ -6,61 +6,60 @@ import ProjectCard, { ProjectCardProps } from '@/components/ProjectCard/ProjectC
 
 const project1Data: ProjectCardProps[] = [
   {
+    variant: 'HMW',
+    overline: '01 | CLIENT: MINISTRY OF EDUCATION, SINGAPORE',
+    hmw: 'How might futures thinking help reframe what students truly need to thrive in 2030 and beyond?',
+  },
+  {
     variant: 'ProjectCover',
-    overline: '01 | CLIENT: LEADING INSURER, APAC',
-    title: 'Household OS: Reimagining Family Coordination in the Philippines',
-    image: '/images/intro-image.png', // Using existing image as placeholder
+    overline: '01 | CLIENT: MINISTRY OF EDUCATION, SINGAPORE',
+    title: 'Imagining<br/>Education<br/>Beyond Certainty',
+    image: '/images/intro-image.png',
     swipeToRead: true,
   },
   {
-    variant: '1:1ContentCol',
-    overline: '01 | CLIENT: LEADING INSURER, APAC',
+    variant: '3:5ContentCol',
+    overline: '01 | CLIENT: MINISTRY OF EDUCATION, SINGAPORE',
     leftContent: {
-      title: 'From Insight to Org-Wide Activation',
-      body: "In a co-creation workshop, I facilitated teams across the org to use the mindsets hands-on, not as reference material, but as thinking tools.",
-      list: [
-        "Marketing saw how to better communicate trust during moments of instability.",
-        "Product identified where complexity bred drop-off.",
-        "Ops rethought service flows around moments of vulnerability."
-      ]
+      body: "The future doesn't arrive all at once. It trickles in through classroom routines, curriculum tweaks, cultural shifts. This project asked: <em>What if we interrupted that drift?</em><br/><br/>Commissioned by the Ministry of Education, this wasn't a visioning exercise. It was a strategic provocation designed to help policy teams grapple with what's changing, what's uncertain, and what roles they might play in shaping what comes next."
     },
     rightContent: {
-      title: 'Why It Matters',
-      body: "Most insurers track customers as data points. We helped this one see them as living systems of changing needs and gave teams the tools to work with those shifts in real time. This project wasn't just about decoding behavior. It was about embedding a new way of noticing, thinking, and designing across the business."
+      title: "",
+      body: "Together, we mapped signals, surfaced tensions, and crafted dilemma-driven futures that challenged business-as-usual not just in systems thinking, but in systems <em>feeling</em>.<br/><br/><strong>From Trends to Tensions</strong><br/>We began with a STEEP trend scan, filtering only those that impacted teaching and learning. Through facilitated clustering and uncertainty mapping, we distilled key drivers: from the rise of AI tutors, to the loneliness epidemic, to shifts in learner autonomy and state control.<br/><br/>Rather than force alignment, we leaned into discomfort. The most resonant futures were built around <strong>dilemmas</strong> like wellbeing vs performance, autonomy vs centralisation, resilience vs compliance, giving stakeholders emotional and strategic footholds to reflect."
     }
   },
   {
-    variant: '3:5ContentCol',
-    overline: '01 | CLIENT: LEADING INSURER, APAC',
+    variant: '1:1ContentCol',
+    overline: '01 | CLIENT: MINISTRY OF EDUCATION, SINGAPORE',
     leftContent: {
-      body: 'As policy lapses surged, the question wasn\'t just "why are people walking away?" It was, <strong><em>why weren\'t we seeing it coming?</em></strong><br/><br/>This insurer had data, but little visibility into the shifting emotional and practical realities behind those numbers. What they lacked was a shared lens across departments: a way to notice, interpret, and respond to early signals of disengagement before it was too late.'
+      title: 'My Role',
+      body: '',
+      list: [
+        '<strong>Researcher</strong>: Led trend and uncertainty mapping, developed core drivers and clusters',
+        '<strong>Facilitator</strong>: Co-designed and ran strategic foresight workshops with ministry teams',
+        '<strong>Writer</strong>: Authored scenario narratives to bridge the analytical with the emotional',
+      ]
     },
     rightContent: {
-        title: 'From Personas to Fluid Mindsets',
-        body: `We interviewed customers and frontline staff across APAC, surfacing 12 distinct Insurance Mindsets, from skeptical first-timers to overwhelmed caregivers managing multiple policies.<br/><br/>But these weren't personas. They were behavioral states: dynamic, overlapping, and context-driven. <br/><br/>They helped teams ask better questions like: <br/><em>What happens when someone is 'Envisioning' their future, while also 'Sheltering' loved ones through crisis?</em><br/><br/>Each mindset acted as a strategic signal, helping teams anticipate when, how, and why a customer's needs might shift, and what that could mean for service, messaging, or support.`
+      title: 'Why It Mattered',
+      body: "Education systems are often structured to avoid uncertainty. But here, uncertainty became the teacher.<br/><br/>By creating space for <em>non-consensus futures</em> that tugged at competing values, we helped shift the conversation. Not just from \"what's the plan?\" to \"what's the possibility?\" but from <em>control</em> to <em>agency</em>.<br/><br/>What emerged wasn't a roadmap, but a reframing: of preparedness, resilience, and the kind of learners (and educators) we need for what's next."
     }
   },
   {
     variant: '3:5ImageContent',
-    overline: '01 | CLIENT: LEADING INSURER, APAC',
-    image: '/images/intro-image.png', // Using existing image as placeholder
+    overline: '01 | CLIENT: MINISTRY OF EDUCATION, SINGAPORE',
+    image: '/images/intro-image.png',
     rightContent: {
-      title: 'A Tool Teams Could Think With',
-      body: "We transformed these insights into tactile mindset cards, not just to summarize research, but to trigger alignment and action. I led the design and development of these cards, not just visually, but functionally:",
+      title: 'Futures as Mirrors, Not Answers',
+      body: "Each scenario was designed to provoke, not prescribe. Through narrative storytelling and thematic arcs, we anchored the futures in human terms, asking:",
       list: [
-        "Could a marketer hold one and reframe their brief?",
-        "Could a product owner spot a blind spot they hadn't seen before?",
-        "Could an operations lead see where empathy could be built into the backend?"
+        'What might learning feel like in this world?',
+        'Who thrives, who\'s left behind?',
+        'What will we wish we\'d built sooner?',
       ]
     }
-  },
-  {
-    variant: 'HMW',
-    overline: '01 | CLIENT: LEADING INSURER, APAC',
-    hmw: 'How might an everyday utility app redistribute invisible labour across the household?',
   }
 ];
-
 
 export default function ResearchProjectsPage() {
   const scrollRef1 = useRef<HTMLDivElement>(null);

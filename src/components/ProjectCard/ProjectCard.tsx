@@ -1,8 +1,5 @@
 'use client';
 
-import React from 'react';
-import { Card, CardContent } from '@/components/ui/card';
-import { Button } from '@/components/ui/button';
 import Image from 'next/image';
 
 export type ProjectCardProps = {
@@ -43,9 +40,10 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
           <div className="flex flex-col justify-between h-full w-[392px]">
             <div>
               <p className="font-mono text-base text-[#404b51] tracking-[-0.8px]">{overline}</p>
-              <h2 className="font-sans text-5xl font-bold text-[#404b51] tracking-[-2.5px] leading-[45px] mt-10">
-                {title}
-              </h2>
+              <h2 
+                className="font-sans text-5xl font-bold text-[#404b51] tracking-[-2.5px] leading-[45px] mt-10"
+                dangerouslySetInnerHTML={{ __html: title || '' }}
+              />
             </div>
             {swipeToRead && (
               <p className="font-sans text-2xl font-bold text-[#404b51] tracking-[-1.15px]">
@@ -69,17 +67,17 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
             <div className="w-1/2">
               <h3 className="font-sans text-lg font-bold text-[#404b51] mb-2">{leftContent?.title}</h3>
               <div className="font-sans text-lg text-[#404b51] leading-[22px] space-y-4">
-                <p>{leftContent?.body}</p>
+                <p dangerouslySetInnerHTML={{ __html: leftContent?.body || '' }} />
                 {leftContent?.list && (
                   <ul className="list-disc pl-5 space-y-2">
-                    {leftContent.list.map((item, index) => <li key={index}>{item}</li>)}
+                    {leftContent.list.map((item, index) => <li key={index} dangerouslySetInnerHTML={{ __html: item }} />)}
                   </ul>
                 )}
               </div>
             </div>
             <div className="w-1/2">
               <h3 className="font-sans text-lg font-bold text-[#404b51] mb-2">{rightContent?.title}</h3>
-              <p className="font-sans text-lg text-[#404b51] leading-[22px]">{rightContent?.body}</p>
+              <p dangerouslySetInnerHTML={{ __html: rightContent?.body || '' }}/>
             </div>
           </div>
         </div>
@@ -121,7 +119,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
                            <p>{rightContent?.body}</p>
                             {rightContent?.list && (
                                 <ul className="list-disc pl-5 space-y-2">
-                                    {rightContent.list.map((item, index) => <li key={index}>{item}</li>)}
+                                    {rightContent.list.map((item, index) => <li key={index} dangerouslySetInnerHTML={{ __html: item }} />)}
                                 </ul>
                             )}
                         </div>
