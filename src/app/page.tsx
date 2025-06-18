@@ -182,7 +182,7 @@ export default function Home() {
           <div>
             <ServiceCard {...serviceDesignData} />
             <div className="mt-[38px] flex flex-col md:flex-row justify-between items-start md:items-center font-mono text-base text-[#5e7c72] gap-4 md:gap-0">
-              <a href="#" className="hover:opacity-80">
+              <a href="/research-projects" className="hover:opacity-80">
                 VIEW <span className="font-bold underline">{serviceDesignData.links.view}</span>
               </a>
               <a href="#" className="hover:opacity-80">{serviceDesignData.links.enquire}</a>
