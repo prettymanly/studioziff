@@ -27,7 +27,6 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
   variant,
   overline,
   title,
-  description,
   image,
   hmw,
   swipeToRead,
