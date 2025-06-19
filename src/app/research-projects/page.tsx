@@ -205,9 +205,9 @@ export default function ResearchProjectsPage() {
             </div>
 
             <p className="text-[20px] leading-[22px] tracking-[-1px]">
-              <span className="font-bold">CUSTOMER RESEARCH</span>
+              <span className="font-bold">ZIFF LAU</span>
               <br />
-              <span className="font-normal">+ BEHAVIORAL INSIGHTS</span>
+              <span className="font-normal">SERVICE DESIGNER</span>
             </p>
           </div>
 

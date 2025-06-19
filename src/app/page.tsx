@@ -129,10 +129,20 @@ export default function Home() {
         </header>
 
         {/* Hero Section */}
-        <section className="w-full h-auto md:h-[436px] mb-20 flex flex-col md:flex-row items-center gap-[38px]">
-          {/* Left Box - Text */}
-          <div className="w-full md:w-1/2 h-[436px] bg-white rounded-[15px] p-[49px] flex flex-col justify-between text-[#404b51]">
+        <section className="w-full mb-20 flex flex-col md:flex-row items-stretch md:h-[436px] gap-[38px]">
+          {/* Left Box - Text and Mobile Image */}
+          <div className="w-full md:w-1/2 bg-white rounded-[15px] p-[49px] flex flex-col justify-between text-[#404b51]">
             <p className="font-mono text-base tracking-[-0.8px]">_INTRO</p>
+            
+            <div className="relative w-full h-[300px] my-6 rounded-[15px] overflow-hidden md:hidden">
+              <Image
+                src="/images/intro-image.png"
+                alt="Ziff Lau"
+                fill
+                style={{ objectFit: 'cover' }}
+              />
+            </div>
+
             <p className="text-[20px] leading-[22px] tracking-[-1px]">
               <span className="font-bold">ZIFF LAU</span>
               <br />
@@ -141,7 +151,7 @@ export default function Home() {
           </div>
 
           {/* Right Box - Image */}
-          <div className="relative w-full md:w-1/2 h-[436px] rounded-[15px] overflow-hidden">
+          <div className="relative hidden md:block w-full md:w-1/2 h-[436px] rounded-[15px] overflow-hidden">
             <Image
               src="/images/intro-image.png"
               alt="Ziff Lau"
