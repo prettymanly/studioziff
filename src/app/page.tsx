@@ -1,5 +1,6 @@
 import { ServiceCard } from '@/components/ServiceCard/ServiceCard';
 import Image from 'next/image';
+import Header from '@/components/Header/Header';
 
 export default function Home() {
   const serviceDesignData = {
@@ -114,19 +115,7 @@ export default function Home() {
     <main className="flex flex-col items-center py-10 px-2.5">
       <div className="w-full max-w-[902px]">
         
-        {/* Header Placeholder */}
-        <header className="w-full mb-10 flex flex-row justify-between items-start font-mono text-base py-4">
-          <div>
-            <p className="text-[#5e7c72] font-bold">FIND ME</p>
-            <p><a href="#" className="hover:opacity-80">BLOG</a></p>
-            <p><a href="#" className="hover:opacity-80">LINKEDIN</a></p>
-          </div>
-          <div className="text-left md:text-right">
-            <p className="text-[#5e7c72] font-bold">SAY HELLO</p>
-            <p><a href="mailto:ZIFF.LAU@GMAIL.COM" className="hover:opacity-80">ZIFF.LAU@GMAIL.COM</a></p>
-            <p>+9322 7317</p>
-          </div>
-        </header>
+        <Header />
 
         {/* Hero Section */}
         <section className="w-full mb-20 flex flex-col md:flex-row items-stretch md:h-[436px] gap-[38px]">
