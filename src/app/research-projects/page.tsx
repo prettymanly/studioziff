@@ -190,20 +190,10 @@ export default function ResearchProjectsPage() {
         </header>
 
         {/* Hero Section */}
-        <section className="w-full mb-20 flex flex-col md:flex-row items-stretch md:h-[436px] gap-[38px]">
-          {/* Left Box - Text and Mobile Image */}
-          <div className="w-full md:w-1/2 bg-white rounded-[15px] p-[49px] flex flex-col justify-between text-[#404b51]">
+        <section className="w-full h-auto md:h-[436px] mb-20 flex flex-col md:flex-row items-center gap-[38px]">
+          {/* Left Box - Text */}
+          <div className="w-full md:w-1/2 h-[436px] bg-white rounded-[15px] p-[49px] flex flex-col justify-between text-[#404b51]">
             <p className="font-mono text-base tracking-[-0.8px]">_01 | RESEARCH PROJECTS</p>
-            
-            <div className="relative w-full h-[300px] my-6 rounded-[15px] overflow-hidden md:hidden">
-              <Image
-                src="/images/intro-image.png"
-                alt="Research Projects"
-                fill
-                className="object-cover"
-              />
-            </div>
-
             <p className="text-[20px] leading-[22px] tracking-[-1px]">
               <span className="font-bold">CUSTOMER RESEARCH</span>
               <br />
@@ -211,13 +201,13 @@ export default function ResearchProjectsPage() {
             </p>
           </div>
 
-          {/* Right Box - Image for Desktop */}
-          <div className="relative w-full md:w-1/2 h-[436px] rounded-[15px] overflow-hidden hidden md:block">
+          {/* Right Box - Image */}
+          <div className="relative w-full md:w-1/2 h-[436px] rounded-[15px] overflow-hidden">
             <Image
               src="/images/intro-image.png"
               alt="Research Projects"
               fill
-              className="object-cover"
+              style={{ objectFit: 'cover' }}
             />
           </div>
         </section>
@@ -260,7 +250,7 @@ export default function ResearchProjectsPage() {
             <div 
               ref={scrollRef1}
               className="grid grid-flow-col auto-cols-[100%] md:auto-cols-[902px] gap-5 overflow-x-auto snap-x snap-mandatory"
-              style={{ scrollbarWidth: 'none', 'msOverflowStyle': 'none' } as React.CSSProperties}
+              style={{ scrollbarWidth: 'none', '-ms-overflow-style': 'none' } as React.CSSProperties}
             >
               {project1Data.map((project, index) => (
                 <ProjectCard key={index} {...project} className="snap-start" />
@@ -290,7 +280,7 @@ export default function ResearchProjectsPage() {
             <div 
               ref={scrollRef2}
               className="grid grid-flow-col auto-cols-[100%] md:auto-cols-[902px] gap-5 overflow-x-auto snap-x snap-mandatory"
-              style={{ scrollbarWidth: 'none', 'msOverflowStyle': 'none' } as React.CSSProperties}
+              style={{ scrollbarWidth: 'none', '-ms-overflow-style': 'none' } as React.CSSProperties}
             >
               {project2Data.map((project, index) => (
                 <ProjectCard key={index} {...project} className="snap-start" />
@@ -320,7 +310,7 @@ export default function ResearchProjectsPage() {
             <div 
               ref={scrollRef3}
               className="grid grid-flow-col auto-cols-[100%] md:auto-cols-[902px] gap-5 overflow-x-auto snap-x snap-mandatory"
-              style={{ scrollbarWidth: 'none', 'msOverflowStyle': 'none' } as React.CSSProperties}
+              style={{ scrollbarWidth: 'none', '-ms-overflow-style': 'none' } as React.CSSProperties}
             >
               {project3Data.map((project, index) => (
                 <ProjectCard key={index} {...project} className="snap-start" />
