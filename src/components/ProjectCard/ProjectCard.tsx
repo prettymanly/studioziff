@@ -41,7 +41,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
     case 'ProjectCover':
       return (
         <div className={`${containerClasses} flex-col md:flex-row md:items-center md:justify-between`}>
-          <div className="flex flex-col justify-between h-full md:w-[392px] mt-10 md:mt-0 mb-8 md:mb-0 order-2 md:order-1">
+          <div className="flex flex-col justify-between h-full md:w-[392px] mb-10 md:mb-0">
             <div>
               <p className="font-mono text-sm md:text-base text-[#404b51] tracking-[-0.8px] mb-6 md:mb-0">{overline}</p>
               <h2 
@@ -56,7 +56,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
             )}
           </div>
           {image && (
-            <div className="w-full md:w-[410px] h-[300px] md:h-[580px] bg-[#d9d9d9] rounded-[15px] relative order-1 md:order-2 shrink-0">
+            <div className="w-full md:w-[410px] h-[300px] md:h-[580px] bg-[#d9d9d9] rounded-[15px] relative shrink-0">
               <Image src={image} alt={title || 'Project Image'} fill className="rounded-[15px] object-cover" />
             </div>
           )}
