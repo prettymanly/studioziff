@@ -8,47 +8,48 @@ import ProjectCard, { ProjectCardProps } from '@/components/ProjectCard/ProjectC
 const project1Data: ProjectCardProps[] = [
   {
     variant: 'ProjectCover',
-    overline: '01 | PROJECT 1 PLACEHOLDER',
-    title: 'AI Project 1<br/>Title Here',
+    overline: '01 | CLIENT: SELF-INITIATED PROJECT',
+    title: 'Tumbo: Finding Classes<br/>Your Kid Won\'t Hate',
     image: '/images/intro-image.png',
     swipeToRead: true,
   },
   {
     variant: 'HMW',
-    overline: '01 | PROJECT 1 PLACEHOLDER',
-    hmw: 'How might we solve this AI challenge for project 1?',
+    overline: '01 | CLIENT: SELF-INITIATED PROJECT',
+    hmw: 'How might we design enrichment discovery around children\'s personalities, not just parental anxieties?',
   },
   {
     variant: '3:5ContentCol',
-    overline: '01 | PROJECT 1 PLACEHOLDER',
+    overline: '01 | CLIENT: SELF-INITIATED PROJECT',
     leftContent: {
-      body: "AI Project 1 content will go here..."
+      body: "Tumbo is a self-initiated project, born not from a client brief, but from lived tension. As a parent and a designer who's worked on the future of education, I kept noticing the same pattern: we keep redesigning schools, but rarely stop to examine the mindsets of the people choosing what happens after school: parents.\n\nPolicy might remove exams, but enrichment centres rush in to fill the gap with more tests. There's a movement toward child-centred education, but it often stops at the brochure.\n\nTumbo is my attempt to shift that."
     },
     rightContent: {
-      title: "AI Project 1 Details",
-      body: "More details about AI project 1..."
+      title: "From Transaction to Trust",
+      body: "Most class platforms treat parents as buyers. Tumbo treats them as meaning-makers, navigating messy hopes, constraints, and shifting intuitions about what's right for their kids.\n\nWe built a recommendation system around four deep lenses:\n• Content: What's being taught\n• Child: Learning styles, sensory preferences, social needs\n• Experience: Class vibe, pacing, group dynamics\n• Philosophy: Pedagogies, language, worldviews\n\nTogether, these tags fuel a discovery experience that starts with context, not category.\n\nIt's a platform that helps parents find classes their children will actually thrive in, based not just on schedule or subject, but on who they are and how they learn."
     }
   },
   {
     variant: '3:5ImageContent',
-    overline: '01 | PROJECT 1 PLACEHOLDER',
+    overline: '01 | CLIENT: SELF-INITIATED PROJECT',
     image: '/images/intro-image.png',
     rightContent: {
-      title: 'AI Project 1 Section',
-      body: "AI project 1 specific content here.",
-      list: ['Item 1', 'Item 2', 'Item 3']
+      title: 'Prototype to Platform',
+      body: "Tumbo is built using lean, AI-augmented tools:",
+      list: ['GPT for enrichment parsing, class summaries, and parent reflection', 'Airtable for structured content', 'Make.com for backend automation', 'Bubble for rapid UI', 'Future plans include syncing qualitative reviews and growth stories'],
+      additionalBody: "This project also lets me apply my own recommendations as a consultant, putting empathy, insight, and clarity to the test in real-world conditions."
     }
   },
   {
     variant: '1:1ContentCol',
-    overline: '01 | PROJECT 1 PLACEHOLDER',
+    overline: '01 | CLIENT: SELF-INITIATED PROJECT',
     leftContent: {
-      title: 'Left Column',
-      body: 'AI project 1 left content...',
+      title: 'A Trust Layer Disguised as a Directory',
+      body: 'What looks like a class listing is really a mirror, one that helps parents reflect on what they value, what their child needs, and what "growth" actually means.\n\n• Scout Reports surface vibe-rich insights on classes\n• Skill Trees track progress across emotional, creative, and social domains\n• Parenting Mindsets adapt the experience based on how each family approaches learning\n\nIt\'s not about finding "the best" class. It\'s about finding what fits now.',
     },
     rightContent: {
-      title: 'Right Column',
-      body: "AI project 1 right content..."
+      title: 'Why It Matters',
+      body: "Tumbo is part tech product, part cultural nudge. It honors a quiet but growing shift among parents: a move toward care, toward presence, toward raising children with less fear and more fit.\n\nAnd as a founder, it's also an experiment in walking the talk, applying futures thinking, behavioral design, and system-building not just for clients, but for myself."
     }
   }
 ];
