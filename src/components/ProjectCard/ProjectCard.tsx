@@ -19,6 +19,7 @@ export type ProjectCardProps = {
     title?: string;
     body: string;
     list?: string[];
+    additionalBody?: string;
   };
 };
 
@@ -121,6 +122,9 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
                                 <ul className="list-disc pl-5 space-y-2">
                                     {rightContent.list.map((item, index) => <li key={index} dangerouslySetInnerHTML={{ __html: item }} />)}
                                 </ul>
+                            )}
+                            {rightContent?.additionalBody && (
+                                <p>{rightContent.additionalBody}</p>
                             )}
                         </div>
                     </div>

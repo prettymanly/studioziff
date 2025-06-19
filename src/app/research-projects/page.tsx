@@ -6,16 +6,16 @@ import ProjectCard, { ProjectCardProps } from '@/components/ProjectCard/ProjectC
 
 const project1Data: ProjectCardProps[] = [
   {
-    variant: 'HMW',
-    overline: '01 | CLIENT: MINISTRY OF EDUCATION, SINGAPORE',
-    hmw: 'How might futures thinking help reframe what students truly need to thrive in 2030 and beyond?',
-  },
-  {
     variant: 'ProjectCover',
     overline: '01 | CLIENT: MINISTRY OF EDUCATION, SINGAPORE',
     title: 'Imagining<br/>Education<br/>Beyond Certainty',
     image: '/images/intro-image.png',
     swipeToRead: true,
+  },
+  {
+    variant: 'HMW',
+    overline: '01 | CLIENT: MINISTRY OF EDUCATION, SINGAPORE',
+    hmw: 'How might futures thinking help reframe what students truly need to thrive in 2030 and beyond?',
   },
   {
     variant: '3:5ContentCol',
@@ -26,6 +26,21 @@ const project1Data: ProjectCardProps[] = [
     rightContent: {
       title: "",
       body: "Together, we mapped signals, surfaced tensions, and crafted dilemma-driven futures that challenged business-as-usual not just in systems thinking, but in systems <em>feeling</em>.<br/><br/><strong>From Trends to Tensions</strong><br/>We began with a STEEP trend scan, filtering only those that impacted teaching and learning. Through facilitated clustering and uncertainty mapping, we distilled key drivers: from the rise of AI tutors, to the loneliness epidemic, to shifts in learner autonomy and state control.<br/><br/>Rather than force alignment, we leaned into discomfort. The most resonant futures were built around <strong>dilemmas</strong> like wellbeing vs performance, autonomy vs centralisation, resilience vs compliance, giving stakeholders emotional and strategic footholds to reflect."
+    }
+  },
+  {
+    variant: '3:5ImageContent',
+    overline: '01 | CLIENT: MINISTRY OF EDUCATION, SINGAPORE',
+    image: '/images/intro-image.png',
+    rightContent: {
+      title: 'Futures as Mirrors, Not Answers',
+      body: "Each scenario was designed to provoke, not prescribe. Through narrative storytelling and thematic arcs, we anchored the futures in human terms, asking:",
+      list: [
+        'What might learning feel like in this world?',
+        'Who thrives, who\'s left behind?',
+        'What will we wish we\'d built sooner?',
+      ],
+      additionalBody: "In our participatory workshops, ministry teams didn't just evaluate scenarios. They used them as mirrors for surfacing instincts, naming trade-offs, and identifying signals already emerging in their own schools."
     }
   },
   {
@@ -43,20 +58,6 @@ const project1Data: ProjectCardProps[] = [
     rightContent: {
       title: 'Why It Mattered',
       body: "Education systems are often structured to avoid uncertainty. But here, uncertainty became the teacher.<br/><br/>By creating space for <em>non-consensus futures</em> that tugged at competing values, we helped shift the conversation. Not just from \"what's the plan?\" to \"what's the possibility?\" but from <em>control</em> to <em>agency</em>.<br/><br/>What emerged wasn't a roadmap, but a reframing: of preparedness, resilience, and the kind of learners (and educators) we need for what's next."
-    }
-  },
-  {
-    variant: '3:5ImageContent',
-    overline: '01 | CLIENT: MINISTRY OF EDUCATION, SINGAPORE',
-    image: '/images/intro-image.png',
-    rightContent: {
-      title: 'Futures as Mirrors, Not Answers',
-      body: "Each scenario was designed to provoke, not prescribe. Through narrative storytelling and thematic arcs, we anchored the futures in human terms, asking:",
-      list: [
-        'What might learning feel like in this world?',
-        'Who thrives, who\'s left behind?',
-        'What will we wish we\'d built sooner?',
-      ]
     }
   }
 ];
