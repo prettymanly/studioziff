@@ -216,9 +216,9 @@ export default function FuturesProjectsPage() {
             </div>
 
             <p className="text-[20px] leading-[22px] tracking-[-1px]">
-              <span className="font-bold">STRATEGIC</span>
+              <span className="font-bold">ZIFF LAU</span>
               <br />
-              <span className="font-normal">FUTURES</span>
+              <span className="font-normal">DESIGN FUTURIST</span>
             </p>
           </div>
 

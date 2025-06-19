@@ -207,9 +207,9 @@ export default function AIProjectsPage() {
             </div>
 
             <p className="text-[20px] leading-[22px] tracking-[-1px]">
-              <span className="font-bold">GENERATIVE AI</span>
+              <span className="font-bold">ZIFF LAU</span>
               <br />
-              <span className="font-normal">+ AUTOMATION</span>
+              <span className="font-normal">AI CREATIVE TECHNOLOGIST</span>
             </p>
           </div>
 
