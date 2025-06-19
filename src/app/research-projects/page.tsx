@@ -7,57 +7,47 @@ import ProjectCard, { ProjectCardProps } from '@/components/ProjectCard/ProjectC
 const project1Data: ProjectCardProps[] = [
   {
     variant: 'ProjectCover',
-    overline: '01 | CLIENT: MINISTRY OF EDUCATION, SINGAPORE',
-    title: 'Imagining<br/>Education<br/>Beyond Certainty',
+    overline: '01 | PROJECT 1 PLACEHOLDER',
+    title: 'Research Project 1<br/>Title Here',
     image: '/images/intro-image.png',
     swipeToRead: true,
   },
   {
     variant: 'HMW',
-    overline: '01 | CLIENT: MINISTRY OF EDUCATION, SINGAPORE',
-    hmw: 'How might futures thinking help reframe what students truly need to thrive in 2030 and beyond?',
+    overline: '01 | PROJECT 1 PLACEHOLDER',
+    hmw: 'How might we solve this research challenge for project 1?',
   },
   {
     variant: '3:5ContentCol',
-    overline: '01 | CLIENT: MINISTRY OF EDUCATION, SINGAPORE',
+    overline: '01 | PROJECT 1 PLACEHOLDER',
     leftContent: {
-      body: "The future doesn't arrive all at once. It trickles in through classroom routines, curriculum tweaks, cultural shifts. This project asked: <em>What if we interrupted that drift?</em><br/><br/>Commissioned by the Ministry of Education, this wasn't a visioning exercise. It was a strategic provocation designed to help policy teams grapple with what's changing, what's uncertain, and what roles they might play in shaping what comes next."
+      body: "Research Project 1 content will go here..."
     },
     rightContent: {
-      title: "",
-      body: "Together, we mapped signals, surfaced tensions, and crafted dilemma-driven futures that challenged business-as-usual not just in systems thinking, but in systems <em>feeling</em>.<br/><br/><strong>From Trends to Tensions</strong><br/>We began with a STEEP trend scan, filtering only those that impacted teaching and learning. Through facilitated clustering and uncertainty mapping, we distilled key drivers: from the rise of AI tutors, to the loneliness epidemic, to shifts in learner autonomy and state control.<br/><br/>Rather than force alignment, we leaned into discomfort. The most resonant futures were built around <strong>dilemmas</strong> like wellbeing vs performance, autonomy vs centralisation, resilience vs compliance, giving stakeholders emotional and strategic footholds to reflect."
+      title: "Research Project 1 Details",
+      body: "More details about research project 1..."
     }
   },
   {
     variant: '3:5ImageContent',
-    overline: '01 | CLIENT: MINISTRY OF EDUCATION, SINGAPORE',
+    overline: '01 | PROJECT 1 PLACEHOLDER',
     image: '/images/intro-image.png',
     rightContent: {
-      title: 'Futures as Mirrors, Not Answers',
-      body: "Each scenario was designed to provoke, not prescribe. Through narrative storytelling and thematic arcs, we anchored the futures in human terms, asking:",
-      list: [
-        'What might learning feel like in this world?',
-        'Who thrives, who\'s left behind?',
-        'What will we wish we\'d built sooner?',
-      ],
-      additionalBody: "In our participatory workshops, ministry teams didn't just evaluate scenarios. They used them as mirrors for surfacing instincts, naming trade-offs, and identifying signals already emerging in their own schools."
+      title: 'Research Project 1 Section',
+      body: "Research project 1 specific content here.",
+      list: ['Item 1', 'Item 2', 'Item 3']
     }
   },
   {
     variant: '1:1ContentCol',
-    overline: '01 | CLIENT: MINISTRY OF EDUCATION, SINGAPORE',
+    overline: '01 | PROJECT 1 PLACEHOLDER',
     leftContent: {
-      title: 'My Role',
-      body: '',
-      list: [
-        '<strong>Researcher</strong>: Led trend and uncertainty mapping, developed core drivers and clusters',
-        '<strong>Facilitator</strong>: Co-designed and ran strategic foresight workshops with ministry teams',
-        '<strong>Writer</strong>: Authored scenario narratives to bridge the analytical with the emotional',
-      ]
+      title: 'Left Column',
+      body: 'Research project 1 left content...',
     },
     rightContent: {
-      title: 'Why It Mattered',
-      body: "Education systems are often structured to avoid uncertainty. But here, uncertainty became the teacher.<br/><br/>By creating space for <em>non-consensus futures</em> that tugged at competing values, we helped shift the conversation. Not just from \"what's the plan?\" to \"what's the possibility?\" but from <em>control</em> to <em>agency</em>.<br/><br/>What emerged wasn't a roadmap, but a reframing: of preparedness, resilience, and the kind of learners (and educators) we need for what's next."
+      title: 'Right Column',
+      body: "Research project 1 right content..."
     }
   }
 ];
