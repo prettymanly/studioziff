@@ -1,174 +1,332 @@
-import { ProjectCard } from '@/components/ProjectCard';
-import { Button } from '@/components/ui/button';
-import projectsData from '@/data/projects.json';
-import Link from 'next/link';
+'use client';
 
-export default function CreativeTechPage() {
-  // Filter projects for creative-tech
-  const creativeTechProjects = projectsData.filter(
-    project => project.service_type === 'creative-tech'
-  );
+import Image from 'next/image';
+import { useRef } from 'react';
+import ProjectCard, { ProjectCardProps } from '@/components/ProjectCard/ProjectCard';
 
-  // Group projects by project_number
-  const groupedProjects = creativeTechProjects.reduce((acc, project) => {
-    const key = project.project_number;
-    if (!acc[key]) {
-      acc[key] = [];
+// Placeholder data for Project 1
+const project1Data: ProjectCardProps[] = [
+  {
+    variant: 'ProjectCover',
+    overline: '01 | PROJECT 1 PLACEHOLDER',
+    title: 'AI Project 1<br/>Title Here',
+    image: '/images/intro-image.png',
+    swipeToRead: true,
+  },
+  {
+    variant: 'HMW',
+    overline: '01 | PROJECT 1 PLACEHOLDER',
+    hmw: 'How might we solve this AI challenge for project 1?',
+  },
+  {
+    variant: '3:5ContentCol',
+    overline: '01 | PROJECT 1 PLACEHOLDER',
+    leftContent: {
+      body: "AI Project 1 content will go here..."
+    },
+    rightContent: {
+      title: "AI Project 1 Details",
+      body: "More details about AI project 1..."
     }
-    acc[key].push(project);
-    return acc;
-  }, {} as Record<number, typeof creativeTechProjects>);
+  },
+  {
+    variant: '3:5ImageContent',
+    overline: '01 | PROJECT 1 PLACEHOLDER',
+    image: '/images/intro-image.png',
+    rightContent: {
+      title: 'AI Project 1 Section',
+      body: "AI project 1 specific content here.",
+      list: ['Item 1', 'Item 2', 'Item 3']
+    }
+  },
+  {
+    variant: '1:1ContentCol',
+    overline: '01 | PROJECT 1 PLACEHOLDER',
+    leftContent: {
+      title: 'Left Column',
+      body: 'AI project 1 left content...',
+    },
+    rightContent: {
+      title: 'Right Column',
+      body: "AI project 1 right content..."
+    }
+  }
+];
+
+// Placeholder data for Project 2
+const project2Data: ProjectCardProps[] = [
+  {
+    variant: 'ProjectCover',
+    overline: '02 | PROJECT 2 PLACEHOLDER',
+    title: 'AI Project 2<br/>Title Here',
+    image: '/images/intro-image.png',
+    swipeToRead: true,
+  },
+  {
+    variant: 'HMW',
+    overline: '02 | PROJECT 2 PLACEHOLDER',
+    hmw: 'How might we solve this AI challenge for project 2?',
+  },
+  {
+    variant: '3:5ContentCol',
+    overline: '02 | PROJECT 2 PLACEHOLDER',
+    leftContent: {
+      body: "AI Project 2 content will go here..."
+    },
+    rightContent: {
+      title: "AI Project 2 Details",
+      body: "More details about AI project 2..."
+    }
+  },
+  {
+    variant: '3:5ImageContent',
+    overline: '02 | PROJECT 2 PLACEHOLDER',
+    image: '/images/intro-image.png',
+    rightContent: {
+      title: 'AI Project 2 Section',
+      body: "AI project 2 specific content here.",
+      list: ['Item 1', 'Item 2', 'Item 3']
+    }
+  },
+  {
+    variant: '1:1ContentCol',
+    overline: '02 | PROJECT 2 PLACEHOLDER',
+    leftContent: {
+      title: 'Left Column',
+      body: 'AI project 2 left content...',
+    },
+    rightContent: {
+      title: 'Right Column',
+      body: "AI project 2 right content..."
+    }
+  }
+];
+
+// Placeholder data for Project 3
+const project3Data: ProjectCardProps[] = [
+  {
+    variant: 'ProjectCover',
+    overline: '03 | PROJECT 3 PLACEHOLDER',
+    title: 'AI Project 3<br/>Title Here',
+    image: '/images/intro-image.png',
+    swipeToRead: true,
+  },
+  {
+    variant: 'HMW',
+    overline: '03 | PROJECT 3 PLACEHOLDER',
+    hmw: 'How might we solve this AI challenge for project 3?',
+  },
+  {
+    variant: '3:5ContentCol',
+    overline: '03 | PROJECT 3 PLACEHOLDER',
+    leftContent: {
+      body: "AI Project 3 content will go here..."
+    },
+    rightContent: {
+      title: "AI Project 3 Details",
+      body: "More details about AI project 3..."
+    }
+  },
+  {
+    variant: '3:5ImageContent',
+    overline: '03 | PROJECT 3 PLACEHOLDER',
+    image: '/images/intro-image.png',
+    rightContent: {
+      title: 'AI Project 3 Section',
+      body: "AI project 3 specific content here.",
+      list: ['Item 1', 'Item 2', 'Item 3']
+    }
+  },
+  {
+    variant: '1:1ContentCol',
+    overline: '03 | PROJECT 3 PLACEHOLDER',
+    leftContent: {
+      title: 'Left Column',
+      body: 'AI project 3 left content...',
+    },
+    rightContent: {
+      title: 'Right Column',
+      body: "AI project 3 right content..."
+    }
+  }
+];
+
+export default function AIProjectsPage() {
+  const scrollRef1 = useRef<HTMLDivElement>(null);
+  const scrollRef2 = useRef<HTMLDivElement>(null);
+  const scrollRef3 = useRef<HTMLDivElement>(null);
+
+  const scrollLeft = (ref: React.RefObject<HTMLDivElement | null>) => {
+    if (ref.current) {
+      ref.current.scrollBy({ left: -910, behavior: 'smooth' });
+    }
+  };
+
+  const scrollRight = (ref: React.RefObject<HTMLDivElement | null>) => {
+    if (ref.current) {
+      ref.current.scrollBy({ left: 910, behavior: 'smooth' });
+    }
+  };
 
   return (
-    <div className="min-h-screen bg-[#0f172a] text-[#E5EDDF]">
-      {/* Main Container - 902px width as per Figma */}
-      <div className="w-[902px] mx-auto">
+    <main className="flex flex-col items-center py-10 px-2.5" style={{ backgroundColor: '#37494c' }}>
+      <div className="w-full max-w-[902px]">
         
-        {/* Header - 129px height */}
-        <header className="h-[129px] flex items-center justify-between px-8">
-          <Link href="/" className="text-2xl font-bold hover:opacity-80">
-            Ziff
-          </Link>
-          <nav className="space-x-6">
-            <Link href="/" className="hover:underline">Home</Link>
-            <Link href="/service-design" className="hover:underline">Service Design</Link>
-            <Link href="/futures" className="hover:underline">Futures</Link>
-            <Link href="/facilitation" className="hover:underline">Facilitation</Link>
-          </nav>
+        {/* Header */}
+        <header className="w-full mb-10 flex flex-row justify-between items-start font-mono text-base py-4">
+          <div>
+            <p className="text-[#e5eddf] font-bold">FIND ME</p>
+            <p><a href="#" className="text-[#e5eddf] hover:opacity-80">BLOG</a></p>
+            <p><a href="#" className="text-[#e5eddf] hover:opacity-80">LINKEDIN</a></p>
+          </div>
+          <div className="text-left md:text-right">
+            <p className="text-[#e5eddf] font-bold">SAY HELLO</p>
+            <p><a href="mailto:ZIFF.LAU@GMAIL.COM" className="text-[#e5eddf] hover:opacity-80">ZIFF.LAU@GMAIL.COM</a></p>
+            <p className="text-[#e5eddf]">+9322 7317</p>
+          </div>
         </header>
 
-        {/* Page Content */}
-        <main className="pb-20">
+        {/* Hero Section */}
+        <section className="w-full h-auto md:h-[436px] mb-20 flex flex-col md:flex-row items-center gap-[38px]">
+          {/* Left Box - Text */}
+          <div className="w-full md:w-1/2 h-[436px] bg-white rounded-[15px] p-[49px] flex flex-col justify-between text-[#404b51]">
+            <p className="font-mono text-base tracking-[-0.8px]">_03 | AI PROJECTS</p>
+            <p className="text-[20px] leading-[22px] tracking-[-1px]">
+              <span className="font-bold">GENERATIVE AI</span>
+              <br />
+              <span className="font-normal">+ AUTOMATION</span>
+            </p>
+          </div>
+
+          {/* Right Box - Image */}
+          <div className="relative w-full md:w-1/2 h-[436px] rounded-[15px] overflow-hidden">
+            <Image
+              src="/images/intro-image.png"
+              alt="AI Projects"
+              fill
+              style={{ objectFit: 'cover' }}
+            />
+          </div>
+        </section>
+
+        {/* Description Section */}
+        <section className="w-full mb-20 text-[#e5eddf] text-[25px] leading-[30px] font-sans">
+          <p className="mb-6">
+            Something needs to run smoother, scale better, or delight more, and you think AI might help. I help teams cut through the AI hype to identify where automation and generative tools can create real value. This isn&apos;t about chasing trends or pretending to be an expert in tools that barely existed two years ago.
+          </p>
+          <p className="mb-6">
+            I&apos;ve been experimenting with AI workflows, building prototypes, and figuring out what actually works versus what just sounds impressive. The approach is always experimental, but the planning is deliberate. I help you design practical tests, build scrappy prototypes, and learn fast without burning resources on AI solutions that don&apos;t solve real problems.
+          </p>
+          <p className="mb-6">
+            Below are examples of what I&apos;ve built and learned: from creating an AI-powered chatbot to support adult learners, to using automation for insight tagging, to crafting MVPs with tools like ChatGPT, Make, Airtable, and Bubble.
+          </p>
+          <p className="mb-6">
+            Want to explore what&apos;s possible for your situation? Let&apos;s experiment together.
+          </p>
+        </section>
+
+        {/* Projects Section */}
+        <section className="flex flex-col space-y-16">
           
-          {/* Service Header Section */}
-          <section className="py-12 mb-8">
-            <div className="mb-6">
-              <span className="text-sm font-mono text-slate-400">_03</span>
-            </div>
-            <h1 className="text-5xl font-bold mb-6">Creative Tech</h1>
-            <p className="text-xl text-slate-300 italic mb-8 max-w-3xl">
-              &ldquo;Where technology meets human experience. Building digital solutions that actually work for people.&rdquo;
-            </p>
-            <div className="flex gap-4">
-              <Button variant="outline" className="border-slate-600 text-[#E5EDDF] hover:bg-slate-800">
-                View Prototypes
-              </Button>
-              <Button variant="ghost" className="text-[#E5EDDF] hover:bg-slate-800">
-                Build Together →
-              </Button>
-            </div>
-          </section>
-
-          {/* Projects Section */}
-          <section>
-            <h2 className="text-3xl font-bold mb-8">Interactive Experiences</h2>
-            
-            {/* Render each project as a swipeable row */}
-            {Object.entries(groupedProjects).length > 0 ? (
-              Object.entries(groupedProjects).map(([projectNumber, cards]) => {
-                const sortedCards = cards.sort((a, b) => a.variant_index - b.variant_index);
-                
-                return (
-                  <div key={projectNumber} className="mb-16">
-                    <h3 className="text-xl font-semibold mb-6 text-slate-300">
-                      Project {projectNumber}: {sortedCards[0]?.client}
-                    </h3>
-                    
-                    {/* Horizontal scrollable row */}
-                    <div className="flex gap-8 overflow-x-auto pb-4 scrollbar-hide">
-                      {sortedCards.map((project) => (
-                        <div key={project.id} className="flex-shrink-0">
-                          <ProjectCard
-                            project_number={project.project_number}
-                            client={project.client}
-                            variant={project.variant as 'ProjectCover' | '1-1ContentCol' | '3-5ContentCol' | '3-5ImageContent' | 'DesignQuestion'}
-                            content={project.content}
-                            cover_image_url={project.cover_image_url}
-                            project_image_url={project.project_image_url}
-                            hmw_line={project.hmw_line}
-                            title={project.title}
-                            description={project.description}
-                          />
-                        </div>
-                      ))}
-                    </div>
-                  </div>
-                );
-              })
-            ) : (
-              <div className="text-center py-16">
-                <p className="text-slate-400 text-lg mb-6">Creative tech projects in development...</p>
-                <p className="text-slate-500">Currently prototyping interactive installations and digital experiences.</p>
-              </div>
-            )}
-          </section>
-
-          {/* Capabilities Section */}
-          <section className="py-16">
-            <h2 className="text-3xl font-bold mb-8">Technical Capabilities</h2>
-            <div className="grid grid-cols-2 gap-8">
-              <div>
-                <h3 className="text-xl font-bold mb-4 text-[#E5EDDF]">Prototyping</h3>
-                <ul className="text-slate-300 space-y-2">
-                  <li>• Interactive web experiences</li>
-                  <li>• Mobile app prototypes</li>
-                  <li>• Hardware integrations</li>
-                  <li>• AR/VR concepts</li>
-                </ul>
-              </div>
-              <div>
-                <h3 className="text-xl font-bold mb-4 text-[#E5EDDF]">Technologies</h3>
-                <ul className="text-slate-300 space-y-2">
-                  <li>• React, Next.js, TypeScript</li>
-                  <li>• Three.js, WebGL</li>
-                  <li>• Arduino, Raspberry Pi</li>
-                  <li>• Unity, Unreal Engine</li>
-                </ul>
-              </div>
-              <div>
-                <h3 className="text-xl font-bold mb-4 text-[#E5EDDF]">Design Process</h3>
-                <ul className="text-slate-300 space-y-2">
-                  <li>• Concept development</li>
-                  <li>• Technical feasibility</li>
-                  <li>• Rapid prototyping</li>
-                  <li>• User testing</li>
-                </ul>
-              </div>
-              <div>
-                <h3 className="text-xl font-bold mb-4 text-[#E5EDDF]">Collaboration</h3>
-                <ul className="text-slate-300 space-y-2">
-                  <li>• Cross-disciplinary teams</li>
-                  <li>• Agile development</li>
-                  <li>• Open source mindset</li>
-                  <li>• Knowledge sharing</li>
-                </ul>
+          {/* Project 1 - Horizontal Carousel */}
+          <div className="w-full">
+            <div className="flex justify-between items-center mb-6">
+              <h3 className="text-[#e5eddf] text-xl font-bold">Project 1: AI-Powered Chatbot for Adult Learners</h3>
+              <div className="flex gap-4">
+                <button 
+                  onClick={() => scrollLeft(scrollRef1)}
+                  className="text-[#e5eddf] hover:opacity-80 text-2xl"
+                >
+                  ←
+                </button>
+                <button 
+                  onClick={() => scrollRight(scrollRef1)}
+                  className="text-[#e5eddf] hover:opacity-80 text-2xl"
+                >
+                  →
+                </button>
               </div>
             </div>
-          </section>
-
-          {/* Call to Action Section */}
-          <section className="py-16 text-center">
-            <h2 className="text-3xl font-bold mb-6">Ready to build something amazing?</h2>
-            <p className="text-lg text-slate-300 mb-8 max-w-2xl mx-auto">
-              Let&apos;s prototype your ideas and create technology experiences that truly serve human needs.
-            </p>
-            <div className="flex gap-4 justify-center">
-              <Button className="bg-[#E5EDDF] text-[#0f172a] hover:bg-[#E5EDDF]/90">
-                Start Prototyping
-              </Button>
-              <Button variant="outline" className="border-slate-600 text-[#E5EDDF] hover:bg-slate-800">
-                Explore Ideas
-              </Button>
+            <div 
+              ref={scrollRef1}
+              className="overflow-x-auto snap-x snap-mandatory scrollbar-hide"
+              style={{ display: 'flex', gap: '2rem', padding: '1rem 0' }}
+            >
+              {project1Data.map((card, index) => (
+                <div key={index} className="flex-shrink-0 snap-center">
+                  <ProjectCard {...card} />
+                </div>
+              ))}
             </div>
-          </section>
+          </div>
 
-        </main>
+          {/* Project 2 - Horizontal Carousel */}
+          <div className="w-full">
+            <div className="flex justify-between items-center mb-6">
+              <h3 className="text-[#e5eddf] text-xl font-bold">Project 2: Automation for Insight Tagging</h3>
+              <div className="flex gap-4">
+                <button 
+                  onClick={() => scrollLeft(scrollRef2)}
+                  className="text-[#e5eddf] hover:opacity-80 text-2xl"
+                >
+                  ←
+                </button>
+                <button 
+                  onClick={() => scrollRight(scrollRef2)}
+                  className="text-[#e5eddf] hover:opacity-80 text-2xl"
+                >
+                  →
+                </button>
+              </div>
+            </div>
+            <div 
+              ref={scrollRef2}
+              className="overflow-x-auto snap-x snap-mandatory scrollbar-hide"
+              style={{ display: 'flex', gap: '2rem', padding: '1rem 0' }}
+            >
+              {project2Data.map((card, index) => (
+                <div key={index} className="flex-shrink-0 snap-center">
+                  <ProjectCard {...card} />
+                </div>
+              ))}
+            </div>
+          </div>
+
+          {/* Project 3 - Horizontal Carousel */}
+          <div className="w-full">
+            <div className="flex justify-between items-center mb-6">
+              <h3 className="text-[#e5eddf] text-xl font-bold">Project 3: MVP with ChatGPT, Make, Airtable & Bubble</h3>
+              <div className="flex gap-4">
+                <button 
+                  onClick={() => scrollLeft(scrollRef3)}
+                  className="text-[#e5eddf] hover:opacity-80 text-2xl"
+                >
+                  ←
+                </button>
+                <button 
+                  onClick={() => scrollRight(scrollRef3)}
+                  className="text-[#e5eddf] hover:opacity-80 text-2xl"
+                >
+                  →
+                </button>
+              </div>
+            </div>
+            <div 
+              ref={scrollRef3}
+              className="overflow-x-auto snap-x snap-mandatory scrollbar-hide"
+              style={{ display: 'flex', gap: '2rem', padding: '1rem 0' }}
+            >
+              {project3Data.map((card, index) => (
+                <div key={index} className="flex-shrink-0 snap-center">
+                  <ProjectCard {...card} />
+                </div>
+              ))}
+            </div>
+          </div>
+
+        </section>
+
       </div>
-    </div>
+    </main>
   );
 }
-
-export const metadata = {
-  title: "Creative Tech | Ziff Portfolio",
-  description: "Creative technology projects bridging human experience and digital innovation through thoughtful prototyping.",
-};
