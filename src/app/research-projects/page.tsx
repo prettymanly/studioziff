@@ -249,12 +249,11 @@ export default function ResearchProjectsPage() {
             </div>
             <div 
               ref={scrollRef1}
-              className="overflow-x-auto snap-x snap-mandatory scrollbar-hide flex gap-8 md:gap-8 px-2.5 md:px-0 py-4"
+              className="grid grid-flow-col auto-cols-[100%] md:auto-cols-[902px] gap-5 overflow-x-auto snap-x snap-mandatory"
+              style={{ scrollbarWidth: 'none', '-ms-overflow-style': 'none' } as React.CSSProperties}
             >
-              {project1Data.map((card, index) => (
-                <div key={index} className="flex-shrink-0 snap-center w-[calc(100vw-20px)] md:w-auto">
-                  <ProjectCard {...card} />
-                </div>
+              {project1Data.map((project, index) => (
+                <ProjectCard key={index} {...project} className="snap-start" />
               ))}
             </div>
           </div>
@@ -262,7 +261,7 @@ export default function ResearchProjectsPage() {
           {/* Project 2 - Horizontal Carousel */}
           <div className="w-full">
             <div className="flex justify-between items-center mb-6">
-              <h3 className="text-[#e5eddf] text-xl font-bold">Project 2: Insurance Customer Drop-off Analysis</h3>
+              <h3 className="text-[#e5eddf] text-xl font-bold">Project 2: Decoding Insurance Drop-offs</h3>
               <div className="flex gap-4">
                 <button 
                   onClick={() => scrollLeft(scrollRef2)}
@@ -280,12 +279,11 @@ export default function ResearchProjectsPage() {
             </div>
             <div 
               ref={scrollRef2}
-              className="overflow-x-auto snap-x snap-mandatory scrollbar-hide flex gap-8 md:gap-8 px-2.5 md:px-0 py-4"
+              className="grid grid-flow-col auto-cols-[100%] md:auto-cols-[902px] gap-5 overflow-x-auto snap-x snap-mandatory"
+              style={{ scrollbarWidth: 'none', '-ms-overflow-style': 'none' } as React.CSSProperties}
             >
-              {project2Data.map((card, index) => (
-                <div key={index} className="flex-shrink-0 snap-center w-[calc(100vw-20px)] md:w-auto">
-                  <ProjectCard {...card} />
-                </div>
+              {project2Data.map((project, index) => (
+                <ProjectCard key={index} {...project} className="snap-start" />
               ))}
             </div>
           </div>
@@ -293,7 +291,7 @@ export default function ResearchProjectsPage() {
           {/* Project 3 - Horizontal Carousel */}
           <div className="w-full">
             <div className="flex justify-between items-center mb-6">
-              <h3 className="text-[#e5eddf] text-xl font-bold">Project 3: Helping Subsidiaries Act Like One Team</h3>
+              <h3 className="text-[#e5eddf] text-xl font-bold">Project 3: Unifying Subsidiary Teams</h3>
               <div className="flex gap-4">
                 <button 
                   onClick={() => scrollLeft(scrollRef3)}
@@ -311,12 +309,11 @@ export default function ResearchProjectsPage() {
             </div>
             <div 
               ref={scrollRef3}
-              className="overflow-x-auto snap-x snap-mandatory scrollbar-hide flex gap-8 md:gap-8 px-2.5 md:px-0 py-4"
+              className="grid grid-flow-col auto-cols-[100%] md:auto-cols-[902px] gap-5 overflow-x-auto snap-x snap-mandatory"
+              style={{ scrollbarWidth: 'none', '-ms-overflow-style': 'none' } as React.CSSProperties}
             >
-              {project3Data.map((card, index) => (
-                <div key={index} className="flex-shrink-0 snap-center w-[calc(100vw-20px)] md:w-auto">
-                  <ProjectCard {...card} />
-                </div>
+              {project3Data.map((project, index) => (
+                <ProjectCard key={index} {...project} className="snap-start" />
               ))}
             </div>
           </div>

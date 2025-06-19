@@ -21,6 +21,7 @@ export type ProjectCardProps = {
     list?: string[];
     additionalBody?: string;
   };
+  className?: string;
 };
 
 const ProjectCard: React.FC<ProjectCardProps> = ({
@@ -32,12 +33,15 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
   swipeToRead,
   leftContent,
   rightContent,
+  className,
 }) => {
+  const containerClasses = `w-full md:w-[902px] h-full bg-white rounded-[15px] p-8 md:p-[50px] flex ${className || ''}`;
+
   switch (variant) {
     case 'ProjectCover':
       return (
-        <div className="w-full md:w-[902px] h-[680px] bg-white rounded-[15px] p-8 md:p-[50px] flex flex-col md:flex-row md:items-center md:justify-between">
-          <div className="flex flex-col justify-between h-full md:w-[392px] mb-8 md:mb-0 order-2 md:order-1">
+        <div className={`${containerClasses} flex-col md:flex-row md:items-center md:justify-between`}>
+          <div className="flex flex-col justify-between h-full md:w-[392px] mt-10 md:mt-0 mb-8 md:mb-0 order-2 md:order-1">
             <div>
               <p className="font-mono text-sm md:text-base text-[#404b51] tracking-[-0.8px] mb-6 md:mb-0">{overline}</p>
               <h2 
@@ -52,7 +56,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
             )}
           </div>
           {image && (
-            <div className="w-full md:w-[410px] h-[300px] md:h-[580px] bg-[#d9d9d9] rounded-[15px] relative order-1 md:order-2">
+            <div className="w-full md:w-[410px] h-[300px] md:h-[580px] bg-[#d9d9d9] rounded-[15px] relative order-1 md:order-2 shrink-0">
               <Image src={image} alt={title || 'Project Image'} fill className="rounded-[15px] object-cover" />
             </div>
           )}
@@ -61,7 +65,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
 
     case '1:1ContentCol':
       return (
-        <div className="w-full md:w-[902px] h-[680px] bg-white rounded-[15px] p-8 md:p-[50px] flex flex-col">
+        <div className={`${containerClasses} flex-col`}>
           <p className="font-mono text-sm md:text-base text-[#404b51] tracking-[-0.8px] mb-6 md:mb-5">{overline}</p>
           <div className="flex flex-col md:flex-row flex-1 gap-8 md:gap-5">
             <div className="w-full md:w-1/2">
@@ -85,7 +89,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
 
     case '3:5ContentCol':
         return (
-            <div className="w-full md:w-[902px] h-[680px] bg-white rounded-[15px] p-8 md:p-[50px] flex flex-col">
+            <div className={`${containerClasses} flex-col`}>
                 <p className="font-mono text-sm md:text-base text-[#404b51] tracking-[-0.8px] mb-6 md:mb-5">{overline}</p>
                 <div className="flex flex-col md:flex-row flex-1 gap-8 md:gap-5">
                     <div className="w-full md:w-[287px] md:flex-shrink-0 mb-6 md:mb-0">
@@ -105,7 +109,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
 
     case '3:5ImageContent':
         return (
-            <div className="w-full md:w-[902px] h-[680px] bg-white rounded-[15px] p-8 md:p-[50px] flex flex-col">
+            <div className={`${containerClasses} flex-col`}>
                 <p className="font-mono text-sm md:text-base text-[#404b51] tracking-[-0.8px] mb-6 md:mb-5">{overline}</p>
                 <div className="flex flex-col md:flex-row flex-1 gap-8 md:gap-5">
                     {image && (
@@ -134,7 +138,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
 
     case 'HMW':
       return (
-        <div className="w-full md:w-[902px] h-[680px] bg-white rounded-[15px] p-8 md:p-[50px]">
+        <div className={containerClasses}>
           {/* Inner Container with Image Background and Black Overlay */}
           <div className="w-full h-full rounded-[15px] overflow-hidden relative flex items-center justify-center">
             {/* Background Image */}
