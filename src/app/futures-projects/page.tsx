@@ -66,47 +66,48 @@ const project1Data: ProjectCardProps[] = [
 const project2Data: ProjectCardProps[] = [
   {
     variant: 'ProjectCover',
-    overline: '02 | PROJECT 2 PLACEHOLDER',
-    title: 'Project 2<br/>Title Here',
+    overline: '02 | CLIENT: GLOBAL CONSUMER TECH BRAND',
+    title: 'Signals into Strategy:<br/>Reimagining How a Global Brand Designs for What\'s Next',
     image: '/images/intro-image.png',
     swipeToRead: true,
   },
   {
     variant: 'HMW',
-    overline: '02 | PROJECT 2 PLACEHOLDER',
-    hmw: 'How might we solve this challenge for project 2?',
+    overline: '02 | CLIENT: GLOBAL CONSUMER TECH BRAND',
+    hmw: 'How might a company move from future curiosity to present-day momentum?',
   },
   {
     variant: '3:5ContentCol',
-    overline: '02 | PROJECT 2 PLACEHOLDER',
+    overline: '02 | CLIENT: GLOBAL CONSUMER TECH BRAND',
     leftContent: {
-      body: "Project 2 content will go here..."
+      body: "The world doesn't wait for five-year plans. Emerging behaviors, cultural shifts, and fringe innovations are already reshaping how we live, connect, and consume, often faster than traditional strategy can keep up.<br/><br/>This project began as a signal scan. But it quickly evolved into something more: a shared foundation for future strategy, one that gave product, brand, and innovation teams a clearer sense of what mattered, what's coming, and what they could do about it."
     },
     rightContent: {
-      title: "Project 2 Details",
-      body: "More details about project 2..."
+      title: "From Signal Overload to Strategic Clarity",
+      body: "We started by scanning hundreds of cultural and behavioral signals from across the globe. From youth identity in Southeast Asia to shifts in loyalty and intimacy post-pandemic, the goal wasn't to catalogue everything. It was to <strong>surface the patterns with momentum</strong>.<br/><br/>Each signal was translated into a <em>future narrative</em>: short, provocative stories that made trends tangible. These weren't just trends to track, but prompts to rethink assumptions:<br/><br/><em>What happens when personal space becomes portable? What does comfort mean in a world of digital overstimulation?</em>"
     }
   },
   {
     variant: '3:5ImageContent',
-    overline: '02 | PROJECT 2 PLACEHOLDER',
+    overline: '02 | CLIENT: GLOBAL CONSUMER TECH BRAND',
     image: '/images/intro-image.png',
     rightContent: {
-      title: 'Project 2 Section',
-      body: "Project 2 specific content here.",
-      list: ['Item 1', 'Item 2', 'Item 3']
+      title: 'Designing with the Future, Not Just for It',
+      body: "We turned those narratives into <strong>opportunity platforms</strong>: thematic areas where the brand could lead with meaning, not just market share. Each one came with early-stage \"starter ideas\" designed to spark imagination across teams.<br/><br/>Think:",
+      list: ['New rituals for unwinding in overstimulated homes', 'Tech products that respond to ambient moods, not just commands', 'Tools that help young users feel \"seen\" without needing to perform'],
+      additionalBody: "These weren't briefs. They were <strong>catalysts</strong>."
     }
   },
   {
     variant: '1:1ContentCol',
-    overline: '02 | PROJECT 2 PLACEHOLDER',
+    overline: '02 | CLIENT: GLOBAL CONSUMER TECH BRAND',
     leftContent: {
-      title: 'Left Column',
-      body: 'Project 2 left content...',
+      title: 'My Role',
+      body: 'I led the design of narrative and visual artifacts that helped teams cut through noise and align on what mattered. From turning complex signals into visceral provocations to shaping tools that brought strategy into motion, my job was to <strong>make the future feel real enough to act on</strong>, not just speculate about.',
     },
     rightContent: {
-      title: 'Right Column',
-      body: "Project 2 right content..."
+      title: 'Why It Mattered',
+      body: "Every company tracks trends. Few turn them into momentum.<br/><br/>This project helped a global brand move beyond horizon-scanning and begin designing with sharper intention. It showed that future-sensing isn't just about imagination. It's about giving strategy a pulse."
     }
   }
 ];
