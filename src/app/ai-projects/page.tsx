@@ -4,6 +4,7 @@ import Image from 'next/image';
 import { useRef } from 'react';
 import ProjectCard, { ProjectCardProps } from '@/components/ProjectCard/ProjectCard';
 import Header from '@/components/Header/Header';
+import Link from 'next/link';
 
 // Placeholder data for Project 1
 const project1Data: ProjectCardProps[] = [
@@ -184,14 +185,14 @@ export default function AIProjectsPage() {
         <section className="w-full mb-20 flex flex-col md:flex-row items-stretch md:h-[436px] gap-[38px]">
           {/* Left Box - Text and Mobile Image */}
           <div className="w-full md:w-1/2 bg-white rounded-[15px] p-[49px] flex flex-col justify-between text-[#404b51]">
-            <p className="font-mono text-base tracking-[-0.8px]">_03 | AI PROJECTS</p>
+            <Link href="/" className="font-mono text-base tracking-[-0.8px] hover:opacity-80 transition-opacity">← HOME</Link>
             
             <div className="relative w-full h-[300px] my-6 rounded-[15px] overflow-hidden md:hidden">
               <Image
                 src="/images/intro-image.png"
-                alt="AI Projects"
+                alt="Ziff Lau"
                 fill
-                className="object-cover"
+                style={{ objectFit: 'cover' }}
               />
             </div>
 
