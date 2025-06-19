@@ -37,12 +37,12 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
   switch (variant) {
     case 'ProjectCover':
       return (
-        <div className="w-[902px] min-h-[552px] bg-white rounded-[15px] p-6 md:p-[50px] flex flex-col md:flex-row md:items-center md:justify-between gap-6 md:gap-0">
-          <div className="flex flex-col justify-between h-full md:w-[392px] order-2 md:order-1">
+        <div className="w-full md:w-[902px] h-[552px] bg-white rounded-[15px] p-8 md:p-[50px] flex flex-col md:flex-row md:items-center md:justify-between">
+          <div className="flex flex-col justify-between h-full md:w-[392px] mb-8 md:mb-0 order-2 md:order-1">
             <div>
               <p className="font-mono text-sm md:text-base text-[#404b51] tracking-[-0.8px]">{overline}</p>
               <h2 
-                className="font-sans text-3xl md:text-5xl font-bold text-[#404b51] tracking-[-2px] md:tracking-[-2.5px] leading-[32px] md:leading-[45px] mt-6 md:mt-10"
+                className="font-sans text-[40px] md:text-5xl font-bold text-[#404b51] tracking-[-2px] md:tracking-[-2.5px] leading-[1.1] md:leading-[45px] mt-6 md:mt-10"
                 dangerouslySetInnerHTML={{ __html: title || '' }}
               />
             </div>
@@ -53,7 +53,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
             )}
           </div>
           {image && (
-            <div className="w-full md:w-[410px] h-[250px] md:h-full bg-[#d9d9d9] rounded-[15px] relative order-1 md:order-2">
+            <div className="w-full md:w-[410px] h-[300px] md:h-[452px] bg-[#d9d9d9] rounded-[15px] relative order-1 md:order-2">
               <Image src={image} alt={title || 'Project Image'} fill className="rounded-[15px] object-cover" />
             </div>
           )}
@@ -62,23 +62,23 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
 
     case '1:1ContentCol':
       return (
-        <div className="w-[902px] min-h-[552px] bg-white rounded-[15px] p-6 md:p-[50px] flex flex-col">
-          <p className="font-mono text-sm md:text-base text-[#404b51] tracking-[-0.8px] mb-4 md:mb-5">{overline}</p>
-          <div className="flex flex-col md:flex-row flex-1 gap-6 md:gap-5">
+        <div className="w-full md:w-[902px] h-[552px] bg-white rounded-[15px] p-8 md:p-[50px] flex flex-col">
+          <p className="font-mono text-sm md:text-base text-[#404b51] tracking-[-0.8px] mb-6 md:mb-5">{overline}</p>
+          <div className="flex flex-col md:flex-row flex-1 gap-8 md:gap-5">
             <div className="w-full md:w-1/2">
-              <h3 className="font-sans text-base md:text-lg font-bold text-[#404b51] mb-3 md:mb-2">{leftContent?.title}</h3>
-              <div className="font-sans text-base md:text-lg text-[#404b51] leading-[20px] md:leading-[22px] space-y-3 md:space-y-4">
+              <h3 className="font-sans text-lg md:text-lg font-bold text-[#404b51] mb-3 md:mb-2">{leftContent?.title}</h3>
+              <div className="font-sans text-base md:text-lg text-[#404b51] leading-[1.5] md:leading-[22px] space-y-3 md:space-y-4">
                 <p dangerouslySetInnerHTML={{ __html: leftContent?.body || '' }} />
                 {leftContent?.list && (
-                  <ul className="list-disc pl-5 space-y-1 md:space-y-2">
+                  <ul className="list-disc pl-5 space-y-2 md:space-y-2">
                     {leftContent.list.map((item, index) => <li key={index} dangerouslySetInnerHTML={{ __html: item }} />)}
                   </ul>
                 )}
               </div>
             </div>
             <div className="w-full md:w-1/2">
-              <h3 className="font-sans text-base md:text-lg font-bold text-[#404b51] mb-3 md:mb-2">{rightContent?.title}</h3>
-              <p className="font-sans text-base md:text-lg text-[#404b51] leading-[20px] md:leading-[22px]" dangerouslySetInnerHTML={{ __html: rightContent?.body || '' }}/>
+              <h3 className="font-sans text-lg md:text-lg font-bold text-[#404b51] mb-3 md:mb-2">{rightContent?.title}</h3>
+              <p className="font-sans text-base md:text-lg text-[#404b51] leading-[1.5] md:leading-[22px]" dangerouslySetInnerHTML={{ __html: rightContent?.body || '' }}/>
             </div>
           </div>
         </div>
@@ -86,17 +86,17 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
 
     case '3:5ContentCol':
         return (
-            <div className="w-[902px] min-h-[552px] bg-white rounded-[15px] p-6 md:p-[50px] flex flex-col">
-                <p className="font-mono text-sm md:text-base text-[#404b51] tracking-[-0.8px] mb-4 md:mb-5">{overline}</p>
-                <div className="flex flex-col md:flex-row flex-1 gap-6 md:gap-5">
-                    <div className="w-full md:w-[287px] md:flex-shrink-0">
-                        <p className="font-sans text-base md:text-lg text-[#404b51] leading-[20px] md:leading-[22px]">
+            <div className="w-full md:w-[902px] h-[552px] bg-white rounded-[15px] p-8 md:p-[50px] flex flex-col">
+                <p className="font-mono text-sm md:text-base text-[#404b51] tracking-[-0.8px] mb-6 md:mb-5">{overline}</p>
+                <div className="flex flex-col md:flex-row flex-1 gap-8 md:gap-5">
+                    <div className="w-full md:w-[287px] md:flex-shrink-0 mb-6 md:mb-0">
+                        <p className="font-sans text-base md:text-lg text-[#404b51] leading-[1.5] md:leading-[22px]">
                             {leftContent?.body}
                         </p>
                     </div>
                     <div className="flex-1">
-                        <h3 className="font-sans text-base md:text-lg font-bold text-[#404b51] mb-3 md:mb-2">{rightContent?.title}</h3>
-                        <div className="font-sans text-base md:text-lg text-[#404b51] leading-[20px] md:leading-[22px] space-y-3 md:space-y-4">
+                        <h3 className="font-sans text-lg md:text-lg font-bold text-[#404b51] mb-3 md:mb-2">{rightContent?.title}</h3>
+                        <div className="font-sans text-base md:text-lg text-[#404b51] leading-[1.5] md:leading-[22px] space-y-3 md:space-y-4">
                            <p dangerouslySetInnerHTML={{ __html: rightContent?.body || '' }} />
                         </div>
                     </div>
@@ -106,20 +106,20 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
 
     case '3:5ImageContent':
         return (
-            <div className="w-[902px] min-h-[552px] bg-white rounded-[15px] p-6 md:p-[50px] flex flex-col">
-                <p className="font-mono text-sm md:text-base text-[#404b51] tracking-[-0.8px] mb-4 md:mb-5">{overline}</p>
-                <div className="flex flex-col md:flex-row flex-1 gap-6 md:gap-5">
+            <div className="w-full md:w-[902px] h-[552px] bg-white rounded-[15px] p-8 md:p-[50px] flex flex-col">
+                <p className="font-mono text-sm md:text-base text-[#404b51] tracking-[-0.8px] mb-6 md:mb-5">{overline}</p>
+                <div className="flex flex-col md:flex-row flex-1 gap-8 md:gap-5">
                     {image && (
-                        <div className="w-full md:w-72 h-[200px] md:h-full bg-[#d9d9d9] rounded-[15px] relative md:flex-shrink-0 order-1 md:order-1">
+                        <div className="w-full md:w-72 h-[300px] md:h-[452px] bg-[#d9d9d9] rounded-[15px] relative md:flex-shrink-0 order-1 md:order-1 mb-6 md:mb-0">
                           <Image src={image} alt={title || 'Project Image'} fill className="rounded-[15px] object-cover" />
                         </div>
                     )}
                     <div className="flex-1 order-2 md:order-2">
-                        <h3 className="font-sans text-base md:text-lg font-bold text-[#404b51] mb-3 md:mb-2">{rightContent?.title}</h3>
-                         <div className="font-sans text-base md:text-lg text-[#404b51] leading-[20px] md:leading-[22px] space-y-3 md:space-y-4">
+                        <h3 className="font-sans text-lg md:text-lg font-bold text-[#404b51] mb-3 md:mb-2">{rightContent?.title}</h3>
+                         <div className="font-sans text-base md:text-lg text-[#404b51] leading-[1.5] md:leading-[22px] space-y-3 md:space-y-4">
                            <p>{rightContent?.body}</p>
                             {rightContent?.list && (
-                                <ul className="list-disc pl-5 space-y-1 md:space-y-2">
+                                <ul className="list-disc pl-5 space-y-2 md:space-y-2">
                                     {rightContent.list.map((item, index) => <li key={index} dangerouslySetInnerHTML={{ __html: item }} />)}
                                 </ul>
                             )}
@@ -135,9 +135,9 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
 
     case 'HMW':
       return (
-        <div className="w-[902px] min-h-[400px] md:h-[552px] bg-white rounded-[15px] p-6 md:p-[50px]">
+        <div className="w-full md:w-[902px] h-[552px] bg-white rounded-[15px] p-8 md:p-[50px]">
           {/* Inner Container with Image Background and Black Overlay */}
-          <div className="w-full h-full rounded-[15px] overflow-hidden relative flex items-center justify-center">
+          <div className="w-full h-[400px] md:h-full rounded-[15px] overflow-hidden relative flex items-center justify-center">
             {/* Background Image */}
             <Image 
               src={image || '/images/intro-image.png'} 
@@ -150,7 +150,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
             <div className="absolute inset-0 bg-black opacity-20"></div>
             
             {/* Text Content */}
-            <h2 className="relative z-10 font-sans text-2xl md:text-5xl text-white text-center leading-[28px] md:leading-[50px] tracking-[-1.5px] md:tracking-[-2.5px] px-6 md:px-[50px]">
+            <h2 className="relative z-10 font-sans text-2xl md:text-5xl text-white text-center leading-[1.1] md:leading-[50px] tracking-[-1.5px] md:tracking-[-2.5px] px-4 md:px-[50px]">
               {hmw}
             </h2>
           </div>

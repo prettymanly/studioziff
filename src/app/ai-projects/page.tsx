@@ -158,13 +158,17 @@ export default function AIProjectsPage() {
 
   const scrollLeft = (ref: React.RefObject<HTMLDivElement | null>) => {
     if (ref.current) {
-      ref.current.scrollBy({ left: -910, behavior: 'smooth' });
+      const isMobile = window.innerWidth < 768;
+      const scrollAmount = isMobile ? window.innerWidth : 910;
+      ref.current.scrollBy({ left: -scrollAmount, behavior: 'smooth' });
     }
   };
 
   const scrollRight = (ref: React.RefObject<HTMLDivElement | null>) => {
     if (ref.current) {
-      ref.current.scrollBy({ left: 910, behavior: 'smooth' });
+      const isMobile = window.innerWidth < 768;
+      const scrollAmount = isMobile ? window.innerWidth : 910;
+      ref.current.scrollBy({ left: scrollAmount, behavior: 'smooth' });
     }
   };
 
@@ -249,11 +253,10 @@ export default function AIProjectsPage() {
             </div>
             <div 
               ref={scrollRef1}
-              className="overflow-x-auto snap-x snap-mandatory scrollbar-hide"
-              style={{ display: 'flex', gap: '2rem', padding: '1rem 0' }}
+              className="overflow-x-auto snap-x snap-mandatory scrollbar-hide flex gap-8 md:gap-8 px-2.5 md:px-0 py-4"
             >
               {project1Data.map((card, index) => (
-                <div key={index} className="flex-shrink-0 snap-center">
+                <div key={index} className="flex-shrink-0 snap-center w-[calc(100vw-20px)] md:w-auto">
                   <ProjectCard {...card} />
                 </div>
               ))}
@@ -281,11 +284,10 @@ export default function AIProjectsPage() {
             </div>
             <div 
               ref={scrollRef2}
-              className="overflow-x-auto snap-x snap-mandatory scrollbar-hide"
-              style={{ display: 'flex', gap: '2rem', padding: '1rem 0' }}
+              className="overflow-x-auto snap-x snap-mandatory scrollbar-hide flex gap-8 md:gap-8 px-2.5 md:px-0 py-4"
             >
               {project2Data.map((card, index) => (
-                <div key={index} className="flex-shrink-0 snap-center">
+                <div key={index} className="flex-shrink-0 snap-center w-[calc(100vw-20px)] md:w-auto">
                   <ProjectCard {...card} />
                 </div>
               ))}
@@ -313,11 +315,10 @@ export default function AIProjectsPage() {
             </div>
             <div 
               ref={scrollRef3}
-              className="overflow-x-auto snap-x snap-mandatory scrollbar-hide"
-              style={{ display: 'flex', gap: '2rem', padding: '1rem 0' }}
+              className="overflow-x-auto snap-x snap-mandatory scrollbar-hide flex gap-8 md:gap-8 px-2.5 md:px-0 py-4"
             >
               {project3Data.map((card, index) => (
-                <div key={index} className="flex-shrink-0 snap-center">
+                <div key={index} className="flex-shrink-0 snap-center w-[calc(100vw-20px)] md:w-auto">
                   <ProjectCard {...card} />
                 </div>
               ))}
