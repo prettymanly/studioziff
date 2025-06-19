@@ -181,10 +181,20 @@ export default function TeachingProjectsPage() {
         </header>
 
         {/* Hero Section */}
-        <section className="w-full h-auto md:h-[436px] mb-20 flex flex-col md:flex-row items-center gap-[38px]">
-          {/* Left Box - Text */}
-          <div className="w-full md:w-1/2 h-[436px] bg-white rounded-[15px] p-[49px] flex flex-col justify-between text-[#404b51]">
+        <section className="w-full mb-20 flex flex-col md:flex-row items-stretch md:h-[436px] gap-[38px]">
+          {/* Left Box - Text and Mobile Image */}
+          <div className="w-full md:w-1/2 bg-white rounded-[15px] p-[49px] flex flex-col justify-between text-[#404b51]">
             <p className="font-mono text-base tracking-[-0.8px]">_04 | TEACHING PROJECTS</p>
+            
+            <div className="relative w-full h-[300px] my-6 rounded-[15px] overflow-hidden md:hidden">
+              <Image
+                src="/images/intro-image.png"
+                alt="Teaching Projects"
+                fill
+                className="object-cover"
+              />
+            </div>
+
             <p className="text-[20px] leading-[22px] tracking-[-1px]">
               <span className="font-bold">TEACHING, FACILITATION</span>
               <br />
@@ -192,13 +202,13 @@ export default function TeachingProjectsPage() {
             </p>
           </div>
 
-          {/* Right Box - Image */}
-          <div className="relative w-full md:w-1/2 h-[436px] rounded-[15px] overflow-hidden">
+          {/* Right Box - Image for Desktop */}
+          <div className="relative w-full md:w-1/2 h-[436px] rounded-[15px] overflow-hidden hidden md:block">
             <Image
               src="/images/intro-image.png"
               alt="Teaching Projects"
               fill
-              style={{ objectFit: 'cover' }}
+              className="object-cover"
             />
           </div>
         </section>
@@ -240,12 +250,11 @@ export default function TeachingProjectsPage() {
             </div>
             <div 
               ref={scrollRef1}
-              className="overflow-x-auto snap-x snap-mandatory scrollbar-hide flex gap-8 md:gap-8 px-2.5 md:px-0 py-4"
+              className="grid grid-flow-col auto-cols-[100%] md:auto-cols-[902px] gap-5 overflow-x-auto snap-x snap-mandatory"
+              style={{ scrollbarWidth: 'none', 'msOverflowStyle': 'none' } as React.CSSProperties}
             >
-              {project1Data.map((card, index) => (
-                <div key={index} className="flex-shrink-0 snap-center w-[calc(100vw-20px)] md:w-auto">
-                  <ProjectCard {...card} />
-                </div>
+              {project1Data.map((project, index) => (
+                <ProjectCard key={index} {...project} className="snap-start" />
               ))}
             </div>
           </div>
@@ -253,7 +262,7 @@ export default function TeachingProjectsPage() {
           {/* Project 2 - Horizontal Carousel */}
           <div className="w-full">
             <div className="flex justify-between items-center mb-6">
-              <h3 className="text-[#e5eddf] text-xl font-bold">Project 2: Corporate Culture Prototyping</h3>
+              <h3 className="text-[#e5eddf] text-xl font-bold">Project 2: Primary School Design Thinking</h3>
               <div className="flex gap-4">
                 <button 
                   onClick={() => scrollLeft(scrollRef2)}
@@ -271,12 +280,11 @@ export default function TeachingProjectsPage() {
             </div>
             <div 
               ref={scrollRef2}
-              className="overflow-x-auto snap-x snap-mandatory scrollbar-hide flex gap-8 md:gap-8 px-2.5 md:px-0 py-4"
+              className="grid grid-flow-col auto-cols-[100%] md:auto-cols-[902px] gap-5 overflow-x-auto snap-x snap-mandatory"
+              style={{ scrollbarWidth: 'none', 'msOverflowStyle': 'none' } as React.CSSProperties}
             >
-              {project2Data.map((card, index) => (
-                <div key={index} className="flex-shrink-0 snap-center w-[calc(100vw-20px)] md:w-auto">
-                  <ProjectCard {...card} />
-                </div>
+              {project2Data.map((project, index) => (
+                <ProjectCard key={index} {...project} className="snap-start" />
               ))}
             </div>
           </div>
@@ -284,7 +292,7 @@ export default function TeachingProjectsPage() {
           {/* Project 3 - Horizontal Carousel */}
           <div className="w-full">
             <div className="flex justify-between items-center mb-6">
-              <h3 className="text-[#e5eddf] text-xl font-bold">Project 3: Design Thinking for Kids</h3>
+              <h3 className="text-[#e5eddf] text-xl font-bold">Project 3: Placeholder</h3>
               <div className="flex gap-4">
                 <button 
                   onClick={() => scrollLeft(scrollRef3)}
@@ -302,16 +310,15 @@ export default function TeachingProjectsPage() {
             </div>
             <div 
               ref={scrollRef3}
-              className="overflow-x-auto snap-x snap-mandatory scrollbar-hide flex gap-8 md:gap-8 px-2.5 md:px-0 py-4"
+              className="grid grid-flow-col auto-cols-[100%] md:auto-cols-[902px] gap-5 overflow-x-auto snap-x snap-mandatory"
+              style={{ scrollbarWidth: 'none', 'msOverflowStyle': 'none' } as React.CSSProperties}
             >
-              {project3Data.map((card, index) => (
-                <div key={index} className="flex-shrink-0 snap-center w-[calc(100vw-20px)] md:w-auto">
-                  <ProjectCard {...card} />
-                </div>
+              {project3Data.map((project, index) => (
+                <ProjectCard key={index} {...project} className="snap-start" />
               ))}
             </div>
           </div>
-
+          
         </section>
 
       </div>

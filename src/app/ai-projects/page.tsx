@@ -192,10 +192,20 @@ export default function AIProjectsPage() {
         </header>
 
         {/* Hero Section */}
-        <section className="w-full h-auto md:h-[436px] mb-20 flex flex-col md:flex-row items-center gap-[38px]">
-          {/* Left Box - Text */}
-          <div className="w-full md:w-1/2 h-[436px] bg-white rounded-[15px] p-[49px] flex flex-col justify-between text-[#404b51]">
+        <section className="w-full mb-20 flex flex-col md:flex-row items-stretch md:h-[436px] gap-[38px]">
+          {/* Left Box - Text and Mobile Image */}
+          <div className="w-full md:w-1/2 bg-white rounded-[15px] p-[49px] flex flex-col justify-between text-[#404b51]">
             <p className="font-mono text-base tracking-[-0.8px]">_03 | AI PROJECTS</p>
+            
+            <div className="relative w-full h-[300px] my-6 rounded-[15px] overflow-hidden md:hidden">
+              <Image
+                src="/images/intro-image.png"
+                alt="AI Projects"
+                fill
+                className="object-cover"
+              />
+            </div>
+
             <p className="text-[20px] leading-[22px] tracking-[-1px]">
               <span className="font-bold">GENERATIVE AI</span>
               <br />
@@ -203,13 +213,13 @@ export default function AIProjectsPage() {
             </p>
           </div>
 
-          {/* Right Box - Image */}
-          <div className="relative w-full md:w-1/2 h-[436px] rounded-[15px] overflow-hidden">
+          {/* Right Box - Image for Desktop */}
+          <div className="relative w-full md:w-1/2 h-[436px] rounded-[15px] overflow-hidden hidden md:block">
             <Image
               src="/images/intro-image.png"
               alt="AI Projects"
               fill
-              style={{ objectFit: 'cover' }}
+              className="object-cover"
             />
           </div>
         </section>
