@@ -62,6 +62,104 @@ const project1Data: ProjectCardProps[] = [
   }
 ];
 
+// Placeholder data for Project 2
+const project2Data: ProjectCardProps[] = [
+  {
+    variant: 'ProjectCover',
+    overline: '02 | PROJECT 2 PLACEHOLDER',
+    title: 'Project 2<br/>Title Here',
+    image: '/images/intro-image.png',
+    swipeToRead: true,
+  },
+  {
+    variant: 'HMW',
+    overline: '02 | PROJECT 2 PLACEHOLDER',
+    hmw: 'How might we solve this challenge for project 2?',
+  },
+  {
+    variant: '3:5ContentCol',
+    overline: '02 | PROJECT 2 PLACEHOLDER',
+    leftContent: {
+      body: "Project 2 content will go here..."
+    },
+    rightContent: {
+      title: "Project 2 Details",
+      body: "More details about project 2..."
+    }
+  },
+  {
+    variant: '3:5ImageContent',
+    overline: '02 | PROJECT 2 PLACEHOLDER',
+    image: '/images/intro-image.png',
+    rightContent: {
+      title: 'Project 2 Section',
+      body: "Project 2 specific content here.",
+      list: ['Item 1', 'Item 2', 'Item 3']
+    }
+  },
+  {
+    variant: '1:1ContentCol',
+    overline: '02 | PROJECT 2 PLACEHOLDER',
+    leftContent: {
+      title: 'Left Column',
+      body: 'Project 2 left content...',
+    },
+    rightContent: {
+      title: 'Right Column',
+      body: "Project 2 right content..."
+    }
+  }
+];
+
+// Placeholder data for Project 3
+const project3Data: ProjectCardProps[] = [
+  {
+    variant: 'ProjectCover',
+    overline: '03 | PROJECT 3 PLACEHOLDER',
+    title: 'Project 3<br/>Title Here',
+    image: '/images/intro-image.png',
+    swipeToRead: true,
+  },
+  {
+    variant: 'HMW',
+    overline: '03 | PROJECT 3 PLACEHOLDER',
+    hmw: 'How might we solve this challenge for project 3?',
+  },
+  {
+    variant: '3:5ContentCol',
+    overline: '03 | PROJECT 3 PLACEHOLDER',
+    leftContent: {
+      body: "Project 3 content will go here..."
+    },
+    rightContent: {
+      title: "Project 3 Details",
+      body: "More details about project 3..."
+    }
+  },
+  {
+    variant: '3:5ImageContent',
+    overline: '03 | PROJECT 3 PLACEHOLDER',
+    image: '/images/intro-image.png',
+    rightContent: {
+      title: 'Project 3 Section',
+      body: "Project 3 specific content here.",
+      list: ['Item 1', 'Item 2', 'Item 3']
+    }
+  },
+  {
+    variant: '1:1ContentCol',
+    overline: '03 | PROJECT 3 PLACEHOLDER',
+    leftContent: {
+      title: 'Left Column',
+      body: 'Project 3 left content...',
+    },
+    rightContent: {
+      title: 'Right Column',
+      body: "Project 3 right content..."
+    }
+  }
+];
+
 export default function ResearchProjectsPage() {
   const scrollRef1 = useRef<HTMLDivElement>(null);
   const scrollRef2 = useRef<HTMLDivElement>(null);
@@ -192,7 +290,7 @@ export default function ResearchProjectsPage() {
               className="overflow-x-auto snap-x snap-mandatory scrollbar-hide"
               style={{ display: 'flex', gap: '2rem', padding: '1rem 0' }}
             >
-              {project1Data.map((card, index) => (
+              {project2Data.map((card, index) => (
                 <div key={index} className="flex-shrink-0 snap-center">
                   <ProjectCard {...card} />
                 </div>
@@ -224,7 +322,7 @@ export default function ResearchProjectsPage() {
               className="overflow-x-auto snap-x snap-mandatory scrollbar-hide"
               style={{ display: 'flex', gap: '2rem', padding: '1rem 0' }}
             >
-              {project1Data.map((card, index) => (
+              {project3Data.map((card, index) => (
                 <div key={index} className="flex-shrink-0 snap-center">
                   <ProjectCard {...card} />
                 </div>
