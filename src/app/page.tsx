@@ -122,6 +122,7 @@ export default function Home() {
           {/* Left Box - Text and Mobile Image */}
           <div className="w-full md:w-1/2 bg-white rounded-[15px] p-[49px] flex flex-col justify-between text-[#404b51]">
             <p className="font-mono text-base tracking-[-0.8px]">_INTRO</p>
+            {/* Test comment */}
             
             <div className="relative w-full h-[300px] my-6 rounded-[15px] overflow-hidden md:hidden">
               <Image
