@@ -3,7 +3,6 @@
 import Image from 'next/image';
 import { useRef } from 'react';
 import ProjectCard, { ProjectCardProps } from '@/components/ProjectCard/ProjectCard';
-import Header from '@/components/Header/Header';
 import Link from 'next/link';
 
 // Placeholder data for Project 1
@@ -179,7 +178,19 @@ export default function AIProjectsPage() {
     <main className="flex flex-col items-center py-10 px-2.5" style={{ backgroundColor: '#37494c' }}>
       <div className="w-full max-w-[902px]">
         
-        <Header textColor="text-[#e5eddf]" />
+        {/* Header */}
+        <header className="w-full mb-10 flex flex-row justify-between items-start font-mono text-base py-4">
+          <div>
+            <p className="text-[#e5eddf] font-bold">FIND ME</p>
+            <p><a href="#" className="text-[#e5eddf] hover:opacity-80">BLOG</a></p>
+            <p><a href="#" className="text-[#e5eddf] hover:opacity-80">LINKEDIN</a></p>
+          </div>
+          <div className="text-left md:text-right">
+            <p className="text-[#e5eddf] font-bold">SAY HELLO</p>
+            <p><a href="mailto:ZIFF.LAU@GMAIL.COM" className="text-[#e5eddf] hover:opacity-80">ZIFF.LAU@GMAIL.COM</a></p>
+            <p className="text-[#e5eddf]">+9322 7317</p>
+          </div>
+        </header>
 
         {/* Hero Section */}
         <section className="w-full mb-20 flex flex-col md:flex-row items-stretch md:h-[436px] gap-[38px]">
@@ -190,16 +201,16 @@ export default function AIProjectsPage() {
             <div className="relative w-full h-[300px] my-6 rounded-[15px] overflow-hidden md:hidden">
               <Image
                 src="/images/intro-image.png"
-                alt="Ziff Lau"
+                alt="AI Projects"
                 fill
-                style={{ objectFit: 'cover' }}
+                className="object-cover"
               />
             </div>
 
             <p className="text-[20px] leading-[22px] tracking-[-1px]">
-              <span className="font-bold">ZIFF LAU</span>
+              <span className="font-bold">GENERATIVE AI</span>
               <br />
-              <span className="font-normal">AI CREATIVE TECHNOLOGIST</span>
+              <span className="font-normal">+ AUTOMATION</span>
             </p>
           </div>
 
