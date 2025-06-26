@@ -19,11 +19,11 @@ const project1Data: ProjectCardProps[] = [
     variant: '3:5ContentCol',
     overline: '01 | CLIENT: NATIONAL CONGLOMERATE, PHILIPPINES',
     leftContent: {
-      body: "In many Southeast Asian households, especially in the Philippines, the home is not just a space, but a system: a network of care, financial interdependence, and decision-making spread across parents, siblings, overseas workers, and elders.\n\nAmid this complexity, families already manage using mental checklists, handwritten logs, Viber threads, and spreadsheets. So when a major conglomerate approached us to explore a \"super app,\" we asked a different question: What if we didn't just digitize transactions but supported the actual work of running a household?"
+      body: "In many Southeast Asian households, especially in the Philippines, the home is not just a space, but a system: a network of care, financial interdependence, and decision-making spread across parents, siblings, overseas workers, and elders.<br><br>Amid this complexity, families already manage using mental checklists, handwritten logs, Viber threads, and spreadsheets.<br><br>So when a major conglomerate approached us to explore a \"super app,\" we asked a different question: What if we didn't just digitize transactions but supported the actual work of running a household?"
     },
     rightContent: {
       title: "From Fragmented Tools to Relational Infrastructure",
-      body: "Through interviews, co-creation sessions, and ethnographic research, we surfaced the quiet complexity of everyday life: multiple household members taking on roles like contributor, payer, planner, or reminder, often across generations and time zones.\n\n\nWe reframed the challenge:"
+      body: "Through interviews, co-creation sessions, and ethnographic research, we surfaced the quiet complexity of everyday life: multiple household members taking on roles like contributor, payer, planner, or reminder, often across generations and time zones.<br><br>We reframed the challenge:"
     }
   },
   {
@@ -47,11 +47,11 @@ const project1Data: ProjectCardProps[] = [
     overline: '01 | CLIENT: NATIONAL CONGLOMERATE, PHILIPPINES',
     leftContent: {
       title: "Designing for Diverse Household Realities",
-      body: "We uncovered a range of household archetypes, from centralized matriarch-led systems to distributed networks coordinated by siblings or intermediaries. We designed logic for real-life dynamics: overseas earners sending money home, elders passing on responsibilities, or blended families navigating new norms.\n\nThe design had to do more than work; it had to respect power dynamics, invite participation, and leave room for dignity."
+      body: "We uncovered a range of <strong>household archetypes</strong>, from centralized matriarch-led systems to distributed networks coordinated by siblings or intermediaries. We designed logic for real-life dynamics: overseas earners sending money home, elders passing on responsibilities, or blended families navigating new norms.<br><br>The design had to do more than work; it had to respect power dynamics, invite participation, and leave room for dignity."
     },
     rightContent: {
       title: "From Points to Purpose: Rethinking Loyalty",
-      body: "A parallel study revealed that traditional rewards programs often missed the mark because they assumed individual benefit, not shared meaning.\n\nWe proposed a loyalty strategy rooted in household psychology:\n\n• Prioritizing essential offsets over luxury perks\n• Enabling shared redemption across online and offline contexts\n• Building in moments of gratitude, recognition, and emotional salience\n• Anchoring value in family, not just frequency\n\nBehavioral principles like loss aversion, social proof, and effort justification shaped how we designed for motivation and care, not just engagement."
+      body: "A parallel study revealed that traditional rewards programs often missed the mark because they assumed individual benefit, not <strong>shared meaning</strong>.<br><br>We proposed a loyalty strategy rooted in <strong>household psychology</strong>:<br>• Prioritizing essential offsets over luxury perks<br>• Enabling shared redemption across online and offline contexts<br>• Building in moments of gratitude, recognition, and emotional salience<br>• Anchoring value in family, not just frequency<br><br>Behavioral principles like <strong>loss aversion</strong>, <strong>social proof</strong>, and <strong>effort justification</strong> shaped how we designed for motivation and care, not just engagement."
     }
   },
   {
@@ -59,11 +59,11 @@ const project1Data: ProjectCardProps[] = [
     overline: '01 | CLIENT: NATIONAL CONGLOMERATE, PHILIPPINES',
     leftContent: {
       title: 'My Role',
-      body: 'I shaped narrative development and strategic positioning, surfacing the underlying tensions that connected disparate customer touchpoints across the conglomerate\'s ecosystem.\n\nThrough design research and rapid prototyping, I employed ethnographic methods to uncover the informal systems families had already developed, translating fieldwork insights into strategic frameworks that reframed the business opportunity from brand aggregation to infrastructure provision.',
+      body: 'I shaped narrative development and strategic positioning, surfacing the underlying tensions that connected disparate customer touchpoints across the conglomerate\'s ecosystem.<br><br>Through design research and rapid prototyping, I employed ethnographic methods to uncover the informal systems families had already developed, translating fieldwork insights into strategic frameworks that reframed the business opportunity from brand aggregation to infrastructure provision.',
     },
     rightContent: {
       title: 'Why It Matters',
-      body: "In a region where the family is the first safety net, most apps treat people as individuals. We helped our client imagine something deeper: a system that supports the way families actually live, care, and coordinate, not just how they transact.\n\nThis project reframed \"digital transformation\" from convenience to <strong>care infrastructure</strong>, a quiet revolution in how platforms can show up for real lives."
+      body: "In a region where the family is the first safety net, most apps treat people as individuals. We helped our client imagine something deeper: a system that supports the way families actually live, care, and coordinate, not just how they transact.<br><br>This project reframed \"digital transformation\" from convenience to <strong>care infrastructure</strong>, a quiet revolution in how platforms can show up for real lives."
     }
   }
 ];
@@ -73,25 +73,25 @@ const project2Data: ProjectCardProps[] = [
   {
     variant: 'ProjectCover',
     overline: '02 | CLIENT: LEADING INSURER, APAC',
-    title: 'Insurance Mindsets Playbook:<br/>A Toolkit for Cross-Functional Empathy',
+    title: 'Insurance Mindsets Playbook:<br/><span style="font-weight: 300;">A Toolkit for Cross-Functional Empathy</span>',
     image: 'https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80',
     swipeToRead: true,
   },
   {
     variant: 'HMW',
     overline: '02 | CLIENT: LEADING INSURER, APAC',
-    hmw: 'How might we unify a fragmented organisation through shared understanding of customer needs?',
+    hmw: '<span style="font-weight: 300;">How might we unify a fragmented organisation through</span> <strong>shared understanding of customer needs?</strong>',
     image: 'https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80',
   },
   {
     variant: '3:5ContentCol',
     overline: '02 | CLIENT: LEADING INSURER, APAC',
     leftContent: {
-      body: "As policy lapses surged, the question wasn't just \"why are people walking away?\" It was, why weren't we seeing it coming?\n\nThis insurer had data, but little visibility into the shifting emotional and practical realities behind those numbers. What they lacked was a shared lens across departments: a way to notice, interpret, and respond to early signals of disengagement before it was too late."
+      body: "As policy lapses surged, the question wasn't just \"why are people walking away?\" It was, <strong>why didn't we see it coming?</strong><br><br>This insurer had data, but little visibility into the shifting emotional and practical realities behind those numbers. What they lacked was a shared lens across departments: a way to notice, interpret, and respond to early signals of disengagement before it was too late."
     },
     rightContent: {
       title: "From Personas to Fluid Mindsets",
-      body: "We interviewed customers and frontline staff across APAC, surfacing 12 distinct Insurance Mindsets, from skeptical first-timers to overwhelmed caregivers managing multiple policies.\n\nBut these weren't personas. They were behavioral states: dynamic, overlapping, and context-driven.\n\nThey helped teams ask better questions like: What happens when someone is 'Envisioning' their future, while also 'Sheltering' loved ones through crisis?\n\nEach mindset acted as a strategic signal, helping teams anticipate when, how, and why a customer's needs might shift, and what that could mean for service, messaging, or support."
+      body: "We interviewed customers and frontline staff across APAC, surfacing 12 distinct Insurance Mindsets, from skeptical first-timers to overwhelmed caregivers managing multiple policies.<br><br>But these weren't personas. They were behavioral states: dynamic, overlapping, and context-driven.<br><br>They helped teams ask better questions like: What happens when someone is 'Envisioning' their future, while also 'Sheltering' loved ones through crisis?<br><br>Each mindset acted as a strategic signal, helping teams anticipate when, how, and why a customer's needs might shift, and what that could mean for service, messaging, or support."
     }
   },
   {
@@ -101,7 +101,7 @@ const project2Data: ProjectCardProps[] = [
     rightContent: {
       title: 'A Tool Teams Could Think With',
       body: "We transformed these insights into tactile mindset cards, not just to summarize research, but to trigger alignment and action.\n\nI led the design and development of these cards, not just visually, but functionally:",
-      list: ['Could a marketer hold one and reframe their brief?', 'Could a product owner spot a blind spot they hadn\'t seen before?', 'Could an operations lead see where empathy could be built into the backend?']
+      list: ['Could a marketer hold one and reframe their brief?', 'Could a product owner spot a blind spot they hadn\'t seen before?', 'Could an operations lead see where empathy could be built into the backend?', 'These cards became a shared language across marketing, product, and operations, bridging silos, surfacing tensions, and opening new entry points for collaboration.']
     }
   },
   {
@@ -109,11 +109,11 @@ const project2Data: ProjectCardProps[] = [
     overline: '02 | CLIENT: LEADING INSURER, APAC',
     leftContent: {
       title: 'From Insight to Org-Wide Activation',
-      body: 'In a co-creation workshop, I facilitated teams across the org to use the mindsets hands-on, not as reference material, but as thinking tools.\n\n• Marketing saw how to better communicate trust during moments of instability.\n• Product identified where complexity bred drop-off.\n• Ops rethought service flows around moments of vulnerability.\n\nThe shift wasn\'t just in how customers were seen, but how the organization saw itself responding.',
+      body: 'In a co-creation workshop, I facilitated teams across the org to use the mindsets hands-on, not as reference material, but as thinking tools.<br><br>• Marketing saw how to better communicate trust during moments of instability.<br>• Product identified where complexity bred drop-off.<br>• Ops rethought service flows around moments of vulnerability.<br><br>The shift wasn\'t just in how customers were seen, but how the organization saw itself responding.',
     },
     rightContent: {
       title: 'Why It Matters',
-      body: "Most insurers track customers as data points. We helped this one see them as living systems of changing needs and gave teams the tools to work with those shifts in real time.\n\nThis project wasn't just about decoding behavior. It was about embedding a new way of noticing, thinking, and designing across the business."
+      body: "Most insurers track customers as data points. We helped this one see them as living systems of changing needs and gave teams the tools to work with those shifts in real time.<br><br>This project wasn't just about decoding behavior. It was about embedding a new way of noticing, thinking, and designing across the business."
     }
   }
 ];
@@ -123,25 +123,25 @@ const project3Data: ProjectCardProps[] = [
   {
     variant: 'ProjectCover',
     overline: '03 | CLIENT: NATIONAL MINISTRY, SINGAPORE',
-    title: 'Yearbook of the Future:<br/>Documenting a Living System in Transition',
+    title: 'Yearbook of the Future:<br/><span style="font-weight: 300;">Documenting a Living System in Transition</span>',
     image: 'https://images.unsplash.com/photo-1481627834876-b7833e8f5570?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80',
     swipeToRead: true,
   },
   {
     variant: 'HMW',
     overline: '03 | CLIENT: NATIONAL MINISTRY, SINGAPORE',
-    hmw: 'How might we honour complexity, surface forgotten stories, and give systems a memory?',
+    hmw: '<span style="font-weight: 300;">How might we honour complexity, surface forgotten stories, and</span> <strong>give systems a memory?</strong>',
     image: 'https://images.unsplash.com/photo-1481627834876-b7833e8f5570?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80',
   },
   {
     variant: '3:5ContentCol',
     overline: '03 | CLIENT: NATIONAL MINISTRY, SINGAPORE',
     leftContent: {
-      body: "In public sector transformation, progress rarely travels in a straight line. It weaves between pilots and policies, tensions and trade-offs, often too fast for reflection, too complex for any one team to hold.\n\nThe Yearbook of the Future was our attempt to make sense of it while it was still unfolding.\n\nSpanning two years and multiple government teams, this wasn't a retrospective. It was a narrative scaffold for a system in motion, documenting how new practices in education policy, design, and collaboration were being tested, challenged, and shaped by the people doing the work."
+      body: "In public sector transformation, progress rarely travels in a straight line. It weaves between pilots and policies, tensions and trade-offs, often too fast for reflection, too complex for any one team to hold.<br><br>The <strong>Yearbook of the Future</strong> was our attempt to make sense of it while it was still unfolding.<br><br>Spanning two years and multiple government teams, this wasn't a retrospective. It was a <strong>narrative scaffold</strong> for a system in motion, documenting how new practices in education policy, design, and collaboration were being tested, challenged, and shaped by the people doing the work."
     },
     rightContent: {
       title: "A Living Archive of Change",
-      body: "As embedded designers across schools and ministries, we witnessed bold experiments in digital learning, work redesign, and organisational culture. But just as crucial as what was changing, was how people were experiencing it.\n\nWe structured the Yearbook around four lenses:\n• People Stories – Candid portraits of educators, civil servants, and team leads navigating uncertainty and invention\n• Process Stories – Timeline-rich accounts of pilots, frictions, pivots, and how learning travelled across silos\n• Insights – Patterns distilled from repeated in-field observations\n• Ideas – Concepts and provocations worth carrying forward, even after the pilot ends\n\nThis wasn't about drawing conclusions. It was about making the threads of transformation legible to those within it, and those who would carry it forward."
+      body: "As embedded designers across schools and ministries, we witnessed bold experiments in digital learning, work redesign, and organisational culture. But just as crucial as what was changing, was how people were experiencing it.<br><br>We structured the Yearbook around four lenses:<br>• <strong>People Stories</strong> – Candid portraits of educators, civil servants, and team leads navigating uncertainty and invention<br>• <strong>Process Stories</strong> – Timeline-rich accounts of pilots, frictions, pivots, and how learning travelled across silos<br>• <strong>Insights</strong> – Patterns distilled from repeated in-field observations<br>• <strong>Ideas</strong> – Concepts and provocations worth carrying forward, even after the pilot ends<br><br>This wasn't about drawing conclusions. It was about making the <strong>threads of transformation legible</strong> to those within it, and those who would carry it forward."
     }
   },
   {
@@ -150,20 +150,8 @@ const project3Data: ProjectCardProps[] = [
     image: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80',
     rightContent: {
       title: 'Designing for Recognition and Reflection',
-      body: "As both lead researcher and communications designer, I shaped the Yearbook's editorial architecture and visual tone. It had to feel credible in a policymaker's hands, but alive in a teacher's.\n\nEvery spread was crafted to bring coherence to complexity: a shared object teams could gather around to make sense of their own journey, see one another's efforts, and reconnect to purpose beyond KPIs.",
+      body: "As both lead researcher and communications designer, I shaped the Yearbook's editorial architecture and visual tone. It had to feel credible in a policymaker's hands, but alive in a teacher's.<br><br>Every spread was crafted to bring coherence to complexity: a shared object teams could gather around to make sense of their own journey, see one another's efforts, and reconnect to purpose beyond KPIs.<br><br><strong>Why It Matters</strong><br>In systems change, so much is lost in the noise: half-built ideas, informal alliances, frontline wisdom. The Yearbook offered a way to hold that, not as archive, but as active memory. A bridge between what was tried, what was learned, and what's still possible.<br><br>It's easy to overlook the cultural infrastructure that helps institutions evolve. This was one small act to reinforce it.",
       list: []
-    }
-  },
-  {
-    variant: '1:1ContentCol',
-    overline: '03 | CLIENT: NATIONAL MINISTRY, SINGAPORE',
-    leftContent: {
-      title: 'Why It Matters',
-      body: 'In systems change, so much is lost in the noise: half-built ideas, informal alliances, frontline wisdom. The Yearbook offered a way to hold that, not as archive, but as active memory. A bridge between what was tried, what was learned, and what\'s still possible.',
-    },
-    rightContent: {
-      title: 'Cultural Infrastructure',
-      body: "It's easy to overlook the cultural infrastructure that helps institutions evolve. This was one small act to reinforce it.\n\nThe Yearbook became a living document that helped teams recognize their own progress, see connections across silos, and maintain institutional memory through transitions."
     }
   }
 ];

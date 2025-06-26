@@ -151,9 +151,10 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
             <div className="absolute inset-0 bg-black opacity-20"></div>
             
             {/* Text Content */}
-            <h2 className="relative z-10 font-sans text-3xl md:text-6xl text-white text-center leading-[1.1] md:leading-[1.1] tracking-[-1.5px] md:tracking-[-2.5px] px-4 md:px-8 max-w-[90%]">
-              {hmw}
-            </h2>
+            <h2 
+              className="relative z-10 font-sans text-3xl md:text-6xl text-white text-center leading-[1.1] md:leading-[1.1] tracking-[-1.5px] md:tracking-[-2.5px] px-4 md:px-8 max-w-[90%]"
+              dangerouslySetInnerHTML={{ __html: hmw || '' }}
+            />
           </div>
         </div>
       );
