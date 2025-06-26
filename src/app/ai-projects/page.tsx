@@ -12,13 +12,14 @@ const project1Data: ProjectCardProps[] = [
     variant: 'ProjectCover',
     overline: '01 | CLIENT: SELF-INITIATED PROJECT',
     title: 'Tumbo: Finding Classes<br/>Your Kid Won\'t Hate',
-    image: '/images/intro-image.png',
+    image: 'https://images.unsplash.com/photo-1503676260728-1c00da094a0b?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80',
     swipeToRead: true,
   },
   {
     variant: 'HMW',
     overline: '01 | CLIENT: SELF-INITIATED PROJECT',
     hmw: 'How might we design enrichment discovery around children\'s personalities, not just parental anxieties?',
+    image: 'https://images.unsplash.com/photo-1503676260728-1c00da094a0b?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80',
   },
   {
     variant: '3:5ContentCol',
@@ -34,7 +35,7 @@ const project1Data: ProjectCardProps[] = [
   {
     variant: '3:5ImageContent',
     overline: '01 | CLIENT: SELF-INITIATED PROJECT',
-    image: '/images/intro-image.png',
+    image: 'https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80',
     rightContent: {
       title: 'Prototype to Platform',
       body: "Tumbo is built using lean, AI-augmented tools:",
@@ -56,100 +57,126 @@ const project1Data: ProjectCardProps[] = [
   }
 ];
 
-// Placeholder data for Project 2
+// Data for Project 2 - Recovering Autodidacts
 const project2Data: ProjectCardProps[] = [
   {
     variant: 'ProjectCover',
-    overline: '02 | PROJECT 2 PLACEHOLDER',
-    title: 'AI Project 2<br/>Title Here',
-    image: '/images/intro-image.png',
+    overline: '02 | CLIENT: SELF-INITIATED PROJECT',
+    title: 'Recovering Autodidacts:<br/>A Chatbot for the Curious-but-Tired',
+    image: '/docs/project-references/AI_02_Autodidact_1.png',
     swipeToRead: true,
   },
   {
     variant: 'HMW',
-    overline: '02 | PROJECT 2 PLACEHOLDER',
-    hmw: 'How might we solve this AI challenge for project 2?',
+    overline: '02 | CLIENT: SELF-INITIATED PROJECT',
+    hmw: 'How might an AI chatbot help time-starved adults rediscover their appetite for self-learning?',
+    image: '/docs/project-references/AI_02_Autodidact_2.png',
   },
   {
-    variant: '3:5ContentCol',
-    overline: '02 | PROJECT 2 PLACEHOLDER',
+    variant: '1:1ContentCol',
+    overline: '02 | CLIENT: SELF-INITIATED PROJECT',
     leftContent: {
-      body: "AI Project 2 content will go here..."
+      title: "The Origin",
+      body: "This was a personal design fiction prototype. I imagined a future where AI plays the role of a learning mentor — not an all-knowing oracle, but a kind companion who knows how to ask the right questions. Drawing from foresight work on AI as a Self-Learning Assistant, this bot was inspired by heutagogy: the theory of self-determined learning. I built it in Chatfuel in under 3 weeks."
     },
     rightContent: {
-      title: "AI Project 2 Details",
-      body: "More details about AI project 2..."
+      title: "What It Was",
+      body: "The prototype was simple: a Facebook Messenger bot that guided users through a 14-day self-learning challenge. Participants picked their own learning goal — like writing daily, learning Japanese, or understanding machine learning — and the bot would check in each day with a short reflection prompt, a motivational learning tip, and occasional feedback."
     }
   },
   {
     variant: '3:5ImageContent',
-    overline: '02 | PROJECT 2 PLACEHOLDER',
-    image: '/images/intro-image.png',
+    overline: '02 | CLIENT: SELF-INITIATED PROJECT',
+    image: '/docs/project-references/AI_02_Autodidact_3.png',
     rightContent: {
-      title: 'AI Project 2 Section',
-      body: "AI project 2 specific content here.",
-      list: ['Item 1', 'Item 2', 'Item 3']
+      title: 'Features Designed to Shape Behavior',
+      body: "Learners were asked to define their goals (a conversational version of a learning contract), reflect daily (reinforcing awareness), and eventually demonstrate what they'd learned. The experience was designed around agency, accountability, and curiosity — all scaffolded lightly by the bot.",
+      list: [
+        '<strong>Learning Contracts:</strong> Established conversationally, forcing early clarity.',
+        '<strong>Daily Reflections:</strong> Encouraged habit-building and pattern recognition.',
+        '<strong>Meta-Learning Tips:</strong> Shared after each completed day as small rewards — sourced from Barbara Oakley, Feynman, and others.',
+        '<strong>Accountability Champions:</strong> Learners were invited to nominate someone they\'d report to, adding social stakes.',
+        '<strong>Proof of Learning:</strong> Users were prompted to demonstrate their outcome with photos, videos, or short notes.'
+      ]
     }
   },
   {
     variant: '1:1ContentCol',
-    overline: '02 | PROJECT 2 PLACEHOLDER',
+    overline: '02 | CLIENT: SELF-INITIATED PROJECT',
     leftContent: {
-      title: 'Left Column',
-      body: 'AI project 2 left content...',
+      title: 'Constraints',
+      body: 'Because of platform limitations, the chatbot wasn\'t truly conversational. It couldn\'t parse user input meaningfully. Yet by thinking the UX, I gave the bot personality: warm, enthusiastic, and playful. It greeted users differently each day, used their names, and made the interaction feel more human.',
     },
     rightContent: {
-      title: 'Right Column',
-      body: "AI project 2 right content..."
+      title: 'What I Wanted to Learn',
+      body: "My hypothesis was simple: if you strip away the complexity of modern edtech and just offer people structure, reflection, and encouragement — would they still learn? Would it feel meaningful? Could a bot rekindle the self-motivated learner within?"
+    }
+  },
+  {
+    variant: '1:1ContentCol',
+    overline: '02 | CLIENT: SELF-INITIATED PROJECT',
+    leftContent: {
+      title: 'Outcomes',
+      body: 'Over a dozen people tested the bot. Some completed the challenge. Some dropped out. But nearly everyone reported it helped them think differently about learning. One said it felt like "talking to a coach who didn\'t judge." Another said it reminded them of what school never taught: how to learn.',
+    },
+    rightContent: {
+      title: 'Why It Matters',
+      body: "This wasn't about replacing teachers with AI. It was about reframing learning itself — less about content delivery, more about mindset scaffolding. The bot didn't teach facts. It helped people care again.<br/><br/>In a time where AI promises speed and automation, Recovering Autodidacts asked a quieter question:<br/><br/><em>What if the future of learning wasn't faster... but more human?</em>"
     }
   }
 ];
 
-// Placeholder data for Project 3
+// Data for Project 3 - Conscious Collapse
 const project3Data: ProjectCardProps[] = [
   {
     variant: 'ProjectCover',
-    overline: '03 | PROJECT 3 PLACEHOLDER',
-    title: 'AI Project 3<br/>Title Here',
-    image: '/images/intro-image.png',
+    overline: '03 | CLIENT: SELF-INITIATED PROJECT',
+    title: 'Conscious Collapse:<br/>Meditations for the Mildly Spiraling',
+    image: '/docs/project-references/AI_03_Collapse_4.png',
     swipeToRead: true,
   },
   {
     variant: 'HMW',
-    overline: '03 | PROJECT 3 PLACEHOLDER',
-    hmw: 'How might we solve this AI challenge for project 3?',
+    overline: '03 | CLIENT: SELF-INITIATED PROJECT',
+    hmw: 'What if AI could help overthinkers laugh their way into mindfulness?',
+    image: '/docs/project-references/AI_03_Collapse_5.png',
   },
   {
-    variant: '3:5ContentCol',
-    overline: '03 | PROJECT 3 PLACEHOLDER',
+    variant: '1:1ContentCol',
+    overline: '03 | CLIENT: SELF-INITIATED PROJECT',
     leftContent: {
-      body: "AI Project 3 content will go here..."
+      title: "The Challenge",
+      body: "Most mindfulness apps speak in soft voices, serene backdrops, and slightly unbearable calm. But what if the people who needed it most — the mildly spiraling, the emotionally constipated, the \"I don't do feelings\" types — couldn't hear themselves in that world?<br/><br/>That's where Conscious Collapse began:<br/>A weird little experiment in designing AI-generated meditations that are deeply human, slightly unhinged, and weirdly healing."
     },
     rightContent: {
-      title: "AI Project 3 Details",
-      body: "More details about AI project 3..."
+      title: "A Different Kind of Stillness",
+      body: "Each script started with a prompt:<br/>• What would a meditation for guilt sound like if it was written by someone honest about avoiding accountability?<br/>• How do you reframe perfectionism without pretending it's a dragon you slayed?<br/>• What's the version of \"just breathe\" that actually lands with a burnt-out dad at 11pm?<br/><br/>Using GPT-4 and a homegrown tone library, I generated meditations that sounded like they were written by someone who gets it — then layered them with synthetic voice, sound design, and visual prompts to create shareable experiences across TikTok, YouTube Shorts, and podcast platforms."
     }
   },
   {
     variant: '3:5ImageContent',
-    overline: '03 | PROJECT 3 PLACEHOLDER',
-    image: '/images/intro-image.png',
+    overline: '03 | CLIENT: SELF-INITIATED PROJECT',
+    image: '/docs/project-references/AI_03_Collapse_1.png',
     rightContent: {
-      title: 'AI Project 3 Section',
-      body: "AI project 3 specific content here.",
-      list: ['Item 1', 'Item 2', 'Item 3']
+      title: 'Stacking Humor, Structure, and Self-Insight',
+      body: "Each script is built with:",
+      list: [
+        '<strong>An emotional hook</strong> (e.g. \"You\'ve convinced yourself this isn\'t burnout, just \'under-caffeination.\'\")',
+        '<strong>A psychological technique</strong> (e.g. cognitive defusion, visualization, body scan)',
+        '<strong>A tonal reversal</strong> (e.g. \"This isn\'t about fixing you. This is about laughing at the part of you that\'s currently making you clench your jaw.\")'
+      ],
+      additionalBody: "In other words: insight meets improv meets internal monologue — with AI as co-writer and co-performer."
     }
   },
   {
-    variant: '1:1ContentCol',
-    overline: '03 | PROJECT 3 PLACEHOLDER',
+    variant: '3:5ContentCol',
+    overline: '03 | CLIENT: SELF-INITIATED PROJECT',
     leftContent: {
-      title: 'Left Column',
-      body: 'AI project 3 left content...',
+      body: "Not a Product. Just a Prototype.<br/>Conscious Collapse wasn't built for scale. It was a sandbox — a chance to play with tone, emotional design, and AI tooling in a low-stakes, slightly chaotic format."
     },
     rightContent: {
-      title: 'Right Column',
-      body: "AI project 3 right content..."
+      title: 'Want to Experiment?',
+      body: "If you're curious about how to use GenAI to create content like this — or want to run a short training for your team — hit me up. I'm always game to help people turn weird ideas into working prototypes."
     }
   }
 ];
@@ -321,7 +348,7 @@ export default function AIProjectsPage() {
           {/* Project 3 - Horizontal Carousel */}
           <div className="w-full">
             <div className="flex justify-between items-center mb-6">
-              <h3 className="text-[#e5eddf] text-xl font-bold">Project 3: MVP with ChatGPT, Make, Airtable & Bubble</h3>
+              <h3 className="text-[#e5eddf] text-xl font-bold">Project 3: Meditations for the Mildly Spiraling</h3>
               <div className="flex gap-4">
                 <button 
                   onClick={() => scrollLeft(scrollRef3)}

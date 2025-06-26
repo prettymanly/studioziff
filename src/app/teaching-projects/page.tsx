@@ -12,13 +12,14 @@ const project1Data: ProjectCardProps[] = [
     variant: 'ProjectCover',
     overline: '01 | SELF-INITIATED PROJECT',
     title: 'Inner Playground:<br/>Prototyping Life Through Play',
-    image: '/images/intro-image.png',
+    image: 'https://images.unsplash.com/photo-1559027615-cd4628902d4a?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80',
     swipeToRead: true,
   },
   {
     variant: 'HMW',
     overline: '01 | SELF-INITIATED PROJECT',
     hmw: 'What if exploring who you could be didn\'t require a crisis?',
+    image: 'https://images.unsplash.com/photo-1559027615-cd4628902d4a?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80',
   },
   {
     variant: '3:5ContentCol',
@@ -34,7 +35,7 @@ const project1Data: ProjectCardProps[] = [
   {
     variant: '3:5ImageContent',
     overline: '01 | SELF-INITIATED PROJECT',
-    image: '/images/intro-image.png',
+    image: 'https://images.unsplash.com/photo-1544027993-37dbfe43562a?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80',
     rightContent: {
       title: 'Who This Is For & What We Explore',
       body: "Who This Is For:",
@@ -62,13 +63,14 @@ const project2Data: ProjectCardProps[] = [
     variant: 'ProjectCover',
     overline: '02 | CLIENT: SINGAPORE INSTITUTE OF TECHNOLOGY (SIT), SINGAPORE',
     title: 'Teaching<br/>Innovation at SIT',
-    image: '/images/intro-image.png',
+    image: 'https://images.unsplash.com/photo-1523240795612-9a054b0db644?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80',
     swipeToRead: true,
   },
   {
     variant: 'HMW',
     overline: '02 | CLIENT: SINGAPORE INSTITUTE OF TECHNOLOGY (SIT), SINGAPORE',
     hmw: 'How might we equip every student, not just designers, with tools to navigate complexity and design with intent?',
+    image: 'https://images.unsplash.com/photo-1523240795612-9a054b0db644?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80',
   },
   {
     variant: '3:5ContentCol',
@@ -84,7 +86,7 @@ const project2Data: ProjectCardProps[] = [
   {
     variant: '3:5ImageContent',
     overline: '02 | CLIENT: SINGAPORE INSTITUTE OF TECHNOLOGY (SIT), SINGAPORE',
-    image: '/images/intro-image.png',
+    image: 'https://images.unsplash.com/photo-1434030216411-0b793f4b4173?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80',
     rightContent: {
       title: 'My Teaching Philosophy',
       body: "While I didn't design the curriculum, it aligns closely with my own approach to design practice:",
@@ -100,13 +102,14 @@ const project3Data: ProjectCardProps[] = [
     variant: 'ProjectCover',
     overline: '03 | CLIENT: BLANGAH RISE PRIMARY SCHOOL, SINGAPORE',
     title: 'Teaching Design Thinking<br/>to Primary Students',
-    image: '/images/intro-image.png',
+    image: 'https://images.unsplash.com/photo-1497486751825-1233686d5d80?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80',
     swipeToRead: true,
   },
   {
     variant: 'HMW',
     overline: '03 | CLIENT: BLANGAH RISE PRIMARY SCHOOL, SINGAPORE',
     hmw: 'How might we make design thinking accessible and engaging for young learners while building teacher capacity?',
+    image: 'https://images.unsplash.com/photo-1497486751825-1233686d5d80?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80',
   },
   {
     variant: '3:5ContentCol',
@@ -122,7 +125,7 @@ const project3Data: ProjectCardProps[] = [
   {
     variant: '3:5ImageContent',
     overline: '03 | CLIENT: BLANGAH RISE PRIMARY SCHOOL, SINGAPORE',
-    image: '/images/intro-image.png',
+    image: 'https://images.unsplash.com/photo-1606092195730-5d7b9af1efc5?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80',
     rightContent: {
       title: 'My Approach',
       body: "I reframed the entire experience as a mission-based adventure, breaking down the design process into digestible \"mini-missions\" that felt like a game rather than a lesson. Each session built toward a larger challenge, keeping students engaged while systematically teaching them to observe, empathize, ideate, and prototype.\n\nThe genius was in the co-design process. Teachers learned Design Thinking by preparing each session with me, experiencing the methodology firsthand as we planned activities, anticipated student responses, and designed materials together. They weren't just observing; they were co-creating the curriculum.",

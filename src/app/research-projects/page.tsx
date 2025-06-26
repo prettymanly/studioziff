@@ -12,13 +12,14 @@ const project1Data: ProjectCardProps[] = [
     variant: 'ProjectCover',
     overline: '01 | CLIENT: NATIONAL CONGLOMERATE, PHILIPPINES',
     title: 'Household OS:<br/>Reimagining Family Coordination in the Philippines',
-    image: '/images/intro-image.png',
+    image: 'https://images.unsplash.com/photo-1609220136736-443140cffec6?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80',
     swipeToRead: true,
   },
   {
     variant: 'HMW',
     overline: '01 | CLIENT: NATIONAL CONGLOMERATE, PHILIPPINES',
     hmw: 'How might we design for family coordination, not just individual utility?',
+    image: 'https://images.unsplash.com/photo-1609220136736-443140cffec6?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80',
   },
   {
     variant: '3:5ContentCol',
@@ -34,7 +35,7 @@ const project1Data: ProjectCardProps[] = [
   {
     variant: '3:5ImageContent',
     overline: '01 | CLIENT: NATIONAL CONGLOMERATE, PHILIPPINES',
-    image: '/images/intro-image.png',
+    image: 'https://images.unsplash.com/photo-1511632765486-a01980e01a18?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80',
     rightContent: {
       title: 'Core Concepts and Feature Experiments',
       body: "The result was the early blueprint of a Household OS, not a dashboard of bills, but a support layer that acknowledged the labour, trust, and emotion embedded in shared living.\n\nWe co-developed a suite of prototypes aimed at making invisible work visible and shared:",
@@ -61,13 +62,14 @@ const project2Data: ProjectCardProps[] = [
     variant: 'ProjectCover',
     overline: '02 | CLIENT: LEADING INSURER, APAC',
     title: 'Insurance Mindsets Playbook:<br/>A Toolkit for Cross-Functional Empathy',
-    image: '/images/intro-image.png',
+    image: 'https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80',
     swipeToRead: true,
   },
   {
     variant: 'HMW',
     overline: '02 | CLIENT: LEADING INSURER, APAC',
     hmw: 'How might we unify a fragmented organisation through shared understanding of customer needs?',
+    image: 'https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80',
   },
   {
     variant: '3:5ContentCol',
@@ -83,7 +85,7 @@ const project2Data: ProjectCardProps[] = [
   {
     variant: '3:5ImageContent',
     overline: '02 | CLIENT: LEADING INSURER, APAC',
-    image: '/images/intro-image.png',
+    image: 'https://images.unsplash.com/photo-1559526324-4b87b5e36e44?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80',
     rightContent: {
       title: 'A Tool Teams Could Think With',
       body: "We transformed these insights into tactile mindset cards, not just to summarize research, but to trigger alignment and action.\n\nI led the design and development of these cards, not just visually, but functionally:",
@@ -110,13 +112,14 @@ const project3Data: ProjectCardProps[] = [
     variant: 'ProjectCover',
     overline: '03 | CLIENT: NATIONAL MINISTRY, SINGAPORE',
     title: 'Yearbook of the Future:<br/>Documenting a Living System in Transition',
-    image: '/images/intro-image.png',
+    image: 'https://images.unsplash.com/photo-1481627834876-b7833e8f5570?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80',
     swipeToRead: true,
   },
   {
     variant: 'HMW',
     overline: '03 | CLIENT: NATIONAL MINISTRY, SINGAPORE',
     hmw: 'How might we honour complexity, surface forgotten stories, and give systems a memory?',
+    image: 'https://images.unsplash.com/photo-1481627834876-b7833e8f5570?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80',
   },
   {
     variant: '3:5ContentCol',
@@ -132,7 +135,7 @@ const project3Data: ProjectCardProps[] = [
   {
     variant: '3:5ImageContent',
     overline: '03 | CLIENT: NATIONAL MINISTRY, SINGAPORE',
-    image: '/images/intro-image.png',
+    image: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80',
     rightContent: {
       title: 'Designing for Recognition and Reflection',
       body: "As both lead researcher and communications designer, I shaped the Yearbook's editorial architecture and visual tone. It had to feel credible in a policymaker's hands, but alive in a teacher's.\n\nEvery spread was crafted to bring coherence to complexity: a shared object teams could gather around to make sense of their own journey, see one another's efforts, and reconnect to purpose beyond KPIs.",

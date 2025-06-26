@@ -93,9 +93,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
                 <p className="font-mono text-sm md:text-base text-[#404b51] tracking-[-0.8px] mb-6 md:mb-5">{overline}</p>
                 <div className="flex flex-col md:flex-row flex-1 gap-8 md:gap-5">
                     <div className="w-full md:w-[287px] md:flex-shrink-0 mb-6 md:mb-0">
-                        <p className="font-sans text-base md:text-lg text-[#404b51] leading-[1.5] md:leading-[22px]">
-                            {leftContent?.body}
-                        </p>
+                        <p className="font-sans text-base md:text-lg text-[#404b51] leading-[1.5] md:leading-[22px]" dangerouslySetInnerHTML={{ __html: leftContent?.body || '' }} />
                     </div>
                     <div className="flex-1">
                         <h3 className="font-sans text-lg md:text-lg font-bold text-[#404b51] mb-3 md:mb-2">{rightContent?.title}</h3>
@@ -120,14 +118,14 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
                     <div className="flex-1 order-2 md:order-2">
                         <h3 className="font-sans text-lg md:text-lg font-bold text-[#404b51] mb-3 md:mb-2">{rightContent?.title}</h3>
                          <div className="font-sans text-base md:text-lg text-[#404b51] leading-[1.5] md:leading-[22px] space-y-3 md:space-y-4">
-                           <p>{rightContent?.body}</p>
+                           <p dangerouslySetInnerHTML={{ __html: rightContent?.body || '' }} />
                             {rightContent?.list && (
                                 <ul className="list-disc pl-5 space-y-2 md:space-y-2">
                                     {rightContent.list.map((item, index) => <li key={index} dangerouslySetInnerHTML={{ __html: item }} />)}
                                 </ul>
                             )}
                             {rightContent?.additionalBody && (
-                                <p>{rightContent.additionalBody}</p>
+                                <p dangerouslySetInnerHTML={{ __html: rightContent.additionalBody }} />
                             )}
                         </div>
                     </div>

@@ -12,13 +12,14 @@ const project1Data: ProjectCardProps[] = [
     variant: 'ProjectCover',
     overline: '01 | CLIENT: MINISTRY OF EDUCATION, SINGAPORE',
     title: 'Imagining<br/>Education<br/>Beyond Certainty',
-    image: '/images/intro-image.png',
+    image: 'https://images.unsplash.com/photo-1509062522246-3755977927d7?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80',
     swipeToRead: true,
   },
   {
     variant: 'HMW',
     overline: '01 | CLIENT: MINISTRY OF EDUCATION, SINGAPORE',
     hmw: 'How might futures thinking help reframe what students truly need to thrive in 2030 and beyond?',
+    image: 'https://images.unsplash.com/photo-1509062522246-3755977927d7?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80',
   },
   {
     variant: '3:5ContentCol',
@@ -34,7 +35,7 @@ const project1Data: ProjectCardProps[] = [
   {
     variant: '3:5ImageContent',
     overline: '01 | CLIENT: MINISTRY OF EDUCATION, SINGAPORE',
-    image: '/images/intro-image.png',
+    image: 'https://images.unsplash.com/photo-1427504494785-3a9ca7044f45?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80',
     rightContent: {
       title: 'Futures as Mirrors, Not Answers',
       body: "Each scenario was designed to provoke, not prescribe. Through narrative storytelling and thematic arcs, we anchored the futures in human terms, asking:",
@@ -71,13 +72,14 @@ const project2Data: ProjectCardProps[] = [
     variant: 'ProjectCover',
     overline: '02 | CLIENT: CONFIDENTIAL – MULTI-MARKET MEAT CONGLOMERATE',
     title: 'From Meat to<br/>Meaning:<br/>A Strategy Built<br/>on Culture,<br/>Not Category',
-    image: '/images/intro-image.png',
+    image: 'https://images.unsplash.com/photo-1574484284002-952d92456975?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80',
     swipeToRead: true,
   },
   {
     variant: 'HMW',
     overline: '02 | CLIENT: CONFIDENTIAL – MULTI-MARKET MEAT CONGLOMERATE',
     hmw: 'What if a legacy meat company didn\'t just copy the meatless trend but reimagined what "meat" could be in a future that might not need it?',
+    image: 'https://images.unsplash.com/photo-1574484284002-952d92456975?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80',
   },
   {
     variant: '3:5ContentCol',
@@ -93,7 +95,7 @@ const project2Data: ProjectCardProps[] = [
   {
     variant: '3:5ImageContent',
     overline: '02 | CLIENT: CONFIDENTIAL – MULTI-MARKET MEAT CONGLOMERATE',
-    image: '/images/intro-image.png',
+    image: 'https://images.unsplash.com/photo-1556909114-4e1d8e3d0f28?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80',
           rightContent: {
         title: 'Futures Thinking Meets Format Strategy',
         body: "We grounded the work in speculative research and near-future scenario planning:<br/><br/><strong>Cultural Signals:</strong> What narratives were reshaping how people think about meat concerning identity, sustainability, gut health, even class?<br/><br/><strong>Behavioral Tensions:</strong> Why were alt-meat products often tried once and forgotten? Where was the drop-off?<br/><br/><strong>Category Provocations:</strong> What if meatless wasn't <em>a product</em>, but a <em>format playground</em>?<br/><br/>Rather than defaulting to global \"plant-based\" tropes, we asked:<br/><em>- What does the region actually crave?<br/>- What formats lend themselves to rituals like hotpot, bento prep, or night market snacking?</em>"
@@ -125,13 +127,14 @@ const project3Data: ProjectCardProps[] = [
     variant: 'ProjectCover',
     overline: '03 | CLIENT: CONFIDENTIAL (GLOBAL CONSUMER TECH BRAND)',
     title: 'Signals into Strategy:<br/>Reimagining How a Global Brand<br/>Designs for What\'s Next',
-    image: '/images/intro-image.png',
+    image: 'https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80',
     swipeToRead: true,
   },
   {
     variant: 'HMW',
     overline: '03 | CLIENT: CONFIDENTIAL (GLOBAL CONSUMER TECH BRAND)',
     hmw: 'How might a company move from future curiosity to present-day momentum?',
+    image: 'https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80',
   },
   {
     variant: '3:5ContentCol',
@@ -147,7 +150,7 @@ const project3Data: ProjectCardProps[] = [
   {
     variant: '3:5ImageContent',
     overline: '03 | CLIENT: CONFIDENTIAL (GLOBAL CONSUMER TECH BRAND)',
-    image: '/images/intro-image.png',
+    image: 'https://images.unsplash.com/photo-1590759168275-c7d6c22e3f7e?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80',
     rightContent: {
       title: 'Designing with the Future, Not Just for It',
       body: "We turned those narratives into <strong>opportunity platforms</strong>: thematic areas where the brand could lead with meaning, not just market share. Each one came with early-stage \"starter ideas\" designed to spark imagination across teams.<br/><br/>Think:",
