@@ -11,7 +11,7 @@ const project1Data: ProjectCardProps[] = [
   {
     variant: 'ProjectCover',
     overline: '01 | CLIENT: SELF-INITIATED PROJECT',
-    title: 'Tumbo: Finding Classes<br/>Your Kid Won\'t Hate',
+    title: 'Tumbo: <span style="font-weight: 300;">Finding Classes<br/>Your Kid Won\'t Hate</span>',
     image: 'https://images.unsplash.com/photo-1503676260728-1c00da094a0b?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80',
     swipeToRead: true,
   },
@@ -25,11 +25,11 @@ const project1Data: ProjectCardProps[] = [
     variant: '3:5ContentCol',
     overline: '01 | CLIENT: SELF-INITIATED PROJECT',
     leftContent: {
-      body: "Tumbo is a self-initiated project, born not from a client brief, but from lived tension. As a parent and a designer who's worked on the future of education, I kept noticing the same pattern: we keep redesigning schools, but rarely stop to examine the mindsets of the people choosing what happens after school: parents.\n\nPolicy might remove exams, but enrichment centres rush in to fill the gap with more tests. There's a movement toward child-centred education, but it often stops at the brochure.\n\nTumbo is my attempt to shift that."
+      body: "Tumbo is a self-initiated project, born not from a client brief, but from lived tension. As a parent and a designer who's worked on the future of education, I kept noticing the same pattern: we keep redesigning schools, but rarely stop to examine the <strong>mindsets of the people choosing what happens after school:</strong> parents.<br><br>Policy might remove exams, but enrichment centres rush in to fill the gap with more tests. There's a movement toward child-centred education, but it often stops at the brochure.<br><br><strong>Tumbo is my attempt to shift that.</strong>"
     },
     rightContent: {
       title: "From Transaction to Trust",
-      body: "Most class platforms treat parents as buyers. Tumbo treats them as meaning-makers, navigating messy hopes, constraints, and shifting intuitions about what's right for their kids.\n\nWe built a recommendation system around four deep lenses:\n• Content: What's being taught\n• Child: Learning styles, sensory preferences, social needs\n• Experience: Class vibe, pacing, group dynamics\n• Philosophy: Pedagogies, language, worldviews\n\nTogether, these tags fuel a discovery experience that starts with context, not category.\n\nIt's a platform that helps parents find classes their children will actually thrive in, based not just on schedule or subject, but on who they are and how they learn."
+      body: "Most class platforms treat parents as buyers. Tumbo treats them as meaning-makers, navigating messy hopes, constraints, and shifting intuitions about what's right for their kids.<br><br>We built a recommendation system around four deep lenses:<br>• <strong>Content:</strong> What's being taught<br>• <strong>Child:</strong> Learning styles, sensory preferences, social needs<br>• <strong>Experience:</strong> Class vibe, pacing, group dynamics<br>• <strong>Philosophy:</strong> Pedagogies, language, worldviews<br><br>Together, these tags fuel a discovery experience that <strong>starts with context, not category.</strong><br><br>It's a platform that helps parents find classes their children will actually thrive in, based not just on schedule or subject, but on who they are and how they learn."
     }
   },
   {
@@ -38,9 +38,9 @@ const project1Data: ProjectCardProps[] = [
     image: 'https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80',
     rightContent: {
       title: 'Prototype to Platform',
-      body: "Tumbo is built using lean, AI-augmented tools:",
-      list: ['GPT for enrichment parsing, class summaries, and parent reflection', 'Airtable for structured content', 'Make.com for backend automation', 'Bubble for rapid UI', 'Future plans include syncing qualitative reviews and growth stories'],
-      additionalBody: "This project also lets me apply my own recommendations as a consultant, putting empathy, insight, and clarity to the test in real-world conditions."
+      body: "Tumbo is hand-built from scratch using a lean, developer-first stack, all powered through Cursor.",
+      list: ['Next.js 15 (App Router) + TailwindCSS + shadcn/ui for a fast, modern UI', 'Supabase as the backend for structured data, tags, user intake, and class content', 'Cursor (with Claude Code) for coding'],
+      additionalBody: "Tumbo is also a testbed. A live project where I <strong>apply my own</strong> consulting playbook around service design, UX strategy, and product clarity in a real-world context with real families."
     }
   },
   {
@@ -48,11 +48,11 @@ const project1Data: ProjectCardProps[] = [
     overline: '01 | CLIENT: SELF-INITIATED PROJECT',
     leftContent: {
       title: 'A Trust Layer Disguised as a Directory',
-      body: 'What looks like a class listing is really a mirror, one that helps parents reflect on what they value, what their child needs, and what "growth" actually means.\n\n• Scout Reports surface vibe-rich insights on classes\n• Skill Trees track progress across emotional, creative, and social domains\n• Parenting Mindsets adapt the experience based on how each family approaches learning\n\nIt\'s not about finding "the best" class. It\'s about finding what fits now.',
+      body: 'What looks like a class listing is really a mirror, one that helps parents reflect on what they value, what their child needs, and what "growth" actually means.<br><br>• <strong>Scout Reports</strong> surface vibe-rich insights on classes<br>• <strong>Skill Trees</strong> track progress across emotional, creative, and social domains<br>• <strong>Parenting Mindsets</strong> adapt the experience based on how each family approaches learning<br><br>It\'s not about finding "the best" class. It\'s about finding what fits now.',
     },
     rightContent: {
       title: 'Why It Matters',
-      body: "Tumbo is part tech product, part cultural nudge. It honors a quiet but growing shift among parents: a move toward care, toward presence, toward raising children with less fear and more fit.\n\nAnd as a founder, it's also an experiment in walking the talk, applying futures thinking, behavioral design, and system-building not just for clients, but for myself."
+      body: "Tumbo is part tech product, part cultural nudge. It honors a quiet but growing shift among parents: a move toward care, toward presence, toward raising children with <strong>less fear and more fit.</strong><br><br>And as a founder, it's also an experiment in walking the talk, applying futures thinking, behavioral design, and system-building not just for clients, but for myself."
     }
   }
 ];
@@ -62,7 +62,7 @@ const project2Data: ProjectCardProps[] = [
   {
     variant: 'ProjectCover',
     overline: '02 | CLIENT: SELF-INITIATED PROJECT',
-    title: 'Recovering Autodidacts:<br/>A Chatbot for the Curious-but-Tired',
+    title: 'Recovering Autodidacts:<br/><span style="font-weight: 300;">A Chatbot for the Curious-but-Tired</span>',
     image: 'https://images.unsplash.com/photo-1516321318423-f06f85e504b3?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80',
     swipeToRead: true,
   },
@@ -73,11 +73,22 @@ const project2Data: ProjectCardProps[] = [
     image: 'https://images.unsplash.com/photo-1522202176988-66273c2fd55f?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80',
   },
   {
+    variant: '3:5ContentCol',
+    overline: '02 | CLIENT: SELF-INITIATED PROJECT',
+    leftContent: {
+      body: "In a region where work culture often trumps curiosity, the Recovering Autodidacts project reimagined what learning could look like for the time-starved adult — not through structured curricula or rigid outcomes, but through conversational nudges, habit loops, and warm provocation."
+    },
+    rightContent: {
+      title: "The Origin",
+      body: "This was a personal design fiction prototype. I imagined a future where AI plays the role of a learning mentor — not an all-knowing oracle, but a kind companion who knows how to ask the right questions. Drawing from foresight work on AI as a Self-Learning Assistant, this bot was inspired by heutagogy: the theory of self-determined learning. I built it in Chatfuel in under 3 weeks."
+    }
+  },
+  {
     variant: '1:1ContentCol',
     overline: '02 | CLIENT: SELF-INITIATED PROJECT',
     leftContent: {
-      title: "The Origin",
-      body: "This was a personal design fiction prototype. I imagined a future where AI plays the role of a learning mentor — not an all-knowing oracle, but a kind companion who knows how to ask the right questions. Drawing from foresight work on AI as a Self-Learning Assistant, this bot was inspired by heutagogy: the theory of self-determined learning. I built it in Chatfuel in under 3 weeks."
+      title: "What It Was",
+      body: "The prototype was simple: a Facebook Messenger bot that guided users through a 14-day self-learning challenge. Participants picked their own learning goal — like writing daily, learning Japanese, or understanding machine learning — and the bot would check in each day with a short reflection prompt, a motivational learning tip, and occasional feedback."
     },
     rightContent: {
       title: "What It Was",
@@ -131,7 +142,7 @@ const project3Data: ProjectCardProps[] = [
   {
     variant: 'ProjectCover',
     overline: '03 | CLIENT: SELF-INITIATED PROJECT',
-    title: 'Conscious Collapse:<br/>Meditations for the Mildly Spiraling',
+    title: 'Conscious Collapse:<br/><span style="font-weight: 300;">Meditations for the Mildly Spiraling</span>',
     image: 'https://images.unsplash.com/photo-1506905925346-21bda4d32df4?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80',
     swipeToRead: true,
   },
@@ -150,7 +161,7 @@ const project3Data: ProjectCardProps[] = [
     },
     rightContent: {
       title: "A Different Kind of Stillness",
-      body: "Each script started with a prompt:<br/>• What would a meditation for guilt sound like if it was written by someone honest about avoiding accountability?<br/>• How do you reframe perfectionism without pretending it's a dragon you slayed?<br/>• What's the version of \"just breathe\" that actually lands with a burnt-out dad at 11pm?<br/><br/>Using GPT-4 and a homegrown tone library, I generated meditations that sounded like they were written by someone who gets it — then layered them with synthetic voice, sound design, and visual prompts to create shareable experiences across TikTok, YouTube Shorts, and podcast platforms."
+      body: "Each script started with a prompt:<br/>• What would a meditation for guilt sound like if it was written by someone honest about avoiding accountability?<br/>• How do you reframe perfectionism without pretending it's a dragon you slayed?<br/>• What's the version of \"just breathe\" that actually lands with a burnt-out dad at 11pm?<br/><br/>Using GPT 4 and a homegrown tone library, I generated meditations that sounded like they were written by someone who gets it,then layered them with synthetic voice, sound design, and visual prompts to create shareable experiences across TikTok, YouTube Shorts, and podcast platforms."
     }
   },
   {

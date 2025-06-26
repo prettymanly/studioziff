@@ -11,7 +11,7 @@ const project1Data: ProjectCardProps[] = [
   {
     variant: 'ProjectCover',
     overline: '01 | CLIENT: MINISTRY OF EDUCATION, SINGAPORE',
-    title: 'Imagining<br/>Education<br/>Beyond Certainty',
+    title: '<span style="font-weight: 300;">Imagining</span><br/>Education<br/>Beyond Certainty',
     image: 'https://images.unsplash.com/photo-1509062522246-3755977927d7?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80',
     swipeToRead: true,
   },
@@ -71,7 +71,7 @@ const project2Data: ProjectCardProps[] = [
   {
     variant: 'ProjectCover',
     overline: '02 | CLIENT: CONFIDENTIAL – MULTI-MARKET MEAT CONGLOMERATE',
-    title: 'From Meat to<br/>Meaning:<br/>A Strategy Built<br/>on Culture,<br/>Not Category',
+    title: 'From Meat to<br/>Meaning:<br/><span style="font-weight: 300;">A Strategy Built<br/>on Culture,<br/>Not Category</span>',
     image: 'https://images.unsplash.com/photo-1574484284002-952d92456975?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80',
     swipeToRead: true,
   },
@@ -126,7 +126,7 @@ const project3Data: ProjectCardProps[] = [
   {
     variant: 'ProjectCover',
     overline: '03 | CLIENT: CONFIDENTIAL (GLOBAL CONSUMER TECH BRAND)',
-    title: 'Signals into Strategy:<br/>Reimagining How a Global Brand<br/>Designs for What\'s Next',
+    title: 'Signals into Strategy:<br/><span style="font-weight: 300;">Reimagining How a Global Brand<br/>Designs for What\'s Next</span>',
     image: 'https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80',
     swipeToRead: true,
   },
