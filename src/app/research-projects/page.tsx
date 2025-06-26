@@ -11,9 +11,20 @@ const project1Data: ProjectCardProps[] = [
   {
     variant: 'ProjectCover',
     overline: '01 | CLIENT: NATIONAL CONGLOMERATE, PHILIPPINES',
-    title: 'Household OS:<br/>Reimagining Family Coordination in the Philippines',
+    title: 'Household OS:<br/><span style="font-weight: 300;">Reimagining Family Coordination in the Philippines</span>',
     image: 'https://images.unsplash.com/photo-1609220136736-443140cffec6?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80',
     swipeToRead: true,
+  },
+  {
+    variant: '3:5ContentCol',
+    overline: '01 | CLIENT: NATIONAL CONGLOMERATE, PHILIPPINES',
+    leftContent: {
+      body: "In many Southeast Asian households, especially in the Philippines, the home is not just a space, but a system: a network of care, financial interdependence, and decision-making spread across parents, siblings, overseas workers, and elders.\n\nAmid this complexity, families already manage using mental checklists, handwritten logs, Viber threads, and spreadsheets. So when a major conglomerate approached us to explore a \"super app,\" we asked a different question: What if we didn't just digitize transactions but supported the actual work of running a household?"
+    },
+    rightContent: {
+      title: "From Fragmented Tools to Relational Infrastructure",
+      body: "Through interviews, co-creation sessions, and ethnographic research, we surfaced the quiet complexity of everyday life: multiple household members taking on roles like contributor, payer, planner, or reminder, often across generations and time zones.\n\n\nWe reframed the challenge:"
+    }
   },
   {
     variant: 'HMW',
@@ -22,24 +33,25 @@ const project1Data: ProjectCardProps[] = [
     image: 'https://images.unsplash.com/photo-1609220136736-443140cffec6?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80',
   },
   {
-    variant: '3:5ContentCol',
-    overline: '01 | CLIENT: NATIONAL CONGLOMERATE, PHILIPPINES',
-    leftContent: {
-      body: "In many Southeast Asian households, especially in the Philippines, the home is not just a space, but a system: a network of care, financial interdependence, and decision-making spread across parents, siblings, overseas workers, and elders.\n\nAmid this complexity, families already manage using mental checklists, handwritten logs, Viber threads, and spreadsheets.\n\nSo when a major conglomerate approached us to explore a \"super app,\" we asked a different question: What if we didn't just digitize transactions but supported the actual work of running a household?"
-    },
-    rightContent: {
-      title: "From Fragmented Tools to Relational Infrastructure",
-      body: "Through interviews, co-creation sessions, and ethnographic research, we surfaced the quiet complexity of everyday life: multiple household members taking on roles like contributor, payer, planner, or reminder, often across generations and time zones.\n\nWe reframed the challenge:"
-    }
-  },
-  {
     variant: '3:5ImageContent',
     overline: '01 | CLIENT: NATIONAL CONGLOMERATE, PHILIPPINES',
     image: 'https://images.unsplash.com/photo-1511632765486-a01980e01a18?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80',
     rightContent: {
       title: 'Core Concepts and Feature Experiments',
-      body: "The result was the early blueprint of a Household OS, not a dashboard of bills, but a support layer that acknowledged the labour, trust, and emotion embedded in shared living.\n\nWe co-developed a suite of prototypes aimed at making invisible work visible and shared:",
-      list: ['Household Wallet: Shared visibility into bills, contributions, and timelines', 'Savings Goals & Upgrade Bundles: Turning aspirations into concrete plans', 'Spending Guard: Nudges and alternatives to stay within budget', 'Smart Automation & API integrations: Reducing manual routines', 'Microloans: Offering relief when the unexpected strikes', 'Loyalty Points: Pooled and purposeful, not just individual rewards', 'Household Insights: Dashboards surfacing friction points and rhythm patterns']
+      body: "The result was the early blueprint of a <strong>Household OS</strong>, not a dashboard of bills, but a support layer that acknowledged the labour, trust, and emotion embedded in shared living.\n\nWe co-developed a suite of prototypes aimed at making invisible work visible and shared:",
+      list: ['<strong>Household Wallet:</strong> Shared visibility into bills, contributions, and timelines', '<strong>Savings Goals & Upgrade Bundles:</strong> Turning aspirations into concrete plans', '<strong>Spending Guard:</strong> Nudges and alternatives to stay within budget', '<strong>Smart Automation & API integrations:</strong> Reducing manual routines', '<strong>Microloans:</strong> Offering relief when the unexpected strikes', '<strong>Loyalty Points:</strong> Pooled and purposeful, not just individual rewards', '<strong>Household Insights:</strong> Dashboards surfacing friction points and rhythm patterns']
+    }
+  },
+  {
+    variant: '3:5ContentCol',
+    overline: '01 | CLIENT: NATIONAL CONGLOMERATE, PHILIPPINES',
+    leftContent: {
+      title: "Designing for Diverse Household Realities",
+      body: "We uncovered a range of household archetypes, from centralized matriarch-led systems to distributed networks coordinated by siblings or intermediaries. We designed logic for real-life dynamics: overseas earners sending money home, elders passing on responsibilities, or blended families navigating new norms.\n\nThe design had to do more than work; it had to respect power dynamics, invite participation, and leave room for dignity."
+    },
+    rightContent: {
+      title: "From Points to Purpose: Rethinking Loyalty",
+      body: "A parallel study revealed that traditional rewards programs often missed the mark because they assumed individual benefit, not shared meaning.\n\nWe proposed a loyalty strategy rooted in household psychology:\n\n• Prioritizing essential offsets over luxury perks\n• Enabling shared redemption across online and offline contexts\n• Building in moments of gratitude, recognition, and emotional salience\n• Anchoring value in family, not just frequency\n\nBehavioral principles like loss aversion, social proof, and effort justification shaped how we designed for motivation and care, not just engagement."
     }
   },
   {
@@ -51,7 +63,7 @@ const project1Data: ProjectCardProps[] = [
     },
     rightContent: {
       title: 'Why It Matters',
-      body: "In a region where the family is the first safety net, most apps treat people as individuals. We helped our client imagine something deeper: a system that supports the way families actually live, care, and coordinate, not just how they transact.\n\nThis project reframed \"digital transformation\" from convenience to care infrastructure, a quiet revolution in how platforms can show up for real lives."
+      body: "In a region where the family is the first safety net, most apps treat people as individuals. We helped our client imagine something deeper: a system that supports the way families actually live, care, and coordinate, not just how they transact.\n\nThis project reframed \"digital transformation\" from convenience to <strong>care infrastructure</strong>, a quiet revolution in how platforms can show up for real lives."
     }
   }
 ];
