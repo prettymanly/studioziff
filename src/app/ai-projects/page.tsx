@@ -271,13 +271,13 @@ export default function AIProjectsPage() {
               <div className="flex gap-4">
                 <button 
                   onClick={() => scrollLeft(scrollRef1)}
-                  className="text-[#e5eddf] hover:opacity-80 text-2xl"
+                  className="text-[#e5eddf] hover:opacity-100 hover:scale-125 transition text-2xl"
                 >
                   ←
                 </button>
                 <button 
                   onClick={() => scrollRight(scrollRef1)}
-                  className="text-[#e5eddf] hover:opacity-80 text-2xl"
+                  className="text-[#e5eddf] hover:opacity-100 hover:scale-125 transition text-2xl"
                 >
                   →
                 </button>
@@ -302,13 +302,13 @@ export default function AIProjectsPage() {
               <div className="flex gap-4">
                 <button 
                   onClick={() => scrollLeft(scrollRef2)}
-                  className="text-[#e5eddf] hover:opacity-80 text-2xl"
+                  className="text-[#e5eddf] hover:opacity-100 hover:scale-125 transition text-2xl"
                 >
                   ←
                 </button>
                 <button 
                   onClick={() => scrollRight(scrollRef2)}
-                  className="text-[#e5eddf] hover:opacity-80 text-2xl"
+                  className="text-[#e5eddf] hover:opacity-100 hover:scale-125 transition text-2xl"
                 >
                   →
                 </button>
@@ -333,13 +333,13 @@ export default function AIProjectsPage() {
               <div className="flex gap-4">
                 <button 
                   onClick={() => scrollLeft(scrollRef3)}
-                  className="text-[#e5eddf] hover:opacity-80 text-2xl"
+                  className="text-[#e5eddf] hover:opacity-100 hover:scale-125 transition text-2xl"
                 >
                   ←
                 </button>
                 <button 
                   onClick={() => scrollRight(scrollRef3)}
-                  className="text-[#e5eddf] hover:opacity-80 text-2xl"
+                  className="text-[#e5eddf] hover:opacity-100 hover:scale-125 transition text-2xl"
                 >
                   →
                 </button>
