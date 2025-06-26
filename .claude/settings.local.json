@@ -1,0 +1,15 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(pkill:*)",
+      "Bash(npm run dev:*)",
+      "Bash(ls:*)",
+      "Bash(npm run build:*)",
+      "Bash(npx shadcn:*)",
+      "Bash(mkdir:*)",
+      "Bash(rm:*)",
+      "Bash(npx next dev:*)"
+    ],
+    "deny": []
+  }
+}

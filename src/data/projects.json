@@ -1,0 +1,106 @@
+[
+  {
+    "id": 1,
+    "project_number": 1,
+    "client": "NATIONAL CONGLOMERATE, PHILIPPINES",
+    "service_type": "service-design",
+    "variant": "ProjectCover",
+    "variant_index": 1,
+    "title": "Household OS: Reimagining Family Coordination in the Philippines",
+    "description": "Swipe to read the case →",
+    "content": "Working with a national conglomerate to understand and redesign their employee experience across multiple touchpoints.",
+    "cover_image_url": null
+  },
+  {
+    "id": 2,
+    "project_number": 1,
+    "client": "NATIONAL CONGLOMERATE, PHILIPPINES",
+    "service_type": "service-design",
+    "variant": "1-1ContentCol",
+    "variant_index": 2,
+    "content": "In many Southeast Asian households, especially in the Philippines, the home is not just a space, but a system: a network of care, financial interdependence, and decision-making spread across parents, siblings, overseas workers, and elders.\n\nAmid this complexity, families already manage using mental checklists, handwritten logs, Viber threads, and spreadsheets.\n\nSo when a major conglomerate approached us to explore a \"super app,\" we asked a different question: What if we didn't just digitize transactions but supported the actual work of running a household?\n\nFrom Fragmented Tools to Relational Infrastructure\nThrough interviews, co-creation sessions, and ethnographic research, we surfaced the quiet complexity of everyday life: multiple household members taking on roles like contributor, payer, planner, or reminder, often across generations and time zones.\n\nWe reframed the challenge:"
+  },
+  {
+    "id": 3,
+    "project_number": 1,
+    "client": "NATIONAL CONGLOMERATE, PHILIPPINES",
+    "service_type": "service-design",
+    "variant": "DesignQuestion",
+    "variant_index": 3,
+    "hmw_line": "How might we design for family coordination, not just individual utility?"
+  },
+  {
+    "id": 4,
+    "project_number": 1,
+    "client": "NATIONAL CONGLOMERATE, PHILIPPINES",
+    "service_type": "service-design",
+    "variant": "3-5ImageContent",
+    "variant_index": 4,
+    "content": "The result was the early blueprint of a Household OS, not a dashboard of bills, but a support layer that acknowledged the labour, trust, and emotion embedded in shared living.\n\nCore Concepts and Feature Experiments\nWe co-developed a suite of prototypes aimed at making invisible work visible and shared:\n• Household Wallet: Shared visibility into bills, contributions, and timelines\n• Savings Goals & Upgrade Bundles: Turning aspirations into concrete plans\n• Spending Guard: Nudges and alternatives to stay within budget\n• Smart Automation & API integrations: Reducing manual routines\n• Microloans: Offering relief when the unexpected strikes\n• Loyalty Points: Pooled and purposeful, not just individual rewards\n• Household Insights: Dashboards surfacing friction points and rhythm patterns",
+    "project_image_url": null
+  },
+  {
+    "id": 5,
+    "project_number": 1,
+    "client": "NATIONAL CONGLOMERATE, PHILIPPINES",
+    "service_type": "service-design",
+    "variant": "3-5ContentCol",
+    "variant_index": 5,
+    "content": "Designing for Diverse Household Realities\nWe uncovered a range of household archetypes, from centralized matriarch-led systems to distributed networks coordinated by siblings or intermediaries. We designed logic for real-life dynamics: overseas earners sending money home, elders passing on responsibilities, or blended families navigating new norms.\n\nThe design had to do more than work; it had to respect power dynamics, invite participation, and leave room for dignity.\n\nFrom Points to Purpose: Rethinking Loyalty\nA parallel study revealed that traditional rewards programs often missed the mark because they assumed individual benefit, not shared meaning.\n\nWe proposed a loyalty strategy rooted in household psychology:\n• Prioritizing essential offsets over luxury perks\n• Enabling shared redemption across online and offline contexts\n• Building in moments of gratitude, recognition, and emotional salience\n• Anchoring value in family, not just frequency\n\nBehavioral principles like loss aversion, social proof, and effort justification shaped how we designed for motivation and care, not just engagement."
+  },
+  {
+    "id": 6,
+    "project_number": 1,
+    "client": "NATIONAL CONGLOMERATE, PHILIPPINES",
+    "service_type": "service-design",
+    "variant": "3-5ContentCol",
+    "variant_index": 6,
+    "content": "My Role\nI shaped narrative development and strategic positioning, surfacing the underlying tensions that connected disparate customer touchpoints across the conglomerate's ecosystem.\n\nThrough design research and rapid prototyping, I employed ethnographic methods to uncover the informal systems families had already developed, translating fieldwork insights into strategic frameworks that reframed the business opportunity from brand aggregation to infrastructure provision.\n\nWhy It Matters\nIn a region where the family is the first safety net, most apps treat people as individuals. We helped our client imagine something deeper: a system that supports the way families actually live, care, and coordinate, not just how they transact.\n\nThis project reframed \"digital transformation\" from convenience to care infrastructure, a quiet revolution in how platforms can show up for real lives."
+  },
+  {
+    "id": 7,
+    "project_number": 2,
+    "client": "FINTECH STARTUP, SINGAPORE",
+    "service_type": "futures",
+    "variant": "ProjectCover",
+    "variant_index": 1,
+    "title": "Future of Digital Banking",
+    "description": "Exploring scenarios for the next decade of financial services, helping a fintech startup position for emerging opportunities in embedded finance and AI-driven personalization.",
+    "content": "Strategic futures research for a fast-growing fintech company looking to stay ahead of industry trends.",
+    "cover_image_url": null
+  },
+  {
+    "id": 8,
+    "project_number": 2,
+    "client": "FINTECH STARTUP, SINGAPORE",
+    "service_type": "futures",
+    "variant": "DesignQuestion",
+    "variant_index": 2,
+    "hmw_line": "How might financial services evolve when AI makes every transaction intelligent and predictive?",
+    "content": "We developed four distinct scenarios ranging from AI-augmented banking to fully autonomous financial ecosystems, each with implications for product development and market positioning."
+  },
+  {
+    "id": 9,
+    "project_number": 3,
+    "client": "CREATIVE AGENCY, LONDON",
+    "service_type": "creative-tech",
+    "variant": "ProjectCover",
+    "variant_index": 1,
+    "title": "Interactive Brand Experience",
+    "description": "Designing and prototyping an immersive digital installation that responds to visitor movement and creates personalized brand narratives in real-time.",
+    "content": "Building cutting-edge interactive experiences that blur the line between digital and physical brand engagement.",
+    "cover_image_url": null
+  },
+  {
+    "id": 10,
+    "project_number": 4,
+    "client": "GLOBAL CONSULTANCY, NYC",
+    "service_type": "facilitation",
+    "variant": "ProjectCover",
+    "variant_index": 1,
+    "title": "Strategic Alignment Workshop Series",
+    "description": "Facilitating a series of workshops for C-suite executives to align on company vision and strategy across multiple time horizons, resulting in a unified 5-year roadmap.",
+    "content": "Guiding leadership teams through complex strategic decisions using structured facilitation and systems thinking.",
+    "cover_image_url": null
+  }
+]
