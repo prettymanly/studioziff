@@ -12,15 +12,15 @@ export default function Home() {
     },
     description: {
       heading: "Making Sense, Together.",
-      body: "Whether you're launching a new product or trying to fix what's not working, real insight beats guesswork. I help lean teams cut through assumptions and get to what actually matters to their users. We'll dig into what's driving customer decisions, where they're hitting roadblocks, and what they're willing to invest in. This isn't research for research's sake—it's strategic work that gets close to your customers, makes sense of their world, and translates those insights into clear, actionable direction for your product, service, or messaging so you can move forward with confidence.",
+      body: "Whether you&apos;re launching a new product or trying to fix what&apos;s not working, real insight beats guesswork. I help lean teams cut through assumptions and get to what actually matters to their users. We&apos;ll dig into what&apos;s driving customer decisions, where they&apos;re hitting roadblocks, and what they&apos;re willing to invest in. This isn&apos;t research for research&apos;s sake—it&apos;s strategic work that gets close to your customers, makes sense of their world, and translates those insights into clear, actionable direction for your product, service, or messaging so you can move forward with confidence.",
       subheading: "",
       subbody: "",
     },
     questions: [
-      "What's really driving our customers' decisions?",
-      "Why aren't people using what we built?",
+      "What&apos;s really driving our customers&apos; decisions?",
+      "Why aren&apos;t people using what we built?",
       "How do we reduce friction or unlock trust?",
-      "Why aren't employees adopting this new way of working?",
+      "Why aren&apos;t employees adopting this new way of working?",
     ],
     activities: [
       "Find signals in what users say, do, or avoid",
@@ -155,7 +155,7 @@ export default function Home() {
         {/* About Section */}
         <section className="w-full mb-10 text-[#323e45] text-[30px] leading-normal font-sans">
           <p className="mb-6">
-            My salaryman days began in advertising. A discipline that taught me the value of narrative precision, the power of productive tension, and a religious belief that there's always space for tongues in cheeks.
+            My salaryman days began in advertising. A discipline that taught me the value of narrative precision, the power of productive tension, and a religious belief that there&apos;s always space for tongues in cheeks.
           </p>
           <p className="mb-6">
             This mindset became my OS and has informed every subsequent endeavor: from framing consumer mindsets and articulating the future of industries, to branding personal experiments and performing improv on stage.
