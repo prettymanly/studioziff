@@ -1,4 +1,5 @@
 import { ServiceCard } from '@/components/ServiceCard/ServiceCard';
+import Image from 'next/image';
 
 export default function Home() {
   const serviceDesignData = {
@@ -38,8 +39,8 @@ export default function Home() {
       enquire: "ENQUIRE ON FUTURES + FORESIGHT WORK"
     },
     description: {
-      heading: "You can't predict the future. But you can prepare for the ones that matter.",
-      body: "Futures work isn't about crystal balls, it's about stretching perspectives. I help teams make sense of change, anticipate risks, and imagine bold alternatives before it's too late (or too late to do anything meaningful). It's strategic imagination, grounded in real-world signals.",
+      heading: "You can&apos;t predict the future. But you can prepare for the ones that matter.",
+      body: "Futures work isn&apos;t about crystal balls, it&apos;s about stretching perspectives. I help teams make sense of change, anticipate risks, and imagine bold alternatives before it&apos;s too late (or too late to do anything meaningful). It&apos;s strategic imagination, grounded in real-world signals.",
       subheading: "Think of it as...",
       subbody: "Foresight you can actually act on. Not just trend decks, but structured provocation, scenario thinking, and facilitated reflection that shifts how people plan and build."
     },
@@ -66,7 +67,7 @@ export default function Home() {
     },
     description: {
       heading: "Thinking with Machines, Creatively",
-      body: "I help teams cut through the AI hype to find practical, creative, or strategic uses of automation. Whether you're a small business trying to streamline operations or a creative team looking to augment your workflow, we'll find use cases that actually matter and build smartly around them.",
+      body: "I help teams cut through the AI hype to find practical, creative, or strategic uses of automation. Whether you&apos;re a small business trying to streamline operations or a creative team looking to augment your workflow, we&apos;ll find use cases that actually matter and build smartly around them.",
       subheading: "Think of it as...",
       subbody: "Practical AI strategy and prototyping. From figuring out your first automation loop to designing AI-powered customer experiences, I work with you to make it tangible, without the jargon."
     },
@@ -95,10 +96,10 @@ export default function Home() {
       heading: "Making Sense, Together.",
       body: "I design learning experiences that unlock clarity, confidence, and curiosity. From corporate innovation sprints to undergraduate classrooms, I bring structure, story, and soul to help teams and individuals build new creative muscles and actually enjoy the process.",
       subheading: "Think of it as...",
-      subbody: "Hands-on, brains-on learning. I adapt to your group's energy and needs, layering just enough structure to stretch minds — whether we're learning design, building futures literacy, or unlearning tired ways of working."
+      subbody: "Hands-on, brains-on learning. I adapt to your group&apos;s energy and needs, layering just enough structure to stretch minds — whether we&apos;re learning design, building futures literacy, or unlearning tired ways of working."
     },
     questions: [
-      "Why aren't employees thinking like owners, innovators, or collaborators?",
+              "Why aren&apos;t employees thinking like owners, innovators, or collaborators?",
       "What does it take to grow a culture of learning and experimentation?",
     ],
     activities: [
@@ -141,9 +142,11 @@ export default function Home() {
 
           {/* Right Box - Image */}
           <div className="w-full md:w-1/2 h-[436px] rounded-[15px] overflow-hidden">
-            <img
+            <Image
               src="/images/intro-image.png"
               alt="Ziff Lau"
+              width={500}
+              height={436}
               className="w-full h-full object-cover"
             />
           </div>
@@ -158,7 +161,7 @@ export default function Home() {
             This mindset became my OS and has informed every subsequent endeavor: from framing consumer mindsets and articulating the future of industries, to branding personal experiments and performing improv on stage.
           </p>
           <p className="mb-6">
-            Currently, I'm developing a platform to <span className="underline">help parents find classes their kids won't immediately hate</span>. It's behavioral economics disguised as a class directory.
+            Currently, I&apos;m developing a platform to <span className="underline">help parents find classes their kids won&apos;t immediately hate</span>. It&apos;s behavioral economics disguised as a class directory.
           </p>
           <p className="mb-6">
             However, I remain available for:
@@ -169,7 +172,7 @@ export default function Home() {
             <li>Teaching gigs (I currently teach Innovation Design at SIT, where students pretend to listen)</li>
           </ul>
           <p>
-            Yes, I wear many hats, and yes, I has one for each context. Below, you'll find what those hats look like, and how I think when I'm wearing them.
+            Yes, I wear many hats, and yes, I has one for each context. Below, you&apos;ll find what those hats look like, and how I think when I&apos;m wearing them.
           </p>
         </section>
 
