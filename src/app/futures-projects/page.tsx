@@ -4,9 +4,8 @@ import Image from 'next/image';
 import { useRef } from 'react';
 import ProjectCard, { ProjectCardProps } from '@/components/ProjectCard/ProjectCard';
 import Header from '@/components/Header/Header';
-import Link from 'next/link';
 import { Tilt } from '@/components/ui/tilt';
-import DecryptedText from '@/components/ui/decrypted-text';
+import { AnimatedHomeLink } from '@/components/ui/animated-home-link';
 
 const project1Data: ProjectCardProps[] = [
   {
@@ -66,101 +65,110 @@ const project1Data: ProjectCardProps[] = [
   }
 ];
 
-// Placeholder data for Project 2
+// Data for Project 2 - Future of Meat
 const project2Data: ProjectCardProps[] = [
   {
     variant: 'ProjectCover',
-    overline: '02 | CLIENT: GLOBAL CONSUMER TECH BRAND',
-    title: 'Signals into Strategy:<br/>Reimagining How a Global Brand Designs for What\'s Next',
+    overline: '02 | CLIENT: CONFIDENTIAL – MULTI-MARKET MEAT CONGLOMERATE',
+    title: 'From Meat to<br/>Meaning:<br/>A Strategy Built<br/>on Culture,<br/>Not Category',
     image: '/images/intro-image.png',
     swipeToRead: true,
   },
   {
     variant: 'HMW',
-    overline: '02 | CLIENT: GLOBAL CONSUMER TECH BRAND',
+    overline: '02 | CLIENT: CONFIDENTIAL – MULTI-MARKET MEAT CONGLOMERATE',
+    hmw: 'What if a legacy meat company didn\'t just copy the meatless trend but reimagined what "meat" could be in a future that might not need it?',
+  },
+  {
+    variant: '3:5ContentCol',
+    overline: '02 | CLIENT: CONFIDENTIAL – MULTI-MARKET MEAT CONGLOMERATE',
+    leftContent: {
+      body: "In Singapore, they sell direct-to-consumer.<br/>In Thailand, they're white-labelled in supermarket aisles.<br/>In China, they supply fast food chains and premium hotpot joints.<br/><br/>Same group. Different markets. One looming question:<br/><strong>What happens to us if meat stops being the default?</strong><br/><br/>This wasn't a marketing brief. It was an existential one."
+    },
+    rightContent: {
+      title: "From Protein to Platform",
+      body: "The alt-meat space had become noisy, dominated by patties, nuggets, and faux-mince. But this client wasn't chasing buzzwords or IPO headlines. They wanted to understand:<br/><br/><strong>If meat becomes morally or culturally obsolete, what meaningful role can we still play?</strong>"
+    }
+  },
+  {
+    variant: '3:5ImageContent',
+    overline: '02 | CLIENT: CONFIDENTIAL – MULTI-MARKET MEAT CONGLOMERATE',
+    image: '/images/intro-image.png',
+          rightContent: {
+        title: 'Futures Thinking Meets Format Strategy',
+        body: "We grounded the work in speculative research and near-future scenario planning:<br/><br/><strong>Cultural Signals:</strong> What narratives were reshaping how people think about meat concerning identity, sustainability, gut health, even class?<br/><br/><strong>Behavioral Tensions:</strong> Why were alt-meat products often tried once and forgotten? Where was the drop-off?<br/><br/><strong>Category Provocations:</strong> What if meatless wasn't <em>a product</em>, but a <em>format playground</em>?<br/><br/>Rather than defaulting to global \"plant-based\" tropes, we asked:<br/><em>- What does the region actually crave?<br/>- What formats lend themselves to rituals like hotpot, bento prep, or night market snacking?</em>"
+      }
+  },
+  {
+    variant: '1:1ContentCol',
+    overline: '02 | CLIENT: CONFIDENTIAL – MULTI-MARKET MEAT CONGLOMERATE',
+    leftContent: {
+      title: 'Outcome: A Strategic SKU Playbook',
+      body: 'Instead of building one global "alt-meat" line, we co-developed a <strong>product format strategy</strong> tailored to regional eating behaviors and business realities:',
+      list: [
+        'SKU archetypes for high-rotation formats (e.g. stir-fry strips, hotpot curls, grillable chunks)',
+        'Suggested pairing strategies to embed the product into local rituals',
+        'Co-manufacturing vs. proprietary format recommendations by country',
+        'Framing strategies for supermarket vs. foodservice channels'
+      ]
+    },
+    rightContent: {
+      title: 'Why It Mattered',
+      body: "No new brand needed. Just <strong>clear format foresight</strong> that could plug into existing supply chains and future-proof the business.<br/><br/>Too often, incumbents either overcommit to a shiny future or ignore it until it's too late. This client chose a different path:<br/><strong>Explore deeply. Design quietly. Be ready, not loud.</strong><br/><br/>They didn't launch a brand.<br/>They launched a <em>point of view</em> on what eating could become and the practical steps to get there, one format at a time."
+    }
+  }
+];
+
+// Data for Project 3 - Signals into Strategy
+const project3Data: ProjectCardProps[] = [
+  {
+    variant: 'ProjectCover',
+    overline: '03 | CLIENT: CONFIDENTIAL (GLOBAL CONSUMER TECH BRAND)',
+    title: 'Signals into Strategy:<br/>Reimagining How a Global Brand<br/>Designs for What\'s Next',
+    image: '/images/intro-image.png',
+    swipeToRead: true,
+  },
+  {
+    variant: 'HMW',
+    overline: '03 | CLIENT: CONFIDENTIAL (GLOBAL CONSUMER TECH BRAND)',
     hmw: 'How might a company move from future curiosity to present-day momentum?',
   },
   {
     variant: '3:5ContentCol',
-    overline: '02 | CLIENT: GLOBAL CONSUMER TECH BRAND',
+    overline: '03 | CLIENT: CONFIDENTIAL (GLOBAL CONSUMER TECH BRAND)',
     leftContent: {
       body: "The world doesn't wait for five-year plans. Emerging behaviors, cultural shifts, and fringe innovations are already reshaping how we live, connect, and consume, often faster than traditional strategy can keep up.<br/><br/>This project began as a signal scan. But it quickly evolved into something more: a shared foundation for future strategy, one that gave product, brand, and innovation teams a clearer sense of what mattered, what's coming, and what they could do about it."
     },
     rightContent: {
       title: "From Signal Overload to Strategic Clarity",
-      body: "We started by scanning hundreds of cultural and behavioral signals from across the globe. From youth identity in Southeast Asia to shifts in loyalty and intimacy post-pandemic, the goal wasn't to catalogue everything. It was to <strong>surface the patterns with momentum</strong>.<br/><br/>Each signal was translated into a <em>future narrative</em>: short, provocative stories that made trends tangible. These weren't just trends to track, but prompts to rethink assumptions:<br/><br/><em>What happens when personal space becomes portable? What does comfort mean in a world of digital overstimulation?</em>"
+      body: "We started by scanning hundreds of cultural and behavioral signals from across the globe. From youth identity in Southeast Asia to shifts in loyalty and intimacy post-pandemic, the goal wasn't to catalogue everything. It was to <strong>surface the patterns with momentum</strong>.<br/><br/>Each signal was translated into a <em>future narrative</em>: short, provocative stories that made trends tangible. These weren't just trends to track, but prompts to rethink assumptions:<br/><br/><em>What happens when personal space becomes portable?<br/>What does comfort mean in a world of digital overstimulation?</em>"
     }
   },
   {
     variant: '3:5ImageContent',
-    overline: '02 | CLIENT: GLOBAL CONSUMER TECH BRAND',
+    overline: '03 | CLIENT: CONFIDENTIAL (GLOBAL CONSUMER TECH BRAND)',
     image: '/images/intro-image.png',
     rightContent: {
       title: 'Designing with the Future, Not Just for It',
       body: "We turned those narratives into <strong>opportunity platforms</strong>: thematic areas where the brand could lead with meaning, not just market share. Each one came with early-stage \"starter ideas\" designed to spark imagination across teams.<br/><br/>Think:",
-      list: ['New rituals for unwinding in overstimulated homes', 'Tech products that respond to ambient moods, not just commands', 'Tools that help young users feel \"seen\" without needing to perform'],
+      list: [
+        'New rituals for unwinding in overstimulated homes',
+        'Tech products that respond to ambient moods, not just commands',
+        'Tools that help young users feel \"seen\" without needing to perform'
+      ],
       additionalBody: "These weren't briefs. They were <strong>catalysts</strong>."
     }
   },
   {
     variant: '1:1ContentCol',
-    overline: '02 | CLIENT: GLOBAL CONSUMER TECH BRAND',
+    overline: '03 | CLIENT: CONFIDENTIAL (GLOBAL CONSUMER TECH BRAND)',
     leftContent: {
       title: 'My Role',
       body: 'I led the design of narrative and visual artifacts that helped teams cut through noise and align on what mattered. From turning complex signals into visceral provocations to shaping tools that brought strategy into motion, my job was to <strong>make the future feel real enough to act on</strong>, not just speculate about.',
     },
     rightContent: {
       title: 'Why It Mattered',
-      body: "Every company tracks trends. Few turn them into momentum.<br/><br/>This project helped a global brand move beyond horizon-scanning and begin designing with sharper intention. It showed that future-sensing isn't just about imagination. It's about giving strategy a pulse."
-    }
-  }
-];
-
-// Placeholder data for Project 3
-const project3Data: ProjectCardProps[] = [
-  {
-    variant: 'ProjectCover',
-    overline: '03 | PROJECT 3 PLACEHOLDER',
-    title: 'Project 3<br/>Title Here',
-    image: '/images/intro-image.png',
-    swipeToRead: true,
-  },
-  {
-    variant: 'HMW',
-    overline: '03 | PROJECT 3 PLACEHOLDER',
-    hmw: 'How might we solve this challenge for project 3?',
-  },
-  {
-    variant: '3:5ContentCol',
-    overline: '03 | PROJECT 3 PLACEHOLDER',
-    leftContent: {
-      body: "Project 3 content will go here..."
-    },
-    rightContent: {
-      title: "Project 3 Details",
-      body: "More details about project 3..."
-    }
-  },
-  {
-    variant: '3:5ImageContent',
-    overline: '03 | PROJECT 3 PLACEHOLDER',
-    image: '/images/intro-image.png',
-    rightContent: {
-      title: 'Project 3 Section',
-      body: "Project 3 specific content here.",
-      list: ['Item 1', 'Item 2', 'Item 3']
-    }
-  },
-  {
-    variant: '1:1ContentCol',
-    overline: '03 | PROJECT 3 PLACEHOLDER',
-    leftContent: {
-      title: 'Left Column',
-      body: 'Project 3 left content...',
-    },
-    rightContent: {
-      title: 'Right Column',
-      body: "Project 3 right content..."
+      body: "Every company tracks trends. Few turn them into momentum.<br/><br/>This project helped a global brand move beyond horizon-scanning and begin designing with sharper intention. It showed that future-sensing isn't just about imagination. It's about <strong>giving strategy a pulse</strong>."
     }
   }
 ];
@@ -196,14 +204,7 @@ export default function FuturesProjectsPage() {
         <section className="w-full mb-20 flex flex-col md:flex-row items-stretch md:h-[436px] gap-[38px]">
           {/* Left Box - Text and Mobile Image */}
           <div className="w-full md:w-1/2 bg-white rounded-[15px] p-[49px] flex flex-col justify-between text-[#404b51]">
-            <Link href="/" className="font-mono text-base tracking-[-0.8px] hover:opacity-80 transition-opacity">
-              <DecryptedText 
-                text="← HOME" 
-                animateOn="view"
-                speed={80}
-                maxIterations={15}
-              />
-            </Link>
+            <AnimatedHomeLink />
             
             <div className="relative w-full h-[300px] my-6 rounded-[15px] overflow-hidden md:hidden">
               <Image
@@ -302,7 +303,7 @@ export default function FuturesProjectsPage() {
           {/* Project 2 - Horizontal Carousel */}
           <div className="w-full">
             <div className="flex justify-between items-center mb-6">
-              <h3 className="text-[#e5eddf] text-xl font-bold">Project 2: Meat Culture in Southeast Asia</h3>
+              <h3 className="text-[#e5eddf] text-xl font-bold">Project 2: Future of Meat</h3>
               <div className="flex gap-4">
                 <button 
                   onClick={() => scrollLeft(scrollRef2)}
@@ -333,7 +334,7 @@ export default function FuturesProjectsPage() {
           {/* Project 3 - Horizontal Carousel */}
           <div className="w-full">
             <div className="flex justify-between items-center mb-6">
-              <h3 className="text-[#e5eddf] text-xl font-bold">Project 3: Identity in a Post-Loyalty Economy</h3>
+              <h3 className="text-[#e5eddf] text-xl font-bold">Project 3: Signals into Strategy</h3>
               <div className="flex gap-4">
                 <button 
                   onClick={() => scrollLeft(scrollRef3)}

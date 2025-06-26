@@ -4,9 +4,8 @@ import Image from 'next/image';
 import { useRef } from 'react';
 import ProjectCard, { ProjectCardProps } from '@/components/ProjectCard/ProjectCard';
 import Header from '@/components/Header/Header';
-import Link from 'next/link';
 import { Tilt } from '@/components/ui/tilt';
-import DecryptedText from '@/components/ui/decrypted-text';
+import { AnimatedHomeLink } from '@/components/ui/animated-home-link';
 
 const project1Data: ProjectCardProps[] = [
   {
@@ -185,14 +184,7 @@ export default function ResearchProjectsPage() {
         <section className="w-full mb-20 flex flex-col md:flex-row items-stretch md:h-[436px] gap-[38px]">
           {/* Left Box - Text and Mobile Image */}
           <div className="w-full md:w-1/2 bg-white rounded-[15px] p-[49px] flex flex-col justify-between text-[#404b51]">
-            <Link href="/" className="font-mono text-base tracking-[-0.8px] hover:opacity-80 transition-opacity">
-              <DecryptedText 
-                text="← HOME" 
-                animateOn="view"
-                speed={80}
-                maxIterations={15}
-              />
-            </Link>
+            <AnimatedHomeLink />
             
             <div className="relative w-full h-[300px] my-6 rounded-[15px] overflow-hidden md:hidden">
               <Image
