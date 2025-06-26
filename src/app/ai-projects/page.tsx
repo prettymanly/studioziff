@@ -63,14 +63,14 @@ const project2Data: ProjectCardProps[] = [
     variant: 'ProjectCover',
     overline: '02 | CLIENT: SELF-INITIATED PROJECT',
     title: 'Recovering Autodidacts:<br/>A Chatbot for the Curious-but-Tired',
-    image: '/docs/project-references/AI_02_Autodidact_1.png',
+    image: 'https://images.unsplash.com/photo-1516321318423-f06f85e504b3?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80',
     swipeToRead: true,
   },
   {
     variant: 'HMW',
     overline: '02 | CLIENT: SELF-INITIATED PROJECT',
     hmw: 'How might an AI chatbot help time-starved adults rediscover their appetite for self-learning?',
-    image: '/docs/project-references/AI_02_Autodidact_2.png',
+    image: 'https://images.unsplash.com/photo-1522202176988-66273c2fd55f?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80',
   },
   {
     variant: '1:1ContentCol',
@@ -87,7 +87,7 @@ const project2Data: ProjectCardProps[] = [
   {
     variant: '3:5ImageContent',
     overline: '02 | CLIENT: SELF-INITIATED PROJECT',
-    image: '/docs/project-references/AI_02_Autodidact_3.png',
+    image: 'https://images.unsplash.com/photo-1434030216411-0b793f4b4173?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80',
     rightContent: {
       title: 'Features Designed to Shape Behavior',
       body: "Learners were asked to define their goals (a conversational version of a learning contract), reflect daily (reinforcing awareness), and eventually demonstrate what they'd learned. The experience was designed around agency, accountability, and curiosity — all scaffolded lightly by the bot.",
@@ -132,14 +132,14 @@ const project3Data: ProjectCardProps[] = [
     variant: 'ProjectCover',
     overline: '03 | CLIENT: SELF-INITIATED PROJECT',
     title: 'Conscious Collapse:<br/>Meditations for the Mildly Spiraling',
-    image: '/docs/project-references/AI_03_Collapse_4.png',
+    image: 'https://images.unsplash.com/photo-1506905925346-21bda4d32df4?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80',
     swipeToRead: true,
   },
   {
     variant: 'HMW',
     overline: '03 | CLIENT: SELF-INITIATED PROJECT',
     hmw: 'What if AI could help overthinkers laugh their way into mindfulness?',
-    image: '/docs/project-references/AI_03_Collapse_5.png',
+    image: 'https://images.unsplash.com/photo-1508672019048-805c876b67e2?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80',
   },
   {
     variant: '1:1ContentCol',
@@ -156,7 +156,7 @@ const project3Data: ProjectCardProps[] = [
   {
     variant: '3:5ImageContent',
     overline: '03 | CLIENT: SELF-INITIATED PROJECT',
-    image: '/docs/project-references/AI_03_Collapse_1.png',
+    image: 'https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80',
     rightContent: {
       title: 'Stacking Humor, Structure, and Self-Insight',
       body: "Each script is built with:",
