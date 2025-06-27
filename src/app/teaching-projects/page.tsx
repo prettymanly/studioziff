@@ -11,25 +11,25 @@ const project1Data: ProjectCardProps[] = [
   {
     variant: 'ProjectCover',
     overline: '01 | SELF-INITIATED PROJECT',
-    title: 'Inner Playground:<br/>Prototyping Life Through Play',
+    title: 'Inner Playground:<br/><span style="font-weight: 300;">Prototyping Life Through Play</span>',
     image: 'https://images.unsplash.com/photo-1559027615-cd4628902d4a?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80',
     swipeToRead: true,
   },
   {
     variant: 'HMW',
     overline: '01 | SELF-INITIATED PROJECT',
-    hmw: 'What if exploring who you could be didn\'t require a crisis?',
+    hmw: 'What if exploring who you could be<br/>didn\'t require a crisis?',
     image: 'https://images.unsplash.com/photo-1559027615-cd4628902d4a?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80',
   },
   {
     variant: '3:5ContentCol',
     overline: '01 | SELF-INITIATED PROJECT',
     leftContent: {
-      body: "Inner Playground is a workshop series I run for grown-ups stuck in the filler episodes of their lives, quietly craving a storyline with more aliveness. It's a playground for your inner world where story, play, and improv help people reconnect with their authentic script, not the one they were handed.\n\nRooted in improvisation, storytelling, and emotional design, each session helps participants tune into their patterns under pressure and explore new ways of showing up with more clarity, presence, and relational courage. We don't just talk about self-discovery; we play it out in our bodies, imagination, and laughter."
+      body: "Inner Playground is a workshop series I run for grown-ups stuck in the filler episodes of their lives, quietly craving a storyline with more aliveness. It's a playground for your inner world where story, play, and improv help people reconnect with their authentic script, not the one they were handed.<br><br>Rooted in improvisation, storytelling, and emotional design, each session helps participants tune into their patterns under pressure and explore new ways of showing up with more clarity, presence, and relational courage. We don't just talk about self-discovery; we play it out in our bodies, imagination, and laughter."
     },
     rightContent: {
       title: "Why This Exists",
-      body: "We grow up playing out roles assigned by school, society, and culture. By the time we're adults, many of us are living someone else's idea of a \"good life\" and wondering: Whose script am I following? Some call it a mid-life crisis. I call it a crisis of the soul when your inner script goes unheard for too long.\n\nAs a facilitator and storyteller, I've seen how often we trade dreams for safety, performance, or someone else's version of success. Inner Playground was born from that gap. It's a space where:\n• You don't have to perform, just be real\n• Clarity comes through play, not overthinking\n• You can rehearse the life you actually want to live"
+      body: "We grow up playing out roles assigned by school, society, and culture. By the time we're adults, many of us are living someone else's idea of a \"good life\" and wondering: Whose script am I following? Some call it a mid-life crisis. I call it a crisis of the soul when your inner script goes unheard for too long.<br><br>As a facilitator and storyteller, I've seen how often we trade dreams for safety, performance, or someone else's version of success. Inner Playground was born from that gap. It's a space where:<br><br>• You don't have to perform, just be real<br>• Clarity comes through play, not overthinking<br>• You can rehearse the life you actually want to live"
     }
   },
   {
@@ -37,10 +37,10 @@ const project1Data: ProjectCardProps[] = [
     overline: '01 | SELF-INITIATED PROJECT',
     image: 'https://images.unsplash.com/photo-1544027993-37dbfe43562a?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80',
     rightContent: {
-      title: 'Who This Is For & What We Explore',
-      body: "Who This Is For:",
+      title: '',
+      body: "<strong>Who This Is For:</strong>",
       list: ['Curious souls at life or career crossroads', 'Creatives and professionals feeling stuck or scripted', 'People wanting to reconnect with their spark', 'Anyone craving meaning, clarity, or just a good laugh', 'Teams looking for deeper connection beyond trust exercises'],
-      additionalBody: "What We Explore\nThe core workshop, Prototype Your Dream Life, is an intimate 3-hour experience that helps participants:\n• Find their inner script (the one that feels real, not just reasonable)\n• Step into imagined versions of their life and feel what awakens\n• Access surprising truths through stories and collaborative play\n• Return to themselves with more clarity, lightness, or surprise"
+      additionalBody: "<strong>What We Explore</strong><br><br>The core workshop, <strong>Prototype Your Dream Life</strong>, is an intimate 3-hour experience that helps participants:<br><br>• Find their inner script (the one that feels real, not just reasonable)<br>• Step into imagined versions of their life and feel what awakens<br>• Access surprising truths through stories and collaborative play<br>• Return to themselves with more clarity, lightness, or surprise"
     }
   },
   {
@@ -48,11 +48,11 @@ const project1Data: ProjectCardProps[] = [
     overline: '01 | SELF-INITIATED PROJECT',
     leftContent: {
       title: 'What I Bring',
-      body: 'This isn\'t corporate improv or therapy. It\'s emotional play, carefully held and always a little absurd. Drawing from my background in storytelling, improv performance, and strategic design, I create experiences that feel safe but not sanitized.\n\nI weave together:\n• Structured improvisation that builds courage, not performance anxiety\n• Somatic awareness and emotional intelligence tools\n• Collaborative story-building that reveals inner patterns\n• Reflective spaces that connect insight to real-world action',
+      body: 'This isn\'t corporate improv or therapy. It\'s emotional play, carefully held and always a little absurd.<br><br>Drawing from my background in storytelling, improv performance, and strategic design, I create experiences that feel safe but not sanitized.<br><br>I weave together:<br><br>• Structured improvisation that builds courage, not performance anxiety<br>• Somatic awareness and emotional intelligence tools<br>• Collaborative story-building that reveals inner patterns<br>• Reflective spaces that connect insight to real-world action',
     },
     rightContent: {
       title: 'The Experience',
-      body: "The vibe is more \"courage gym\" than comedy class. You'll be gently guided, not put on the spot.\n\nI run public sessions and offer custom formats for teams and organizations. Whether you're looking to prototype your dream life or help your team show up with more authenticity, Inner Playground creates space for people who want to laugh hard, live honestly, and choose their own script.\n\nYou can find out more at innerplayground.fun."
+      body: "The vibe is more \"courage gym\" than comedy class. You'll be gently guided, not put on the spot.<br><br>I run public sessions and offer custom formats for teams and organizations. Whether you're looking to prototype your dream life or help your team show up with more authenticity, Inner Playground creates space for people who want to laugh hard, live honestly, and choose their own script.<br><br>You can find out more at innerplayground.fun."
     }
   }
 ];
@@ -62,7 +62,7 @@ const project2Data: ProjectCardProps[] = [
   {
     variant: 'ProjectCover',
     overline: '02 | CLIENT: SINGAPORE INSTITUTE OF TECHNOLOGY (SIT), SINGAPORE',
-    title: 'Teaching<br/>Innovation at SIT',
+    title: 'Teaching<br/>Innovation <span style="font-weight: 300;">at SIT</span>',
     image: 'https://images.unsplash.com/photo-1523240795612-9a054b0db644?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80',
     swipeToRead: true,
   },
@@ -76,11 +76,11 @@ const project2Data: ProjectCardProps[] = [
     variant: '3:5ContentCol',
     overline: '02 | CLIENT: SINGAPORE INSTITUTE OF TECHNOLOGY (SIT), SINGAPORE',
     leftContent: {
-      body: "Institution: Singapore Institute of Technology (SIT)\nRole: Adjunct Faculty, Innovation & Design Thinking\n\nAt SIT, innovation isn't reserved for design students. I teach a university-wide module that introduces design as a mindset, empowering students from diverse disciplines to think critically, act empathetically, and experiment with confidence."
+      body: "<strong>Institution:</strong> Singapore Institute of Technology (SIT)<br><strong>Role:</strong> Adjunct Faculty, Innovation & Design Thinking<br><br>At SIT, innovation isn't reserved for design students. I teach a university-wide module that introduces design as a mindset, empowering students from diverse disciplines to think critically, act empathetically, and experiment with confidence."
     },
     rightContent: {
       title: "Course Approach",
-      body: "Grounded in Design Thinking, the course helps students tackle real-world problems by understanding human needs, reframing challenges, and iterating solutions.\n\nBut beyond just teaching the steps, we help students internalise the principles by running Design Your Life exercises adapted from Stanford's d.school, using playful tools like LEGO for stimulus, and introducing future-oriented thinking to expand their horizons."
+      body: "Grounded in Design Thinking, the course helps students tackle real-world problems by understanding human needs, reframing challenges, and iterating solutions.<br><br>But beyond just teaching the steps, we help students internalise the principles by running Design Your Life exercises adapted from Stanford's d.school, using playful tools like LEGO for stimulus, and introducing future-oriented thinking to expand their horizons."
     }
   },
   {
@@ -91,7 +91,7 @@ const project2Data: ProjectCardProps[] = [
       title: 'My Teaching Philosophy',
       body: "While I didn't design the curriculum, it aligns closely with my own approach to design practice:",
       list: ['Start from people and context', 'Make ambiguity workable', 'Use tools to provoke clarity, not conformity'],
-      additionalBody: "As an adjunct faculty, I bring field experience into the classroom, from service design and research to storytelling and strategic foresight, to show students how design lives in the real world, not just the studio.\n\nWhy It Matters\nMost students won't become designers. But all of them will face complexity, ambiguity, and change. This course gives them a vocabulary and a practice to meet that with creativity, care, and courage."
+      additionalBody: "As an <strong>adjunct faculty</strong>, I bring field experience into the classroom, from service design and research to storytelling and strategic foresight, to show students how design lives in the real world, not just the studio.<br><br><strong>Why It Matters</strong><br><br>Most students won't become designers. But all of them will face complexity, ambiguity, and change. This course gives them a vocabulary and a practice to meet that with creativity, care, and courage."
     }
   }
 ];
@@ -101,7 +101,7 @@ const project3Data: ProjectCardProps[] = [
   {
     variant: 'ProjectCover',
     overline: '03 | CLIENT: BLANGAH RISE PRIMARY SCHOOL, SINGAPORE',
-    title: 'Teaching Design Thinking<br/>to Primary Students',
+    title: 'Teaching Design Thinking<br/><span style="font-weight: 300;">to Primary Students</span>',
     image: 'https://images.unsplash.com/photo-1497486751825-1233686d5d80?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80',
     swipeToRead: true,
   },
@@ -115,11 +115,11 @@ const project3Data: ProjectCardProps[] = [
     variant: '3:5ContentCol',
     overline: '03 | CLIENT: BLANGAH RISE PRIMARY SCHOOL, SINGAPORE',
     leftContent: {
-      body: "Institution: Telok Blangah Rise Primary School\nRole: External Facilitator & Teacher Trainer\nContext: Gifted Education Programme\n\nWhen Telok Blangah Rise Primary wanted to introduce Design Thinking to their select students in the gifted programme, they needed someone who could both engage young minds and build internal capacity. While I don't normally teach children, I saw this as an opportunity to create something sustainable: a programme that teachers could own, iterate, and continue long after I left."
+      body: "<strong>Institution:</strong> Telok Blangah Rise Primary School<br><strong>Role:</strong> External Facilitator & Teacher Trainer<br><strong>Context:</strong> Gifted Education Programme"
     },
     rightContent: {
       title: "The Challenge",
-      body: "Primary school students needed Design Thinking concepts translated into their world. Traditional DT workshops designed for adults wouldn't work. The school also wanted their teachers to become confident facilitators themselves, not dependent on external trainers."
+      body: "When Telok Blangah Rise Primary wanted to introduce Design Thinking to their select students in the gifted programme, they needed someone who could both engage young minds and build internal capacity. While I don't normally teach children, I saw this as an opportunity to create something sustainable: a programme that teachers could own, iterate, and continue long after I left.<br><br>Primary school students needed Design Thinking concepts translated into their world. Traditional DT workshops designed for adults wouldn't work. The school also wanted their teachers to become confident facilitators themselves, not dependent on external trainers."
     }
   },
   {
@@ -128,7 +128,7 @@ const project3Data: ProjectCardProps[] = [
     image: 'https://images.unsplash.com/photo-1606092195730-5d7b9af1efc5?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80',
     rightContent: {
       title: 'My Approach',
-      body: "I reframed the entire experience as a mission-based adventure, breaking down the design process into digestible \"mini-missions\" that felt like a game rather than a lesson. Each session built toward a larger challenge, keeping students engaged while systematically teaching them to observe, empathize, ideate, and prototype.\n\nThe genius was in the co-design process. Teachers learned Design Thinking by preparing each session with me, experiencing the methodology firsthand as we planned activities, anticipated student responses, and designed materials together. They weren't just observing; they were co-creating the curriculum.",
+      body: "I reframed the entire experience as a <strong>mission-based adventure</strong>, breaking down the design process into digestible \"mini-missions\" that felt like a game rather than a lesson. Each session built toward a larger challenge, keeping students engaged while systematically teaching them to observe, empathize, ideate, and prototype.<br><br>The genius was in the co-design process. Teachers learned Design Thinking by <strong>preparing each session with me</strong>, experiencing the methodology firsthand as we planned activities, anticipated student responses, and designed materials together. They weren't just observing; they were co-creating the curriculum.",
       list: []
     }
   },
@@ -137,11 +137,11 @@ const project3Data: ProjectCardProps[] = [
     overline: '03 | CLIENT: BLANGAH RISE PRIMARY SCHOOL, SINGAPORE',
     leftContent: {
       title: 'What Made It Work',
-      body: '• Gamification that mattered: Mini-missions weren\'t just fun activities but genuine design challenges scaled for young minds\n• Teacher-as-learner: Educators experienced DT principles while designing the programme, creating deeper understanding than any training manual\n• COVID-friendly innovation: Happening during the pandemic, we found fresh ways to facilitate design thinking that worked within health restrictions\n• Sustainable handoff: By the end, teachers owned the process and could iterate independently',
+      body: '• <strong>Gamification that mattered:</strong> Mini-missions weren\'t just fun activities but genuine design challenges scaled for young minds<br>• <strong>Teacher-as-learner:</strong> Educators experienced DT principles while designing the programme, creating deeper understanding than any training manual<br>• <strong>COVID-friendly innovation:</strong> Happening during the pandemic, we found fresh ways to facilitate design thinking that worked within health restrictions<br>• <strong>Sustainable handoff:</strong> By the end, teachers owned the process and could iterate independently',
     },
     rightContent: {
       title: 'Why It Matters',
-      body: "This wasn't just about teaching kids to think like designers. It was about building a school's capacity to nurture creative problem-solving in their students. The teachers didn't just learn to run sessions; they learned to adapt and evolve the approach for future cohorts.\n\nThe timing during COVID also pushed us to innovate beyond traditional DT facilitation, creating methods that were both pandemic-safe and genuinely more engaging than what came before."
+      body: "This wasn't just about teaching kids to think like designers. It was about building a school's capacity to nurture creative problem-solving in their students. The teachers didn't just learn to run sessions; they learned to adapt and evolve the approach for future cohorts.<br><br>The timing during COVID also pushed us to innovate beyond traditional DT facilitation, creating methods that were both pandemic-safe and genuinely more engaging than what came before."
     }
   }
 ];
