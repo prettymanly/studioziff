@@ -9,7 +9,7 @@
     "title": "Household OS: Reimagining Family Coordination in the Philippines",
     "description": "Swipe to read the case →",
     "content": "Working with a national conglomerate to understand and redesign their employee experience across multiple touchpoints.",
-    "cover_image_url": null
+    "cover_image_url": "/images/Projects/Research/Household OS_Cover.png"
   },
   {
     "id": 2,
@@ -18,7 +18,7 @@
     "service_type": "service-design",
     "variant": "1-1ContentCol",
     "variant_index": 2,
-    "content": "In many Southeast Asian households, especially in the Philippines, the home is not just a space, but a system: a network of care, financial interdependence, and decision-making spread across parents, siblings, overseas workers, and elders.\n\nAmid this complexity, families already manage using mental checklists, handwritten logs, Viber threads, and spreadsheets.\n\nSo when a major conglomerate approached us to explore a \"super app,\" we asked a different question: What if we didn't just digitize transactions but supported the actual work of running a household?\n\nFrom Fragmented Tools to Relational Infrastructure\nThrough interviews, co-creation sessions, and ethnographic research, we surfaced the quiet complexity of everyday life: multiple household members taking on roles like contributor, payer, planner, or reminder, often across generations and time zones.\n\nWe reframed the challenge:"
+    "content": "In many Southeast Asian households, especially in the Philippines, the home is not just a space, but a system: a network of care, financial interdependence, and decision-making spread across parents, siblings, overseas workers, and elders.\n\nAmid this complexity, families already manage using mental checklists, handwritten logs, Viber threads, and spreadsheets.\n\nSo when a major conglomerate approached us to explore a \"super app,\" we asked a different question: What if we didn't just digitize transactions but supported the actual work of running a household?\n\nFrom Fragmented Tools to Relational Infrastructure\n\nThrough interviews, co-creation sessions, and ethnographic research, we surfaced the quiet complexity of everyday life: multiple household members taking on roles like contributor, payer, planner, or reminder, often across generations and time zones.\n\nWe reframed the challenge:"
   },
   {
     "id": 3,
@@ -27,7 +27,8 @@
     "service_type": "service-design",
     "variant": "DesignQuestion",
     "variant_index": 3,
-    "hmw_line": "How might we design for family coordination, not just individual utility?"
+    "hmw_line": "How might we design for family coordination, not just individual utility?",
+    "cover_image_url": "/images/Projects/Research/Household OS_HMW.png"
   },
   {
     "id": 4,
@@ -37,7 +38,7 @@
     "variant": "3-5ImageContent",
     "variant_index": 4,
     "content": "The result was the early blueprint of a Household OS, not a dashboard of bills, but a support layer that acknowledged the labour, trust, and emotion embedded in shared living.\n\nCore Concepts and Feature Experiments\nWe co-developed a suite of prototypes aimed at making invisible work visible and shared:\n• Household Wallet: Shared visibility into bills, contributions, and timelines\n• Savings Goals & Upgrade Bundles: Turning aspirations into concrete plans\n• Spending Guard: Nudges and alternatives to stay within budget\n• Smart Automation & API integrations: Reducing manual routines\n• Microloans: Offering relief when the unexpected strikes\n• Loyalty Points: Pooled and purposeful, not just individual rewards\n• Household Insights: Dashboards surfacing friction points and rhythm patterns",
-    "project_image_url": null
+    "project_image_url": "/images/Projects/Research/Household OS_Column.png"
   },
   {
     "id": 5,

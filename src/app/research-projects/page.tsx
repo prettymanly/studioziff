@@ -12,7 +12,7 @@ const project1Data: ProjectCardProps[] = [
     variant: 'ProjectCover',
     overline: '01 | CLIENT: NATIONAL CONGLOMERATE, PHILIPPINES',
     title: 'Household OS:<br/><span style="font-weight: 300;">Reimagining Family Coordination in the Philippines</span>',
-    image: 'https://images.unsplash.com/photo-1609220136736-443140cffec6?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80',
+    image: '/images/Projects/Research/Household OS_Cover.png',
     swipeToRead: true,
   },
   {
@@ -30,12 +30,12 @@ const project1Data: ProjectCardProps[] = [
     variant: 'HMW',
     overline: '01 | CLIENT: NATIONAL CONGLOMERATE, PHILIPPINES',
     hmw: 'How might we design for family coordination, not just individual utility?',
-    image: 'https://images.unsplash.com/photo-1609220136736-443140cffec6?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80',
+    image: '/images/Projects/Research/Household OS_HMW.png',
   },
   {
     variant: '3:5ImageContent',
     overline: '01 | CLIENT: NATIONAL CONGLOMERATE, PHILIPPINES',
-    image: 'https://images.unsplash.com/photo-1511632765486-a01980e01a18?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80',
+    image: '/images/Projects/Research/Household OS_Column.png',
     rightContent: {
       title: 'Core Concepts and Feature Experiments',
       body: "The result was the early blueprint of a <strong>Household OS</strong>, not a dashboard of bills, but a support layer that acknowledged the labour, trust, and emotion embedded in shared living.\n\nWe co-developed a suite of prototypes aimed at making invisible work visible and shared:",
@@ -74,14 +74,14 @@ const project2Data: ProjectCardProps[] = [
     variant: 'ProjectCover',
     overline: '02 | CLIENT: LEADING INSURER, APAC',
     title: 'Insurance Mindsets Playbook:<br/><span style="font-weight: 300;">A Toolkit for Cross-Functional Empathy</span>',
-    image: 'https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80',
+    image: '/images/Projects/Research/InsuranceMindset_Cover.png',
     swipeToRead: true,
   },
   {
     variant: 'HMW',
     overline: '02 | CLIENT: LEADING INSURER, APAC',
     hmw: '<span style="font-weight: 300;">How might we unify a fragmented organisation through</span> <strong>shared understanding of customer needs?</strong>',
-    image: 'https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80',
+    image: '/images/Projects/Research/InsuranceMindset_HMW.png',
   },
   {
     variant: '3:5ContentCol',
@@ -97,7 +97,7 @@ const project2Data: ProjectCardProps[] = [
   {
     variant: '3:5ImageContent',
     overline: '02 | CLIENT: LEADING INSURER, APAC',
-    image: 'https://images.unsplash.com/photo-1559526324-4b87b5e36e44?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80',
+    image: '/images/Projects/Research/InsuranceMindset_Column.png',
     rightContent: {
       title: 'A Tool Teams Could Think With',
       body: "We transformed these insights into tactile mindset cards, not just to summarize research, but to trigger alignment and action.\n\nI led the design and development of these cards, not just visually, but functionally:",
@@ -124,14 +124,14 @@ const project3Data: ProjectCardProps[] = [
     variant: 'ProjectCover',
     overline: '03 | CLIENT: NATIONAL MINISTRY, SINGAPORE',
     title: 'Yearbook of the Future:<br/><span style="font-weight: 300;">Documenting a Living System in Transition</span>',
-    image: 'https://images.unsplash.com/photo-1481627834876-b7833e8f5570?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80',
+    image: '/images/Projects/Research/YearbookoftheFuture_Cover.png',
     swipeToRead: true,
   },
   {
     variant: 'HMW',
     overline: '03 | CLIENT: NATIONAL MINISTRY, SINGAPORE',
     hmw: '<span style="font-weight: 300;">How might we honour complexity, surface forgotten stories, and</span> <strong>give systems a memory?</strong>',
-    image: 'https://images.unsplash.com/photo-1481627834876-b7833e8f5570?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80',
+    image: '/images/Projects/Research/YearbookoftheFuture_HMW.png',
   },
   {
     variant: '3:5ContentCol',
@@ -147,7 +147,7 @@ const project3Data: ProjectCardProps[] = [
   {
     variant: '3:5ImageContent',
     overline: '03 | CLIENT: NATIONAL MINISTRY, SINGAPORE',
-    image: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80',
+    image: '/images/Projects/Research/YearbookoftheFuture_Column.png',
     rightContent: {
       title: 'Designing for Recognition and Reflection',
       body: "As both lead researcher and communications designer, I shaped the Yearbook's editorial architecture and visual tone. It had to feel credible in a policymaker's hands, but alive in a teacher's.<br><br>Every spread was crafted to bring coherence to complexity: a shared object teams could gather around to make sense of their own journey, see one another's efforts, and reconnect to purpose beyond KPIs.<br><br><strong>Why It Matters</strong><br>In systems change, so much is lost in the noise: half-built ideas, informal alliances, frontline wisdom. The Yearbook offered a way to hold that, not as archive, but as active memory. A bridge between what was tried, what was learned, and what's still possible.<br><br>It's easy to overlook the cultural infrastructure that helps institutions evolve. This was one small act to reinforce it.",
